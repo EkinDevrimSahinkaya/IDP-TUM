@@ -6,7 +6,6 @@ import time
 import datetime
 import glob
 import os
-import shapefile as shp
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 new_string = ROOT_DIR.replace("\\", "/")
 staticRoot = new_string + "/IDP-TUM/static_data/*.csv"

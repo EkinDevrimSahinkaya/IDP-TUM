@@ -8,6 +8,7 @@ from qgis.utils import iface
 import datetime
 import glob
 import os
+from qgis.PyQt import QtGui
 
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 new_string = ROOT_DIR.replace("\\", "/")
@@ -32,8 +33,6 @@ else:
     print('invalid layer')
     print(rlayer.error().summary())
 def mapAndPoint():
-
-
     #Adding Points
     latest_output_data_csv = max(glob.glob(outputRoot), key=os.path.getctime)
     absolute_path_to_csv_file = 'C:/Users/TR1/PycharmProjects/IDP-TUM/Datas/test.csv'
@@ -50,6 +49,69 @@ def mapAndPoint():
         # QTimer.singleShot(1000, set_project_crs)
         # csvlayer.triggerRepaint()
 
+    myTargetField = 'flow'
+    myRangeList = []
+    myOpacity = 1
+    # First group 0-100
+    myMin = 0.0
+    myMax = 100.0
+    myLabel = 'Very Low Traffic'
+    myColour = QtGui.QColor('#008000')
+    mySymbol1 = QgsSymbol.defaultSymbol(csvlayer.geometryType())
+    mySymbol1.setColor(myColour)
+    mySymbol1.setOpacity(myOpacity)
+    myRange1 = QgsRendererRange(myMin, myMax, mySymbol1, myLabel)
+    myRangeList.append(myRange1)
+    # Second Group 100-200
+    myMin = 100.1
+    myMax = 200.0
+    myLabel = 'Low Traffic'
+    myColour = QtGui.QColor('#00a500')
+    mySymbol2 = QgsSymbol.defaultSymbol(
+    csvlayer.geometryType())
+    mySymbol2.setColor(myColour)
+    mySymbol2.setOpacity(myOpacity)
+    myRange2 = QgsRendererRange(myMin, myMax, mySymbol2, myLabel)
+    myRangeList.append(myRange2)
+    # Third Group 200-300
+    myMin = 200.1
+    myMax = 300
+    myLabel = 'Normal Traffic'
+    myColour = QtGui.QColor('#f5ff09')
+    mySymbol2 = QgsSymbol.defaultSymbol(
+        csvlayer.geometryType())
+    mySymbol2.setColor(myColour)
+    mySymbol2.setOpacity(myOpacity)
+    myRange2 = QgsRendererRange(myMin, myMax, mySymbol2, myLabel)
+    myRangeList.append(myRange2)
+    # Third Group 300-400
+    myMin = 300.1
+    myMax = 400
+    myLabel = 'Busy Traffic'
+    myColour = QtGui.QColor('#ffa634')
+    mySymbol2 = QgsSymbol.defaultSymbol(
+        csvlayer.geometryType())
+    mySymbol2.setColor(myColour)
+    mySymbol2.setOpacity(myOpacity)
+    myRange2 = QgsRendererRange(myMin, myMax, mySymbol2, myLabel)
+    myRangeList.append(myRange2)
+    # Third Group 400-1000
+    myMin = 400.1
+    myMax = 1000
+    myLabel = 'Very Busy Traffic'
+    myColour = QtGui.QColor('#ff2712')
+    mySymbol2 = QgsSymbol.defaultSymbol(
+        csvlayer.geometryType())
+    mySymbol2.setColor(myColour)
+    mySymbol2.setOpacity(myOpacity)
+    myRange2 = QgsRendererRange(myMin, myMax, mySymbol2, myLabel)
+    myRangeList.append(myRange2)
+    myRenderer = QgsGraduatedSymbolRenderer('', myRangeList)
+    myClassificationMethod = QgsApplication.classificationMethodRegistry().method("EqualInterval")
+    myRenderer.setClassificationMethod(myClassificationMethod)
+    myRenderer.setClassAttribute(myTargetField)
+    csvlayer.setRenderer(myRenderer)
+    print("Classify eklendi.", csvlayer)
     QgsProject.instance().setCrs(QgsCoordinateReferenceSystem('EPSG:3857'), True)
     canvas = QgsMapCanvas()
     canvas.setCurrentLayer(rlayer)
@@ -60,6 +122,7 @@ def mapAndPoint():
 def set_project_crs():
     # Set CRS to EPSG:3857
     QgsProject.instance().setCrs(QgsCoordinateReferenceSystem('EPSG:3857'))
+
 
 def layer():
 

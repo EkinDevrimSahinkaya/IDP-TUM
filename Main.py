@@ -25,4 +25,8 @@ def run(condition):
         task()
 
 if __name__ == '__main__':
-    run(True)
+    # run(True)
+    xml_to_csv()
+    static_data()
+    output_data()
+    layer()
