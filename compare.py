@@ -20,7 +20,9 @@ def output_data():
 
     output = a.merge(b, on="detid", how="left").fillna(0).set_index("detid")
     zero_coords_filter = (output['lat'] == 0) | (output['lon'] == 0)
+    zero_coords_filter2 = (output['lat'] == 0.0) | (output['lon'] == 0.0)
     output = output[~zero_coords_filter]
+    output = output[~zero_coords_filter2]
     output.to_csv("output_data/"+datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S").replace("-", "_")+"_output.csv")
 
 
@@ -37,5 +39,7 @@ if __name__ == "__main__":
 
     output = a.merge(b, on="detid", how="left").fillna(0).set_index("detid")
     zero_coords_filter = (output['lat'] == 0) | (output['lon'] == 0)
+    zero_coords_filter2 = (output['lat'] == 0.0) | (output['lon'] == 0.0)
     output = output[~zero_coords_filter]
+    output = output[~zero_coords_filter2]
     output.to_csv("output_data/"+datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S").replace("-", "_")+"_output.csv")

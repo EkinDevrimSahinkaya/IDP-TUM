@@ -52,6 +52,7 @@ def mapAndPoint():
     myTargetField = 'flow'
     myRangeList = []
     myOpacity = 1
+
     # First group 0-100
     myMin = 0.0
     myMax = 100.0
@@ -106,6 +107,7 @@ def mapAndPoint():
     mySymbol2.setOpacity(myOpacity)
     myRange2 = QgsRendererRange(myMin, myMax, mySymbol2, myLabel)
     myRangeList.append(myRange2)
+
     myRenderer = QgsGraduatedSymbolRenderer('', myRangeList)
     myClassificationMethod = QgsApplication.classificationMethodRegistry().method("EqualInterval")
     myRenderer.setClassificationMethod(myClassificationMethod)
@@ -122,7 +124,6 @@ def mapAndPoint():
 def set_project_crs():
     # Set CRS to EPSG:3857
     QgsProject.instance().setCrs(QgsCoordinateReferenceSystem('EPSG:3857'))
-
 
 def layer():
 
