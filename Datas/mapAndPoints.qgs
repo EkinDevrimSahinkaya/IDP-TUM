@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="" saveUserFull="okan alkan" saveUser="okann" saveDateTime="2023-12-05T17:54:41" version="3.34.0-Prizren">
+<qgis projectname="" version="3.34.0-Prizren" saveUser="okann" saveUserFull="okan alkan" saveDateTime="2023-12-05T18:02:37">
   <homePath path=""/>
   <title></title>
   <transaction mode="Disabled"/>
@@ -17,34 +17,34 @@
       <geographicflag>false</geographicflag>
     </spatialrefsys>
   </projectCrs>
-  <elevation-shading-renderer light-altitude="45" edl-distance="0.5" hillshading-is-multidirectional="0" edl-is-active="1" combined-method="0" hillshading-z-factor="1" is-active="0" edl-distance-unit="0" edl-strength="1000" light-azimuth="315" hillshading-is-active="0"/>
+  <elevation-shading-renderer is-active="0" combined-method="0" hillshading-z-factor="1" hillshading-is-active="0" light-azimuth="315" edl-distance-unit="0" hillshading-is-multidirectional="0" edl-strength="1000" edl-distance="0.5" edl-is-active="1" light-altitude="45"/>
   <layer-tree-group>
     <customproperties>
       <Option/>
     </customproperties>
-    <layer-tree-layer providerKey="delimitedtext" legend_exp="" legend_split_behavior="0" checked="Qt::Checked" expanded="1" patch_size="-1,-1" id="Points_8b31c487_ba51_4d8f_92bd_afd52c9b8428" source="../output_data/2023_12_05_17_54_41_output.csv?delimiter=,&amp;xField=lon&amp;yField=lat&amp;crs=epsg:4326" name="Points">
+    <layer-tree-layer checked="Qt::Checked" name="Points" source="../output_data/2023_12_05_18_02_37_output.csv?delimiter=,&amp;xField=lon&amp;yField=lat&amp;crs=epsg:4326" patch_size="-1,-1" providerKey="delimitedtext" expanded="1" legend_exp="" id="Points_4260796c_b7b4_41c2_8a02_dda00ad4ccd3" legend_split_behavior="0">
       <customproperties>
         <Option/>
       </customproperties>
     </layer-tree-layer>
-    <layer-tree-layer providerKey="wms" legend_exp="" legend_split_behavior="0" checked="Qt::Checked" expanded="1" patch_size="-1,-1" id="OSM_6bee5ca3_94d6_49bb_85a4_7d2da28d4e11" source="&#x9;crs=EPSG:3857&amp;format&amp;type=xyz&amp;url=https://tile.openstreetmap.org/%7Bz%7D/%7Bx%7D/%7By%7D.png&amp;zmax=19&amp;zmin=0" name="OSM">
+    <layer-tree-layer checked="Qt::Checked" name="OSM" source="&#x9;crs=EPSG:3857&amp;format&amp;type=xyz&amp;url=https://tile.openstreetmap.org/%7Bz%7D/%7Bx%7D/%7By%7D.png&amp;zmax=19&amp;zmin=0" patch_size="-1,-1" providerKey="wms" expanded="1" legend_exp="" id="OSM_f42de572_7213_4bfc_b91e_4aeb9e48684e" legend_split_behavior="0">
       <customproperties>
         <Option/>
       </customproperties>
     </layer-tree-layer>
     <custom-order enabled="0">
-      <item>OSM_6bee5ca3_94d6_49bb_85a4_7d2da28d4e11</item>
-      <item>Points_8b31c487_ba51_4d8f_92bd_afd52c9b8428</item>
+      <item>OSM_f42de572_7213_4bfc_b91e_4aeb9e48684e</item>
+      <item>Points_4260796c_b7b4_41c2_8a02_dda00ad4ccd3</item>
     </custom-order>
   </layer-tree-group>
-  <snapping-settings unit="1" self-snapping="0" enabled="0" type="1" minScale="0" maxScale="0" mode="2" tolerance="12" intersection-snapping="0" scaleDependencyMode="0">
+  <snapping-settings type="1" minScale="0" tolerance="12" scaleDependencyMode="0" maxScale="0" intersection-snapping="0" unit="1" mode="2" enabled="0" self-snapping="0">
     <individual-layer-settings>
-      <layer-setting enabled="1" type="1" minScale="0" maxScale="0" tolerance="12" units="1" id="Points_8b31c487_ba51_4d8f_92bd_afd52c9b8428"/>
+      <layer-setting type="1" units="1" minScale="0" tolerance="12" maxScale="0" enabled="1" id="Points_4260796c_b7b4_41c2_8a02_dda00ad4ccd3"/>
     </individual-layer-settings>
   </snapping-settings>
   <relations/>
   <polymorphicRelations/>
-  <mapcanvas annotationsVisible="1" name="">
+  <mapcanvas name="" annotationsVisible="1">
     <units>unknown</units>
     <extent>
       <xmin>-20037508.34278924390673637</xmin>
@@ -56,8 +56,8 @@
     <rendermaptile>0</rendermaptile>
     <expressionContextScope/>
   </mapcanvas>
-  <main-annotation-layer hasScaleBasedVisibilityFlag="0" autoRefreshTime="0" refreshOnNotifyMessage="" styleCategories="AllStyleCategories" type="annotation" maxScale="0" minScale="1e+08" refreshOnNotifyEnabled="0" autoRefreshMode="Disabled" legendPlaceholderImage="">
-    <id>Annotations_f3fd9a08_4652_4f6a_9654_d6f5b006e636</id>
+  <main-annotation-layer type="annotation" autoRefreshMode="Disabled" minScale="1e+08" legendPlaceholderImage="" maxScale="0" styleCategories="AllStyleCategories" refreshOnNotifyMessage="" refreshOnNotifyEnabled="0" autoRefreshTime="0" hasScaleBasedVisibilityFlag="0">
+    <id>Annotations_c2d392d6_9d76_4de8_bc3b_0a738c4096b1</id>
     <datasource></datasource>
     <keywordList>
       <value></value>
@@ -117,7 +117,7 @@
     <paintEffect/>
   </main-annotation-layer>
   <projectlayers>
-    <maplayer hasScaleBasedVisibilityFlag="0" autoRefreshTime="0" refreshOnNotifyMessage="" styleCategories="AllStyleCategories" type="raster" maxScale="0" minScale="1e+08" refreshOnNotifyEnabled="0" autoRefreshMode="Disabled" legendPlaceholderImage="">
+    <maplayer type="raster" autoRefreshMode="Disabled" minScale="1e+08" legendPlaceholderImage="" maxScale="0" styleCategories="AllStyleCategories" refreshOnNotifyMessage="" refreshOnNotifyEnabled="0" autoRefreshTime="0" hasScaleBasedVisibilityFlag="0">
       <extent>
         <xmin>-20037508.34278924390673637</xmin>
         <ymin>-20037508.34278924763202667</ymin>
@@ -130,7 +130,7 @@
         <xmax>179.99999999999997158</xmax>
         <ymax>85.05112877980660357</ymax>
       </wgs84extent>
-      <id>OSM_6bee5ca3_94d6_49bb_85a4_7d2da28d4e11</id>
+      <id>OSM_f42de572_7213_4bfc_b91e_4aeb9e48684e</id>
       <datasource>	crs=EPSG:3857&amp;format&amp;type=xyz&amp;url=https://tile.openstreetmap.org/%7Bz%7D/%7Bx%7D/%7By%7D.png&amp;zmax=19&amp;zmin=0</datasource>
       <keywordList>
         <value></value>
@@ -157,7 +157,7 @@
         <title>OpenStreetMap tiles</title>
         <abstract>OpenStreetMap is built by a community of mappers that contribute and maintain data about roads, trails, cafés, railway stations, and much more, all over the world.</abstract>
         <links>
-          <link url="https://www.openstreetmap.org/" type="WWW:LINK" mimeType="" size="" format="" name="Source" description=""/>
+          <link type="WWW:LINK" description="" name="Source" size="" mimeType="" url="https://www.openstreetmap.org/" format=""/>
         </links>
         <dates/>
         <fees></fees>
@@ -179,12 +179,12 @@
           </spatialrefsys>
         </crs>
         <extent>
-          <spatial maxz="nan" minz="nan" minx="-180" dimensions="2" maxx="180" miny="-85.05112877980660357" maxy="85.05112877980660357" crs="EPSG:4326"/>
+          <spatial minz="nan" maxz="nan" dimensions="2" maxy="85.05112877980660357" crs="EPSG:4326" maxx="180" minx="-180" miny="-85.05112877980660357"/>
         </extent>
       </resourceMetadata>
       <provider>wms</provider>
       <noData>
-        <noDataList useSrcNoData="0" bandNo="1"/>
+        <noDataList bandNo="1" useSrcNoData="0"/>
       </noData>
       <map-layer-style-manager current="default">
         <map-layer-style name="default"/>
@@ -196,13 +196,13 @@
         <Searchable>1</Searchable>
         <Private>0</Private>
       </flags>
-      <temporal enabled="0" mode="0" fetchMode="0">
+      <temporal fetchMode="0" mode="0" enabled="0">
         <fixedRange>
           <start></start>
           <end></end>
         </fixedRange>
       </temporal>
-      <elevation band="1" enabled="0" symbology="Line" zoffset="0" zscale="1">
+      <elevation zscale="1" symbology="Line" band="1" zoffset="0" enabled="0">
         <data-defined-properties>
           <Option type="Map">
             <Option type="QString" value="" name="name"/>
@@ -211,7 +211,7 @@
           </Option>
         </data-defined-properties>
         <profileLineSymbol>
-          <symbol clip_to_extent="1" type="line" force_rhr="0" alpha="1" is_animated="0" frame_rate="10" name="">
+          <symbol type="line" alpha="1" name="" force_rhr="0" is_animated="0" frame_rate="10" clip_to_extent="1">
             <data_defined_properties>
               <Option type="Map">
                 <Option type="QString" value="" name="name"/>
@@ -219,7 +219,7 @@
                 <Option type="QString" value="collection" name="type"/>
               </Option>
             </data_defined_properties>
-            <layer class="SimpleLine" locked="0" pass="0" enabled="1" id="{39bb8574-5d04-413b-8cd4-07db24a715e7}">
+            <layer class="SimpleLine" pass="0" locked="0" enabled="1" id="{572d298f-e676-455a-849e-a0c9c22bc3f4}">
               <Option type="Map">
                 <Option type="QString" value="0" name="align_dash_pattern"/>
                 <Option type="QString" value="square" name="capstyle"/>
@@ -231,7 +231,7 @@
                 <Option type="QString" value="MM" name="dash_pattern_offset_unit"/>
                 <Option type="QString" value="0" name="draw_inside_polygon"/>
                 <Option type="QString" value="bevel" name="joinstyle"/>
-                <Option type="QString" value="243,166,178,255" name="line_color"/>
+                <Option type="QString" value="190,207,80,255" name="line_color"/>
                 <Option type="QString" value="solid" name="line_style"/>
                 <Option type="QString" value="0.6" name="line_width"/>
                 <Option type="QString" value="MM" name="line_width_unit"/>
@@ -260,7 +260,7 @@
           </symbol>
         </profileLineSymbol>
         <profileFillSymbol>
-          <symbol clip_to_extent="1" type="fill" force_rhr="0" alpha="1" is_animated="0" frame_rate="10" name="">
+          <symbol type="fill" alpha="1" name="" force_rhr="0" is_animated="0" frame_rate="10" clip_to_extent="1">
             <data_defined_properties>
               <Option type="Map">
                 <Option type="QString" value="" name="name"/>
@@ -268,10 +268,10 @@
                 <Option type="QString" value="collection" name="type"/>
               </Option>
             </data_defined_properties>
-            <layer class="SimpleFill" locked="0" pass="0" enabled="1" id="{697f95d0-93e7-496f-9616-ed67bf644e14}">
+            <layer class="SimpleFill" pass="0" locked="0" enabled="1" id="{45d9f636-e9b7-4cab-b4f3-536f2e37bc11}">
               <Option type="Map">
                 <Option type="QString" value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale"/>
-                <Option type="QString" value="243,166,178,255" name="color"/>
+                <Option type="QString" value="190,207,80,255" name="color"/>
                 <Option type="QString" value="bevel" name="joinstyle"/>
                 <Option type="QString" value="0,0" name="offset"/>
                 <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
@@ -308,9 +308,9 @@
       </pipe-data-defined-properties>
       <pipe>
         <provider>
-          <resampling enabled="false" maxOversampling="2" zoomedOutResamplingMethod="nearestNeighbour" zoomedInResamplingMethod="nearestNeighbour"/>
+          <resampling zoomedOutResamplingMethod="nearestNeighbour" maxOversampling="2" zoomedInResamplingMethod="nearestNeighbour" enabled="false"/>
         </provider>
-        <rasterrenderer alphaBand="-1" nodataColor="" band="1" type="singlebandcolordata" opacity="1">
+        <rasterrenderer type="singlebandcolordata" opacity="1" alphaBand="-1" band="1" nodataColor="">
           <rasterTransparency/>
           <minMaxOrigin>
             <limits>None</limits>
@@ -321,28 +321,28 @@
             <stdDevFactor>2</stdDevFactor>
           </minMaxOrigin>
         </rasterrenderer>
-        <brightnesscontrast gamma="1" brightness="0" contrast="0"/>
-        <huesaturation colorizeGreen="128" saturation="0" invertColors="0" colorizeRed="255" colorizeBlue="128" colorizeStrength="100" grayscaleMode="0" colorizeOn="0"/>
+        <brightnesscontrast contrast="0" gamma="1" brightness="0"/>
+        <huesaturation saturation="0" colorizeRed="255" colorizeGreen="128" grayscaleMode="0" colorizeStrength="100" colorizeBlue="128" invertColors="0" colorizeOn="0"/>
         <rasterresampler maxOversampling="2"/>
         <resamplingStage>resamplingFilter</resamplingStage>
       </pipe>
       <blendMode>0</blendMode>
     </maplayer>
-    <maplayer refreshOnNotifyMessage="" minScale="100000000" legendPlaceholderImage="" autoRefreshTime="0" geometry="Point" maxScale="0" simplifyDrawingHints="1" simplifyLocal="1" simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories" symbologyReferenceScale="-1" readOnly="0" labelsEnabled="0" simplifyMaxScale="1" type="vector" simplifyAlgorithm="0" wkbType="Point" autoRefreshMode="Disabled">
+    <maplayer simplifyDrawingTol="1" type="vector" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories" maxScale="0" simplifyLocal="1" simplifyAlgorithm="0" readOnly="0" labelsEnabled="0" simplifyDrawingHints="1" hasScaleBasedVisibilityFlag="0" symbologyReferenceScale="-1" autoRefreshTime="0" autoRefreshMode="Disabled" legendPlaceholderImage="" refreshOnNotifyMessage="" geometry="Point" minScale="100000000" simplifyMaxScale="1" wkbType="Point">
       <extent>
-        <xmin>0</xmin>
-        <ymin>0</ymin>
+        <xmin>11.41591099999999948</xmin>
+        <ymin>48.07718700000000212</ymin>
         <xmax>11.71517000000000053</xmax>
         <ymax>48.22311799999999948</ymax>
       </extent>
       <wgs84extent>
-        <xmin>0</xmin>
-        <ymin>0</ymin>
+        <xmin>11.41591099999999948</xmin>
+        <ymin>48.07718700000000212</ymin>
         <xmax>11.71517000000000053</xmax>
         <ymax>48.22311799999999948</ymax>
       </wgs84extent>
-      <id>Points_8b31c487_ba51_4d8f_92bd_afd52c9b8428</id>
-      <datasource>file:../output_data/2023_12_05_17_54_41_output.csv?delimiter=,&amp;xField=lon&amp;yField=lat&amp;crs=epsg:4326</datasource>
+      <id>Points_4260796c_b7b4_41c2_8a02_dda00ad4ccd3</id>
+      <datasource>file:../output_data/2023_12_05_18_02_37_output.csv?delimiter=,&amp;xField=lon&amp;yField=lat&amp;crs=epsg:4326</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -402,13 +402,13 @@
         <Searchable>1</Searchable>
         <Private>0</Private>
       </flags>
-      <temporal limitMode="0" endField="" durationField="" fixedDuration="0" accumulate="0" enabled="0" durationUnit="min" mode="0" endExpression="" startField="" startExpression="">
+      <temporal startExpression="" accumulate="0" startField="" endField="" fixedDuration="0" durationField="" endExpression="" durationUnit="min" limitMode="0" mode="0" enabled="0">
         <fixedRange>
           <start></start>
           <end></end>
         </fixedRange>
       </temporal>
-      <elevation respectLayerSymbol="1" clamping="Terrain" showMarkerSymbolInSurfacePlots="0" type="IndividualFeatures" symbology="Line" extrusion="0" zoffset="0" zscale="1" extrusionEnabled="0" binding="Centroid">
+      <elevation type="IndividualFeatures" zscale="1" symbology="Line" binding="Centroid" respectLayerSymbol="1" extrusion="0" clamping="Terrain" zoffset="0" showMarkerSymbolInSurfacePlots="0" extrusionEnabled="0">
         <data-defined-properties>
           <Option type="Map">
             <Option type="QString" value="" name="name"/>
@@ -417,7 +417,7 @@
           </Option>
         </data-defined-properties>
         <profileLineSymbol>
-          <symbol clip_to_extent="1" type="line" force_rhr="0" alpha="1" is_animated="0" frame_rate="10" name="">
+          <symbol type="line" alpha="1" name="" force_rhr="0" is_animated="0" frame_rate="10" clip_to_extent="1">
             <data_defined_properties>
               <Option type="Map">
                 <Option type="QString" value="" name="name"/>
@@ -425,7 +425,7 @@
                 <Option type="QString" value="collection" name="type"/>
               </Option>
             </data_defined_properties>
-            <layer class="SimpleLine" locked="0" pass="0" enabled="1" id="{4266a2f4-f0c0-48b1-8ac1-9c0ad362840d}">
+            <layer class="SimpleLine" pass="0" locked="0" enabled="1" id="{8c86ec9a-edcb-4a05-a5d2-34e2b71c27df}">
               <Option type="Map">
                 <Option type="QString" value="0" name="align_dash_pattern"/>
                 <Option type="QString" value="square" name="capstyle"/>
@@ -437,7 +437,7 @@
                 <Option type="QString" value="MM" name="dash_pattern_offset_unit"/>
                 <Option type="QString" value="0" name="draw_inside_polygon"/>
                 <Option type="QString" value="bevel" name="joinstyle"/>
-                <Option type="QString" value="114,155,111,255" name="line_color"/>
+                <Option type="QString" value="152,125,183,255" name="line_color"/>
                 <Option type="QString" value="solid" name="line_style"/>
                 <Option type="QString" value="0.6" name="line_width"/>
                 <Option type="QString" value="MM" name="line_width_unit"/>
@@ -466,7 +466,7 @@
           </symbol>
         </profileLineSymbol>
         <profileFillSymbol>
-          <symbol clip_to_extent="1" type="fill" force_rhr="0" alpha="1" is_animated="0" frame_rate="10" name="">
+          <symbol type="fill" alpha="1" name="" force_rhr="0" is_animated="0" frame_rate="10" clip_to_extent="1">
             <data_defined_properties>
               <Option type="Map">
                 <Option type="QString" value="" name="name"/>
@@ -474,15 +474,15 @@
                 <Option type="QString" value="collection" name="type"/>
               </Option>
             </data_defined_properties>
-            <layer class="SimpleFill" locked="0" pass="0" enabled="1" id="{afa5e35d-ee39-4302-93d4-84e2059825e6}">
+            <layer class="SimpleFill" pass="0" locked="0" enabled="1" id="{0e0a22eb-5240-4e48-b456-4db1d35bb4df}">
               <Option type="Map">
                 <Option type="QString" value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale"/>
-                <Option type="QString" value="114,155,111,255" name="color"/>
+                <Option type="QString" value="152,125,183,255" name="color"/>
                 <Option type="QString" value="bevel" name="joinstyle"/>
                 <Option type="QString" value="0,0" name="offset"/>
                 <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
                 <Option type="QString" value="MM" name="offset_unit"/>
-                <Option type="QString" value="81,111,79,255" name="outline_color"/>
+                <Option type="QString" value="109,89,131,255" name="outline_color"/>
                 <Option type="QString" value="solid" name="outline_style"/>
                 <Option type="QString" value="0.2" name="outline_width"/>
                 <Option type="QString" value="MM" name="outline_width_unit"/>
@@ -499,7 +499,7 @@
           </symbol>
         </profileFillSymbol>
         <profileMarkerSymbol>
-          <symbol clip_to_extent="1" type="marker" force_rhr="0" alpha="1" is_animated="0" frame_rate="10" name="">
+          <symbol type="marker" alpha="1" name="" force_rhr="0" is_animated="0" frame_rate="10" clip_to_extent="1">
             <data_defined_properties>
               <Option type="Map">
                 <Option type="QString" value="" name="name"/>
@@ -507,18 +507,18 @@
                 <Option type="QString" value="collection" name="type"/>
               </Option>
             </data_defined_properties>
-            <layer class="SimpleMarker" locked="0" pass="0" enabled="1" id="{968b82a1-b6c0-4f7e-8d59-c6cbf1687d79}">
+            <layer class="SimpleMarker" pass="0" locked="0" enabled="1" id="{ac1a7fae-a745-40ba-8b5c-87668db5bf5b}">
               <Option type="Map">
                 <Option type="QString" value="0" name="angle"/>
                 <Option type="QString" value="square" name="cap_style"/>
-                <Option type="QString" value="114,155,111,255" name="color"/>
+                <Option type="QString" value="152,125,183,255" name="color"/>
                 <Option type="QString" value="1" name="horizontal_anchor_point"/>
                 <Option type="QString" value="bevel" name="joinstyle"/>
                 <Option type="QString" value="diamond" name="name"/>
                 <Option type="QString" value="0,0" name="offset"/>
                 <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
                 <Option type="QString" value="MM" name="offset_unit"/>
-                <Option type="QString" value="81,111,79,255" name="outline_color"/>
+                <Option type="QString" value="109,89,131,255" name="outline_color"/>
                 <Option type="QString" value="solid" name="outline_style"/>
                 <Option type="QString" value="0.2" name="outline_width"/>
                 <Option type="QString" value="3x:0,0,0,0,0,0" name="outline_width_map_unit_scale"/>
@@ -540,16 +540,16 @@
           </symbol>
         </profileMarkerSymbol>
       </elevation>
-      <renderer-v2 referencescale="-1" attr="flow" type="graduatedSymbol" enableorderby="0" symbollevels="0" graduatedMethod="GraduatedColor" forceraster="0">
+      <renderer-v2 type="graduatedSymbol" attr="flow" referencescale="-1" forceraster="0" symbollevels="0" enableorderby="0" graduatedMethod="GraduatedColor">
         <ranges>
-          <range uuid="{04db67f9-34f4-44d9-a309-234558a588a5}" upper="100.000000000000000" symbol="0" label="Very Low Traffic" lower="0.000000000000000" render="true"/>
-          <range uuid="{c5243359-fa2c-44ec-8f0f-0b0a4eb9a9eb}" upper="200.000000000000000" symbol="1" label="Low Traffic" lower="100.099999999999994" render="true"/>
-          <range uuid="{c00a4066-2f3a-4543-bf93-4dff9e506413}" upper="300.000000000000000" symbol="2" label="Normal Traffic" lower="200.099999999999994" render="true"/>
-          <range uuid="{4e3a693b-077e-448d-880a-16a7d5febb19}" upper="400.000000000000000" symbol="3" label="Busy Traffic" lower="300.100000000000023" render="true"/>
-          <range uuid="{03c2f518-eef1-4a80-b140-78cc21ffad4a}" upper="1000.000000000000000" symbol="4" label="Very Busy Traffic" lower="400.100000000000023" render="true"/>
+          <range upper="100.000000000000000" symbol="0" uuid="{224a321a-887e-4151-91f8-9700b15049b1}" render="true" lower="0.000000000000000" label="Very Low Traffic"/>
+          <range upper="200.000000000000000" symbol="1" uuid="{ea4ccf74-75ef-44db-b1a0-f747e9eb3f63}" render="true" lower="100.099999999999994" label="Low Traffic"/>
+          <range upper="300.000000000000000" symbol="2" uuid="{9a73ec99-2bf6-4a14-a674-12e781a862f8}" render="true" lower="200.099999999999994" label="Normal Traffic"/>
+          <range upper="400.000000000000000" symbol="3" uuid="{626edfab-3911-48d7-bb99-5118eb81fbc5}" render="true" lower="300.100000000000023" label="Busy Traffic"/>
+          <range upper="1000.000000000000000" symbol="4" uuid="{b8f4004e-3f44-4014-909d-8e69f39360ea}" render="true" lower="400.100000000000023" label="Very Busy Traffic"/>
         </ranges>
         <symbols>
-          <symbol clip_to_extent="1" type="marker" force_rhr="0" alpha="1" is_animated="0" frame_rate="10" name="0">
+          <symbol type="marker" alpha="1" name="0" force_rhr="0" is_animated="0" frame_rate="10" clip_to_extent="1">
             <data_defined_properties>
               <Option type="Map">
                 <Option type="QString" value="" name="name"/>
@@ -557,7 +557,7 @@
                 <Option type="QString" value="collection" name="type"/>
               </Option>
             </data_defined_properties>
-            <layer class="SimpleMarker" locked="0" pass="0" enabled="1" id="{2a4bd3c7-ad4b-49e6-a8ca-dc120b35ea9c}">
+            <layer class="SimpleMarker" pass="0" locked="0" enabled="1" id="{c65c1b42-775d-447a-920d-22edd5a97f19}">
               <Option type="Map">
                 <Option type="QString" value="0" name="angle"/>
                 <Option type="QString" value="square" name="cap_style"/>
@@ -588,7 +588,7 @@
               </data_defined_properties>
             </layer>
           </symbol>
-          <symbol clip_to_extent="1" type="marker" force_rhr="0" alpha="1" is_animated="0" frame_rate="10" name="1">
+          <symbol type="marker" alpha="1" name="1" force_rhr="0" is_animated="0" frame_rate="10" clip_to_extent="1">
             <data_defined_properties>
               <Option type="Map">
                 <Option type="QString" value="" name="name"/>
@@ -596,7 +596,7 @@
                 <Option type="QString" value="collection" name="type"/>
               </Option>
             </data_defined_properties>
-            <layer class="SimpleMarker" locked="0" pass="0" enabled="1" id="{44e9b80c-62aa-4464-8aae-aa40e3942bfa}">
+            <layer class="SimpleMarker" pass="0" locked="0" enabled="1" id="{13a65e53-6ef4-49ee-a8d5-6c754a0274ba}">
               <Option type="Map">
                 <Option type="QString" value="0" name="angle"/>
                 <Option type="QString" value="square" name="cap_style"/>
@@ -627,7 +627,7 @@
               </data_defined_properties>
             </layer>
           </symbol>
-          <symbol clip_to_extent="1" type="marker" force_rhr="0" alpha="1" is_animated="0" frame_rate="10" name="2">
+          <symbol type="marker" alpha="1" name="2" force_rhr="0" is_animated="0" frame_rate="10" clip_to_extent="1">
             <data_defined_properties>
               <Option type="Map">
                 <Option type="QString" value="" name="name"/>
@@ -635,7 +635,7 @@
                 <Option type="QString" value="collection" name="type"/>
               </Option>
             </data_defined_properties>
-            <layer class="SimpleMarker" locked="0" pass="0" enabled="1" id="{97dd0012-6ba0-4229-b690-ce93c17d00bf}">
+            <layer class="SimpleMarker" pass="0" locked="0" enabled="1" id="{412f877e-0eaf-478c-a81e-33a7f0243d04}">
               <Option type="Map">
                 <Option type="QString" value="0" name="angle"/>
                 <Option type="QString" value="square" name="cap_style"/>
@@ -666,7 +666,7 @@
               </data_defined_properties>
             </layer>
           </symbol>
-          <symbol clip_to_extent="1" type="marker" force_rhr="0" alpha="1" is_animated="0" frame_rate="10" name="3">
+          <symbol type="marker" alpha="1" name="3" force_rhr="0" is_animated="0" frame_rate="10" clip_to_extent="1">
             <data_defined_properties>
               <Option type="Map">
                 <Option type="QString" value="" name="name"/>
@@ -674,7 +674,7 @@
                 <Option type="QString" value="collection" name="type"/>
               </Option>
             </data_defined_properties>
-            <layer class="SimpleMarker" locked="0" pass="0" enabled="1" id="{66067f59-0a4b-4df9-aab8-f89271706d9d}">
+            <layer class="SimpleMarker" pass="0" locked="0" enabled="1" id="{ee3100f0-0264-4edc-b360-d846412ee68c}">
               <Option type="Map">
                 <Option type="QString" value="0" name="angle"/>
                 <Option type="QString" value="square" name="cap_style"/>
@@ -705,7 +705,7 @@
               </data_defined_properties>
             </layer>
           </symbol>
-          <symbol clip_to_extent="1" type="marker" force_rhr="0" alpha="1" is_animated="0" frame_rate="10" name="4">
+          <symbol type="marker" alpha="1" name="4" force_rhr="0" is_animated="0" frame_rate="10" clip_to_extent="1">
             <data_defined_properties>
               <Option type="Map">
                 <Option type="QString" value="" name="name"/>
@@ -713,7 +713,7 @@
                 <Option type="QString" value="collection" name="type"/>
               </Option>
             </data_defined_properties>
-            <layer class="SimpleMarker" locked="0" pass="0" enabled="1" id="{fd85b17e-863a-427e-ab0e-afe075516dfe}">
+            <layer class="SimpleMarker" pass="0" locked="0" enabled="1" id="{7b08cf10-ebb1-41f1-8633-446a8bdc34f5}">
               <Option type="Map">
                 <Option type="QString" value="0" name="angle"/>
                 <Option type="QString" value="square" name="cap_style"/>
@@ -746,8 +746,8 @@
           </symbol>
         </symbols>
         <classificationMethod id="EqualInterval">
-          <symmetricMode astride="0" enabled="0" symmetrypoint="0"/>
-          <labelFormat labelprecision="4" trimtrailingzeroes="1" format="%1 - %2"/>
+          <symmetricMode astride="0" symmetrypoint="0" enabled="0"/>
+          <labelFormat trimtrailingzeroes="1" labelprecision="4" format="%1 - %2"/>
           <parameters>
             <Option/>
           </parameters>
@@ -867,83 +867,83 @@
         </field>
       </fieldConfiguration>
       <aliases>
-        <alias index="0" field="detid" name=""/>
-        <alias index="1" field="Unnamed: 0_x" name=""/>
-        <alias index="2" field="timestamp" name=""/>
-        <alias index="3" field="flow" name=""/>
-        <alias index="4" field="vehicleTypeFlow" name=""/>
-        <alias index="5" field="speed" name=""/>
-        <alias index="6" field="vehicleTypeSpeed" name=""/>
-        <alias index="7" field="occupancy_percentage" name=""/>
-        <alias index="8" field="Unnamed: 0_y" name=""/>
-        <alias index="9" field="type" name=""/>
-        <alias index="10" field="location_desc" name=""/>
-        <alias index="11" field="lat" name=""/>
-        <alias index="12" field="lon" name=""/>
+        <alias name="" field="detid" index="0"/>
+        <alias name="" field="Unnamed: 0_x" index="1"/>
+        <alias name="" field="timestamp" index="2"/>
+        <alias name="" field="flow" index="3"/>
+        <alias name="" field="vehicleTypeFlow" index="4"/>
+        <alias name="" field="speed" index="5"/>
+        <alias name="" field="vehicleTypeSpeed" index="6"/>
+        <alias name="" field="occupancy_percentage" index="7"/>
+        <alias name="" field="Unnamed: 0_y" index="8"/>
+        <alias name="" field="type" index="9"/>
+        <alias name="" field="location_desc" index="10"/>
+        <alias name="" field="lat" index="11"/>
+        <alias name="" field="lon" index="12"/>
       </aliases>
       <splitPolicies>
-        <policy field="detid" policy="Duplicate"/>
-        <policy field="Unnamed: 0_x" policy="Duplicate"/>
-        <policy field="timestamp" policy="Duplicate"/>
-        <policy field="flow" policy="Duplicate"/>
-        <policy field="vehicleTypeFlow" policy="Duplicate"/>
-        <policy field="speed" policy="Duplicate"/>
-        <policy field="vehicleTypeSpeed" policy="Duplicate"/>
-        <policy field="occupancy_percentage" policy="Duplicate"/>
-        <policy field="Unnamed: 0_y" policy="Duplicate"/>
-        <policy field="type" policy="Duplicate"/>
-        <policy field="location_desc" policy="Duplicate"/>
-        <policy field="lat" policy="Duplicate"/>
-        <policy field="lon" policy="Duplicate"/>
+        <policy policy="Duplicate" field="detid"/>
+        <policy policy="Duplicate" field="Unnamed: 0_x"/>
+        <policy policy="Duplicate" field="timestamp"/>
+        <policy policy="Duplicate" field="flow"/>
+        <policy policy="Duplicate" field="vehicleTypeFlow"/>
+        <policy policy="Duplicate" field="speed"/>
+        <policy policy="Duplicate" field="vehicleTypeSpeed"/>
+        <policy policy="Duplicate" field="occupancy_percentage"/>
+        <policy policy="Duplicate" field="Unnamed: 0_y"/>
+        <policy policy="Duplicate" field="type"/>
+        <policy policy="Duplicate" field="location_desc"/>
+        <policy policy="Duplicate" field="lat"/>
+        <policy policy="Duplicate" field="lon"/>
       </splitPolicies>
       <defaults>
-        <default field="detid" applyOnUpdate="0" expression=""/>
-        <default field="Unnamed: 0_x" applyOnUpdate="0" expression=""/>
-        <default field="timestamp" applyOnUpdate="0" expression=""/>
-        <default field="flow" applyOnUpdate="0" expression=""/>
-        <default field="vehicleTypeFlow" applyOnUpdate="0" expression=""/>
-        <default field="speed" applyOnUpdate="0" expression=""/>
-        <default field="vehicleTypeSpeed" applyOnUpdate="0" expression=""/>
-        <default field="occupancy_percentage" applyOnUpdate="0" expression=""/>
-        <default field="Unnamed: 0_y" applyOnUpdate="0" expression=""/>
-        <default field="type" applyOnUpdate="0" expression=""/>
-        <default field="location_desc" applyOnUpdate="0" expression=""/>
-        <default field="lat" applyOnUpdate="0" expression=""/>
-        <default field="lon" applyOnUpdate="0" expression=""/>
+        <default applyOnUpdate="0" expression="" field="detid"/>
+        <default applyOnUpdate="0" expression="" field="Unnamed: 0_x"/>
+        <default applyOnUpdate="0" expression="" field="timestamp"/>
+        <default applyOnUpdate="0" expression="" field="flow"/>
+        <default applyOnUpdate="0" expression="" field="vehicleTypeFlow"/>
+        <default applyOnUpdate="0" expression="" field="speed"/>
+        <default applyOnUpdate="0" expression="" field="vehicleTypeSpeed"/>
+        <default applyOnUpdate="0" expression="" field="occupancy_percentage"/>
+        <default applyOnUpdate="0" expression="" field="Unnamed: 0_y"/>
+        <default applyOnUpdate="0" expression="" field="type"/>
+        <default applyOnUpdate="0" expression="" field="location_desc"/>
+        <default applyOnUpdate="0" expression="" field="lat"/>
+        <default applyOnUpdate="0" expression="" field="lon"/>
       </defaults>
       <constraints>
-        <constraint constraints="0" exp_strength="0" field="detid" unique_strength="0" notnull_strength="0"/>
-        <constraint constraints="0" exp_strength="0" field="Unnamed: 0_x" unique_strength="0" notnull_strength="0"/>
-        <constraint constraints="0" exp_strength="0" field="timestamp" unique_strength="0" notnull_strength="0"/>
-        <constraint constraints="0" exp_strength="0" field="flow" unique_strength="0" notnull_strength="0"/>
-        <constraint constraints="0" exp_strength="0" field="vehicleTypeFlow" unique_strength="0" notnull_strength="0"/>
-        <constraint constraints="0" exp_strength="0" field="speed" unique_strength="0" notnull_strength="0"/>
-        <constraint constraints="0" exp_strength="0" field="vehicleTypeSpeed" unique_strength="0" notnull_strength="0"/>
-        <constraint constraints="0" exp_strength="0" field="occupancy_percentage" unique_strength="0" notnull_strength="0"/>
-        <constraint constraints="0" exp_strength="0" field="Unnamed: 0_y" unique_strength="0" notnull_strength="0"/>
-        <constraint constraints="0" exp_strength="0" field="type" unique_strength="0" notnull_strength="0"/>
-        <constraint constraints="0" exp_strength="0" field="location_desc" unique_strength="0" notnull_strength="0"/>
-        <constraint constraints="0" exp_strength="0" field="lat" unique_strength="0" notnull_strength="0"/>
-        <constraint constraints="0" exp_strength="0" field="lon" unique_strength="0" notnull_strength="0"/>
+        <constraint notnull_strength="0" constraints="0" field="detid" unique_strength="0" exp_strength="0"/>
+        <constraint notnull_strength="0" constraints="0" field="Unnamed: 0_x" unique_strength="0" exp_strength="0"/>
+        <constraint notnull_strength="0" constraints="0" field="timestamp" unique_strength="0" exp_strength="0"/>
+        <constraint notnull_strength="0" constraints="0" field="flow" unique_strength="0" exp_strength="0"/>
+        <constraint notnull_strength="0" constraints="0" field="vehicleTypeFlow" unique_strength="0" exp_strength="0"/>
+        <constraint notnull_strength="0" constraints="0" field="speed" unique_strength="0" exp_strength="0"/>
+        <constraint notnull_strength="0" constraints="0" field="vehicleTypeSpeed" unique_strength="0" exp_strength="0"/>
+        <constraint notnull_strength="0" constraints="0" field="occupancy_percentage" unique_strength="0" exp_strength="0"/>
+        <constraint notnull_strength="0" constraints="0" field="Unnamed: 0_y" unique_strength="0" exp_strength="0"/>
+        <constraint notnull_strength="0" constraints="0" field="type" unique_strength="0" exp_strength="0"/>
+        <constraint notnull_strength="0" constraints="0" field="location_desc" unique_strength="0" exp_strength="0"/>
+        <constraint notnull_strength="0" constraints="0" field="lat" unique_strength="0" exp_strength="0"/>
+        <constraint notnull_strength="0" constraints="0" field="lon" unique_strength="0" exp_strength="0"/>
       </constraints>
       <constraintExpressions>
-        <constraint desc="" field="detid" exp=""/>
-        <constraint desc="" field="Unnamed: 0_x" exp=""/>
-        <constraint desc="" field="timestamp" exp=""/>
-        <constraint desc="" field="flow" exp=""/>
-        <constraint desc="" field="vehicleTypeFlow" exp=""/>
-        <constraint desc="" field="speed" exp=""/>
-        <constraint desc="" field="vehicleTypeSpeed" exp=""/>
-        <constraint desc="" field="occupancy_percentage" exp=""/>
-        <constraint desc="" field="Unnamed: 0_y" exp=""/>
-        <constraint desc="" field="type" exp=""/>
-        <constraint desc="" field="location_desc" exp=""/>
-        <constraint desc="" field="lat" exp=""/>
-        <constraint desc="" field="lon" exp=""/>
+        <constraint exp="" desc="" field="detid"/>
+        <constraint exp="" desc="" field="Unnamed: 0_x"/>
+        <constraint exp="" desc="" field="timestamp"/>
+        <constraint exp="" desc="" field="flow"/>
+        <constraint exp="" desc="" field="vehicleTypeFlow"/>
+        <constraint exp="" desc="" field="speed"/>
+        <constraint exp="" desc="" field="vehicleTypeSpeed"/>
+        <constraint exp="" desc="" field="occupancy_percentage"/>
+        <constraint exp="" desc="" field="Unnamed: 0_y"/>
+        <constraint exp="" desc="" field="type"/>
+        <constraint exp="" desc="" field="location_desc"/>
+        <constraint exp="" desc="" field="lat"/>
+        <constraint exp="" desc="" field="lon"/>
       </constraintExpressions>
       <expressionfields/>
       <attributeactions/>
-      <attributetableconfig sortExpression="" actionWidgetStyle="dropDown" sortOrder="0">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <conditionalstyles>
@@ -968,8 +968,8 @@
     </maplayer>
   </projectlayers>
   <layerorder>
-    <layer id="OSM_6bee5ca3_94d6_49bb_85a4_7d2da28d4e11"/>
-    <layer id="Points_8b31c487_ba51_4d8f_92bd_afd52c9b8428"/>
+    <layer id="OSM_f42de572_7213_4bfc_b91e_4aeb9e48684e"/>
+    <layer id="Points_4260796c_b7b4_41c2_8a02_dda00ad4ccd3"/>
   </layerorder>
   <properties>
     <Digitizing>
@@ -1034,10 +1034,10 @@
     <abstract></abstract>
     <links/>
     <dates>
-      <date type="Created" value="2023-12-05T17:54:35"/>
+      <date type="Created" value="2023-12-05T18:02:31"/>
     </dates>
     <author>okan alkan</author>
-    <creation>2023-12-05T17:54:35</creation>
+    <creation>2023-12-05T18:02:31</creation>
   </projectMetadata>
   <Annotations/>
   <Layouts/>
@@ -1047,13 +1047,13 @@
   <ProjectViewSettings UseProjectScales="0" rotation="0">
     <Scales/>
   </ProjectViewSettings>
-  <ProjectStyleSettings RandomizeDefaultSymbolColor="1" DefaultSymbolOpacity="1" projectStyleId="attachment:///BTjITw_styles.db">
+  <ProjectStyleSettings DefaultSymbolOpacity="1" RandomizeDefaultSymbolColor="1" projectStyleId="attachment:///XdQznJ_styles.db">
     <databases/>
   </ProjectStyleSettings>
-  <ProjectTimeSettings timeStepUnit="h" frameRate="1" cumulativeTemporalRange="0" timeStep="1"/>
+  <ProjectTimeSettings timeStepUnit="h" timeStep="1" cumulativeTemporalRange="0" frameRate="1"/>
   <ElevationProperties>
     <terrainProvider type="flat">
-      <TerrainProvider offset="0" scale="1"/>
+      <TerrainProvider scale="1" offset="0"/>
     </terrainProvider>
   </ElevationProperties>
   <ProjectDisplaySettings CoordinateType="MapCrs" CoordinateAxisOrder="Default">
@@ -1098,7 +1098,7 @@
       </spatialrefsys>
     </CoordinateCustomCrs>
   </ProjectDisplaySettings>
-  <ProjectGpsSettings autoCommitFeatures="0" destinationLayer="" destinationFollowsActiveLayer="1" autoAddTrackVertices="0">
+  <ProjectGpsSettings autoCommitFeatures="0" destinationFollowsActiveLayer="1" destinationLayer="" autoAddTrackVertices="0">
     <timeStampFields/>
   </ProjectGpsSettings>
 </qgis>

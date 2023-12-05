@@ -19,6 +19,8 @@ def output_data():
     b = pd.read_csv(latest_static_data_csv)
 
     output = a.merge(b, on="detid", how="left").fillna(0).set_index("detid")
+    zero_coords_filter = (output['lat'] == 0) | (output['lon'] == 0)
+    output = output[~zero_coords_filter]
     output.to_csv("output_data/"+datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S").replace("-", "_")+"_output.csv")
 
 
@@ -34,4 +36,6 @@ if __name__ == "__main__":
     b = pd.read_csv(latest_static_data_csv)
 
     output = a.merge(b, on="detid", how="left").fillna(0).set_index("detid")
+    zero_coords_filter = (output['lat'] == 0) | (output['lon'] == 0)
+    output = output[~zero_coords_filter]
     output.to_csv("output_data/"+datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S").replace("-", "_")+"_output.csv")
