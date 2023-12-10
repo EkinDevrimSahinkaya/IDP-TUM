@@ -8,15 +8,17 @@ import sys
 import pandas_read_xml as pdx
 import os
 import sys
+
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-new_string = ROOT_DIR.replace("\\", "/")
-Root = new_string + "/IDP-TUM/xml_data"
+# new_string = ROOT_DIR.replace("\\", "/")
+# Root = new_string + "/xml_data"
+Root = os.path.join(ROOT_DIR, "xml_data")
 
 # URL for the DATEX II v2 SOAP endpoint
 soap_url = 'https://mobilithek.info:8443/mobilithek/api/v1.0/subscription/soap/610483572798353408/clientPullService'
 
 # Replace with the actual path to your .p12 certificate file and password
-p12_certificate_path = r""+ROOT_DIR+"\IDP-TUM\Certificate\certificate.p12"
+p12_certificate_path = r""+ROOT_DIR+r"\certificate\certificate.p12"
 p12_certificate_password = 'S7YwrWhJP4Zd'
 
 # Define the SOAP request XML payload with the specified 'SOAPAction'
@@ -35,9 +37,9 @@ headers = {
     'SOAPAction': 'http://datex2.eu/wsdl/clientPull/2_0/getDatex2Data'
 }
 
-
 # Define the CSV file path for storing the data
 # xml_file_path = 'datex2_data.xml'
+
 
 def pull_and_save_data(working_directory=os.getcwd()):
     try:
@@ -85,15 +87,18 @@ def pull_and_save_data(working_directory=os.getcwd()):
                                                          "vehicleTypeSpeed", "occupancy_percentage"])
             # temp_df.to_pickle(os.path.join(sd, filename))
             temp_df.to_csv(os.path.join(working_directory, filename))
+            session.close()
         else:
             print(f"Request failed with status code: {response.status_code}")
 
     except Exception as e:
         print(f"An error occurred: {str(e)}")
 
-def xml_to_csv():
 
+def xml_to_csv():
     pull_and_save_data(Root)
+
+
 if __name__ == '__main__':
 
     pull_and_save_data(Root)

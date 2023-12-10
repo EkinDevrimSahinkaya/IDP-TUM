@@ -8,13 +8,14 @@ import sys
 import pandas_read_xml as pdx
 
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-new_string = ROOT_DIR.replace("\\", "/")
-Root = new_string + "/IDP-TUM/static_data"
+# new_string = ROOT_DIR.replace("\\", "/")
+# Root = new_string + "/static_data"
+Root = os.path.join(ROOT_DIR, "static_data")
 # URL for the DATEX II v2 SOAP endpoint
 soap_url = 'https://mobilithek.info:8443/mobilithek/api/v1.0/subscription/soap/610481569602957312/clientPullService'
 
 # Replace with the actual path to your .p12 certificate file and password
-p12_certificate_path =  r""+ROOT_DIR+"\IDP-TUM\Certificate\certificate.p12"
+p12_certificate_path = r""+ROOT_DIR+r"\certificate\certificate.p12"
 p12_certificate_password = 'S7YwrWhJP4Zd'
 
 # Define the SOAP request XML payload with the specified 'SOAPAction'
@@ -41,7 +42,7 @@ def pull_and_save_data(working_directory = os.getcwd()):
         filename = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S").replace("-", "_") + '_15min_static.csv'
         session = requests.Session()
         session.mount(soap_url, Pkcs12Adapter(
-        pkcs12_filename=p12_certificate_path, pkcs12_password=p12_certificate_password))
+            pkcs12_filename=p12_certificate_path, pkcs12_password=p12_certificate_password))
         # Send the SOAP request
         response = session.post(soap_url, data=soap_request_xml, headers=headers)
         if response.status_code == 200:
@@ -57,8 +58,9 @@ def pull_and_save_data(working_directory = os.getcwd()):
                     temp_lat = element['measurementSiteLocation']['pointByCoordinates']['pointCoordinates']['latitude']
                     temp_lon = element['measurementSiteLocation']['pointByCoordinates']['pointCoordinates']['longitude']
                 all_data.append([temp_id, temp_type, temp_location, temp_lat, temp_lon])
-            all_data_df_to_csv = pd.DataFrame(all_data, columns = ['detid', 'type','location_desc','lat','lon'])
+            all_data_df_to_csv = pd.DataFrame(all_data, columns=['detid', 'type','location_desc','lat','lon'])
             all_data_df_to_csv.to_csv(os.path.join(working_directory, filename))
+            session.close()
         else:
             print(f"Request failed with status code: {response.status_code}")
 

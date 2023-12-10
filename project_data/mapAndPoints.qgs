@@ -1,5 +1,9 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<<<<<<< Updated upstream
 <qgis saveUser="okann" version="3.34.0-Prizren" projectname="" saveUserFull="okan alkan" saveDateTime="2023-12-05T18:20:21">
+=======
+<qgis saveUser="User" projectname="" version="3.34.1-Prizren" saveDateTime="2023-12-06T17:06:36" saveUserFull="Alex">
+>>>>>>> Stashed changes
   <homePath path=""/>
   <title></title>
   <transaction mode="Disabled"/>
@@ -17,22 +21,35 @@
       <geographicflag>false</geographicflag>
     </spatialrefsys>
   </projectCrs>
+<<<<<<< Updated upstream
   <elevation-shading-renderer edl-strength="1000" light-altitude="45" combined-method="0" edl-is-active="1" hillshading-is-multidirectional="0" edl-distance="0.5" hillshading-is-active="0" is-active="0" edl-distance-unit="0" light-azimuth="315" hillshading-z-factor="1"/>
+=======
+  <elevation-shading-renderer edl-distance-unit="0" combined-method="0" edl-strength="1000" hillshading-z-factor="1" light-altitude="45" edl-distance="0.5" is-active="0" hillshading-is-active="0" edl-is-active="1" light-azimuth="315" hillshading-is-multidirectional="0"/>
+>>>>>>> Stashed changes
   <layer-tree-group>
     <customproperties>
       <Option/>
     </customproperties>
+<<<<<<< Updated upstream
     <layer-tree-layer id="Points_85db5500_3ba7_4506_a36d_fb8eeed67ee4" checked="Qt::Checked" patch_size="-1,-1" name="Points" providerKey="delimitedtext" source="../output_data/2023_12_05_18_20_20_output.csv?delimiter=,&amp;xField=lon&amp;yField=lat&amp;crs=epsg:4326" expanded="1" legend_exp="" legend_split_behavior="0">
+=======
+    <layer-tree-layer expanded="1" legend_exp="" id="Points_6ea7bb06_d239_47b7_9a8f_e98b8ec230d0" patch_size="-1,-1" source="../output_data/2023_12_06_17_06_36_output.csv?delimiter=,&amp;xField=lon&amp;yField=lat&amp;crs=epsg:4326" legend_split_behavior="0" checked="Qt::Checked" name="Points" providerKey="delimitedtext">
+>>>>>>> Stashed changes
       <customproperties>
         <Option/>
       </customproperties>
     </layer-tree-layer>
+<<<<<<< Updated upstream
     <layer-tree-layer id="OSM_f7015535_2e2f_47ca_a86c_0fc86d867635" checked="Qt::Checked" patch_size="-1,-1" name="OSM" providerKey="wms" source="&#x9;crs=EPSG:3857&amp;format&amp;type=xyz&amp;url=https://tile.openstreetmap.org/%7Bz%7D/%7Bx%7D/%7By%7D.png&amp;zmax=19&amp;zmin=0" expanded="1" legend_exp="" legend_split_behavior="0">
+=======
+    <layer-tree-layer expanded="1" legend_exp="" id="OSM_621a1361_3d6d_481c_8985_0528c1ee5b83" patch_size="-1,-1" source="&#x9;crs=EPSG:3857&amp;format&amp;type=xyz&amp;url=https://tile.openstreetmap.org/%7Bz%7D/%7Bx%7D/%7By%7D.png&amp;zmax=19&amp;zmin=0" legend_split_behavior="0" checked="Qt::Checked" name="OSM" providerKey="wms">
+>>>>>>> Stashed changes
       <customproperties>
         <Option/>
       </customproperties>
     </layer-tree-layer>
     <custom-order enabled="0">
+<<<<<<< Updated upstream
       <item>OSM_f7015535_2e2f_47ca_a86c_0fc86d867635</item>
       <item>Points_85db5500_3ba7_4506_a36d_fb8eeed67ee4</item>
     </custom-order>
@@ -40,11 +57,20 @@
   <snapping-settings type="1" scaleDependencyMode="0" unit="1" enabled="0" intersection-snapping="0" mode="2" minScale="0" tolerance="12" self-snapping="0" maxScale="0">
     <individual-layer-settings>
       <layer-setting type="1" id="Points_85db5500_3ba7_4506_a36d_fb8eeed67ee4" enabled="1" units="1" minScale="0" tolerance="12" maxScale="0"/>
+=======
+      <item>OSM_621a1361_3d6d_481c_8985_0528c1ee5b83</item>
+      <item>Points_6ea7bb06_d239_47b7_9a8f_e98b8ec230d0</item>
+    </custom-order>
+  </layer-tree-group>
+  <snapping-settings maxScale="0" type="1" enabled="0" unit="1" tolerance="12" intersection-snapping="0" self-snapping="0" scaleDependencyMode="0" minScale="0" mode="2">
+    <individual-layer-settings>
+      <layer-setting maxScale="0" type="1" id="Points_6ea7bb06_d239_47b7_9a8f_e98b8ec230d0" enabled="1" units="1" tolerance="12" minScale="0"/>
+>>>>>>> Stashed changes
     </individual-layer-settings>
   </snapping-settings>
   <relations/>
   <polymorphicRelations/>
-  <mapcanvas name="" annotationsVisible="1">
+  <mapcanvas annotationsVisible="1" name="">
     <units>unknown</units>
     <extent>
       <xmin>-20037508.34278924390673637</xmin>
@@ -56,8 +82,13 @@
     <rendermaptile>0</rendermaptile>
     <expressionContextScope/>
   </mapcanvas>
+<<<<<<< Updated upstream
   <main-annotation-layer type="annotation" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" hasScaleBasedVisibilityFlag="0" styleCategories="AllStyleCategories" autoRefreshTime="0" minScale="1e+08" autoRefreshMode="Disabled" maxScale="0" legendPlaceholderImage="">
     <id>Annotations_283bf2ff_4c58_4370_8888_4c3c541b0335</id>
+=======
+  <main-annotation-layer refreshOnNotifyMessage="" maxScale="0" autoRefreshTime="0" type="annotation" hasScaleBasedVisibilityFlag="0" legendPlaceholderImage="" styleCategories="AllStyleCategories" refreshOnNotifyEnabled="0" autoRefreshMode="Disabled" minScale="1e+08">
+    <id>Annotations_98f5d2da_5de0_4add_8a99_5723538d8e37</id>
+>>>>>>> Stashed changes
     <datasource></datasource>
     <keywordList>
       <value></value>
@@ -117,7 +148,11 @@
     <paintEffect/>
   </main-annotation-layer>
   <projectlayers>
+<<<<<<< Updated upstream
     <maplayer type="raster" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" hasScaleBasedVisibilityFlag="0" styleCategories="AllStyleCategories" autoRefreshTime="0" minScale="1e+08" autoRefreshMode="Disabled" maxScale="0" legendPlaceholderImage="">
+=======
+    <maplayer refreshOnNotifyMessage="" maxScale="0" autoRefreshTime="0" type="raster" hasScaleBasedVisibilityFlag="0" legendPlaceholderImage="" styleCategories="AllStyleCategories" refreshOnNotifyEnabled="0" autoRefreshMode="Disabled" minScale="1e+08">
+>>>>>>> Stashed changes
       <extent>
         <xmin>-20037508.34278924390673637</xmin>
         <ymin>-20037508.34278924763202667</ymin>
@@ -130,7 +165,11 @@
         <xmax>179.99999999999997158</xmax>
         <ymax>85.05112877980660357</ymax>
       </wgs84extent>
+<<<<<<< Updated upstream
       <id>OSM_f7015535_2e2f_47ca_a86c_0fc86d867635</id>
+=======
+      <id>OSM_621a1361_3d6d_481c_8985_0528c1ee5b83</id>
+>>>>>>> Stashed changes
       <datasource>	crs=EPSG:3857&amp;format&amp;type=xyz&amp;url=https://tile.openstreetmap.org/%7Bz%7D/%7Bx%7D/%7By%7D.png&amp;zmax=19&amp;zmin=0</datasource>
       <keywordList>
         <value></value>
@@ -157,7 +196,11 @@
         <title>OpenStreetMap tiles</title>
         <abstract>OpenStreetMap is built by a community of mappers that contribute and maintain data about roads, trails, cafés, railway stations, and much more, all over the world.</abstract>
         <links>
+<<<<<<< Updated upstream
           <link type="WWW:LINK" url="https://www.openstreetmap.org/" mimeType="" name="Source" format="" size="" description=""/>
+=======
+          <link type="WWW:LINK" description="" mimeType="" size="" url="https://www.openstreetmap.org/" name="Source" format=""/>
+>>>>>>> Stashed changes
         </links>
         <dates/>
         <fees></fees>
@@ -179,7 +222,11 @@
           </spatialrefsys>
         </crs>
         <extent>
+<<<<<<< Updated upstream
           <spatial miny="-85.05112877980660357" crs="EPSG:4326" dimensions="2" minx="-180" maxx="180" minz="nan" maxz="nan" maxy="85.05112877980660357"/>
+=======
+          <spatial minz="nan" maxx="180" maxy="85.05112877980660357" dimensions="2" crs="EPSG:4326" minx="-180" miny="-85.05112877980660357" maxz="nan"/>
+>>>>>>> Stashed changes
         </extent>
       </resourceMetadata>
       <provider>wms</provider>
@@ -196,13 +243,21 @@
         <Searchable>1</Searchable>
         <Private>0</Private>
       </flags>
+<<<<<<< Updated upstream
       <temporal enabled="0" mode="0" fetchMode="0">
+=======
+      <temporal fetchMode="0" enabled="0" mode="0">
+>>>>>>> Stashed changes
         <fixedRange>
           <start></start>
           <end></end>
         </fixedRange>
       </temporal>
+<<<<<<< Updated upstream
       <elevation zscale="1" symbology="Line" zoffset="0" enabled="0" band="1">
+=======
+      <elevation enabled="0" symbology="Line" zoffset="0" band="1" zscale="1">
+>>>>>>> Stashed changes
         <data-defined-properties>
           <Option type="Map">
             <Option type="QString" name="name" value=""/>
@@ -211,7 +266,11 @@
           </Option>
         </data-defined-properties>
         <profileLineSymbol>
+<<<<<<< Updated upstream
           <symbol type="line" clip_to_extent="1" frame_rate="10" name="" force_rhr="0" alpha="1" is_animated="0">
+=======
+          <symbol force_rhr="0" type="line" is_animated="0" clip_to_extent="1" frame_rate="10" name="" alpha="1">
+>>>>>>> Stashed changes
             <data_defined_properties>
               <Option type="Map">
                 <Option type="QString" name="name" value=""/>
@@ -219,6 +278,7 @@
                 <Option type="QString" name="type" value="collection"/>
               </Option>
             </data_defined_properties>
+<<<<<<< Updated upstream
             <layer locked="0" id="{ef95d6c2-666e-40ba-a96f-35aa69aeae5d}" pass="0" enabled="1" class="SimpleLine">
               <Option type="Map">
                 <Option type="QString" name="align_dash_pattern" value="0"/>
@@ -248,6 +308,37 @@
                 <Option type="QString" name="tweak_dash_pattern_on_corners" value="0"/>
                 <Option type="QString" name="use_custom_dash" value="0"/>
                 <Option type="QString" name="width_map_unit_scale" value="3x:0,0,0,0,0,0"/>
+=======
+            <layer pass="0" id="{3872a7e1-43c5-4c47-87bf-6da6ff17e4e9}" enabled="1" locked="0" class="SimpleLine">
+              <Option type="Map">
+                <Option type="QString" value="0" name="align_dash_pattern"/>
+                <Option type="QString" value="square" name="capstyle"/>
+                <Option type="QString" value="5;2" name="customdash"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="customdash_map_unit_scale"/>
+                <Option type="QString" value="MM" name="customdash_unit"/>
+                <Option type="QString" value="0" name="dash_pattern_offset"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="dash_pattern_offset_map_unit_scale"/>
+                <Option type="QString" value="MM" name="dash_pattern_offset_unit"/>
+                <Option type="QString" value="0" name="draw_inside_polygon"/>
+                <Option type="QString" value="bevel" name="joinstyle"/>
+                <Option type="QString" value="196,60,57,255" name="line_color"/>
+                <Option type="QString" value="solid" name="line_style"/>
+                <Option type="QString" value="0.6" name="line_width"/>
+                <Option type="QString" value="MM" name="line_width_unit"/>
+                <Option type="QString" value="0" name="offset"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
+                <Option type="QString" value="MM" name="offset_unit"/>
+                <Option type="QString" value="0" name="ring_filter"/>
+                <Option type="QString" value="0" name="trim_distance_end"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="trim_distance_end_map_unit_scale"/>
+                <Option type="QString" value="MM" name="trim_distance_end_unit"/>
+                <Option type="QString" value="0" name="trim_distance_start"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="trim_distance_start_map_unit_scale"/>
+                <Option type="QString" value="MM" name="trim_distance_start_unit"/>
+                <Option type="QString" value="0" name="tweak_dash_pattern_on_corners"/>
+                <Option type="QString" value="0" name="use_custom_dash"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="width_map_unit_scale"/>
+>>>>>>> Stashed changes
               </Option>
               <data_defined_properties>
                 <Option type="Map">
@@ -260,7 +351,11 @@
           </symbol>
         </profileLineSymbol>
         <profileFillSymbol>
+<<<<<<< Updated upstream
           <symbol type="fill" clip_to_extent="1" frame_rate="10" name="" force_rhr="0" alpha="1" is_animated="0">
+=======
+          <symbol force_rhr="0" type="fill" is_animated="0" clip_to_extent="1" frame_rate="10" name="" alpha="1">
+>>>>>>> Stashed changes
             <data_defined_properties>
               <Option type="Map">
                 <Option type="QString" name="name" value=""/>
@@ -268,6 +363,7 @@
                 <Option type="QString" name="type" value="collection"/>
               </Option>
             </data_defined_properties>
+<<<<<<< Updated upstream
             <layer locked="0" id="{a2d927e7-efc5-4eaf-9112-b165f526d85c}" pass="0" enabled="1" class="SimpleFill">
               <Option type="Map">
                 <Option type="QString" name="border_width_map_unit_scale" value="3x:0,0,0,0,0,0"/>
@@ -281,6 +377,21 @@
                 <Option type="QString" name="outline_width" value="0.26"/>
                 <Option type="QString" name="outline_width_unit" value="MM"/>
                 <Option type="QString" name="style" value="solid"/>
+=======
+            <layer pass="0" id="{b9338924-9976-4ccd-a468-9fb34cb6b91f}" enabled="1" locked="0" class="SimpleFill">
+              <Option type="Map">
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale"/>
+                <Option type="QString" value="196,60,57,255" name="color"/>
+                <Option type="QString" value="bevel" name="joinstyle"/>
+                <Option type="QString" value="0,0" name="offset"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
+                <Option type="QString" value="MM" name="offset_unit"/>
+                <Option type="QString" value="35,35,35,255" name="outline_color"/>
+                <Option type="QString" value="no" name="outline_style"/>
+                <Option type="QString" value="0.26" name="outline_width"/>
+                <Option type="QString" value="MM" name="outline_width_unit"/>
+                <Option type="QString" value="solid" name="style"/>
+>>>>>>> Stashed changes
               </Option>
               <data_defined_properties>
                 <Option type="Map">
@@ -308,9 +419,15 @@
       </pipe-data-defined-properties>
       <pipe>
         <provider>
+<<<<<<< Updated upstream
           <resampling zoomedInResamplingMethod="nearestNeighbour" zoomedOutResamplingMethod="nearestNeighbour" maxOversampling="2" enabled="false"/>
         </provider>
         <rasterrenderer type="singlebandcolordata" opacity="1" nodataColor="" alphaBand="-1" band="1">
+=======
+          <resampling zoomedInResamplingMethod="nearestNeighbour" enabled="false" zoomedOutResamplingMethod="nearestNeighbour" maxOversampling="2"/>
+        </provider>
+        <rasterrenderer type="singlebandcolordata" nodataColor="" band="1" opacity="1" alphaBand="-1">
+>>>>>>> Stashed changes
           <rasterTransparency/>
           <minMaxOrigin>
             <limits>None</limits>
@@ -321,14 +438,23 @@
             <stdDevFactor>2</stdDevFactor>
           </minMaxOrigin>
         </rasterrenderer>
+<<<<<<< Updated upstream
         <brightnesscontrast gamma="1" brightness="0" contrast="0"/>
         <huesaturation colorizeBlue="128" saturation="0" colorizeStrength="100" colorizeGreen="128" colorizeRed="255" grayscaleMode="0" invertColors="0" colorizeOn="0"/>
+=======
+        <brightnesscontrast brightness="0" gamma="1" contrast="0"/>
+        <huesaturation colorizeBlue="128" colorizeOn="0" saturation="0" colorizeRed="255" grayscaleMode="0" invertColors="0" colorizeGreen="128" colorizeStrength="100"/>
+>>>>>>> Stashed changes
         <rasterresampler maxOversampling="2"/>
         <resamplingStage>resamplingFilter</resamplingStage>
       </pipe>
       <blendMode>0</blendMode>
     </maplayer>
+<<<<<<< Updated upstream
     <maplayer symbologyReferenceScale="-1" legendPlaceholderImage="" simplifyMaxScale="1" refreshOnNotifyEnabled="0" labelsEnabled="0" wkbType="Point" autoRefreshMode="Disabled" styleCategories="AllStyleCategories" simplifyAlgorithm="0" maxScale="0" type="vector" refreshOnNotifyMessage="" geometry="Point" autoRefreshTime="0" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" simplifyDrawingTol="1" readOnly="0" minScale="100000000" simplifyLocal="1">
+=======
+    <maplayer geometry="Point" simplifyDrawingTol="1" readOnly="0" symbologyReferenceScale="-1" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" refreshOnNotifyMessage="" styleCategories="AllStyleCategories" refreshOnNotifyEnabled="0" maxScale="0" simplifyAlgorithm="0" wkbType="Point" legendPlaceholderImage="" type="vector" simplifyMaxScale="1" autoRefreshTime="0" minScale="100000000" autoRefreshMode="Disabled" simplifyDrawingHints="1" simplifyLocal="1">
+>>>>>>> Stashed changes
       <extent>
         <xmin>11.41591099999999948</xmin>
         <ymin>48.07718700000000212</ymin>
@@ -341,8 +467,13 @@
         <xmax>11.71517000000000053</xmax>
         <ymax>48.22311799999999948</ymax>
       </wgs84extent>
+<<<<<<< Updated upstream
       <id>Points_85db5500_3ba7_4506_a36d_fb8eeed67ee4</id>
       <datasource>file:../output_data/2023_12_05_18_20_20_output.csv?delimiter=,&amp;xField=lon&amp;yField=lat&amp;crs=epsg:4326</datasource>
+=======
+      <id>Points_6ea7bb06_d239_47b7_9a8f_e98b8ec230d0</id>
+      <datasource>file:../output_data/2023_12_06_17_06_36_output.csv?delimiter=,&amp;xField=lon&amp;yField=lat&amp;crs=epsg:4326</datasource>
+>>>>>>> Stashed changes
       <keywordList>
         <value></value>
       </keywordList>
@@ -402,13 +533,21 @@
         <Searchable>1</Searchable>
         <Private>0</Private>
       </flags>
+<<<<<<< Updated upstream
       <temporal startExpression="" durationField="" durationUnit="min" endField="" limitMode="0" accumulate="0" fixedDuration="0" enabled="0" mode="0" startField="" endExpression="">
+=======
+      <temporal startField="" fixedDuration="0" durationField="" accumulate="0" startExpression="" limitMode="0" enabled="0" endField="" durationUnit="min" mode="0" endExpression="">
+>>>>>>> Stashed changes
         <fixedRange>
           <start></start>
           <end></end>
         </fixedRange>
       </temporal>
+<<<<<<< Updated upstream
       <elevation clamping="Terrain" type="IndividualFeatures" zscale="1" symbology="Line" zoffset="0" binding="Centroid" extrusion="0" showMarkerSymbolInSurfacePlots="0" extrusionEnabled="0" respectLayerSymbol="1">
+=======
+      <elevation binding="Centroid" clamping="Terrain" type="IndividualFeatures" zoffset="0" symbology="Line" showMarkerSymbolInSurfacePlots="0" extrusion="0" extrusionEnabled="0" zscale="1" respectLayerSymbol="1">
+>>>>>>> Stashed changes
         <data-defined-properties>
           <Option type="Map">
             <Option type="QString" name="name" value=""/>
@@ -417,7 +556,11 @@
           </Option>
         </data-defined-properties>
         <profileLineSymbol>
+<<<<<<< Updated upstream
           <symbol type="line" clip_to_extent="1" frame_rate="10" name="" force_rhr="0" alpha="1" is_animated="0">
+=======
+          <symbol force_rhr="0" type="line" is_animated="0" clip_to_extent="1" frame_rate="10" name="" alpha="1">
+>>>>>>> Stashed changes
             <data_defined_properties>
               <Option type="Map">
                 <Option type="QString" name="name" value=""/>
@@ -425,6 +568,7 @@
                 <Option type="QString" name="type" value="collection"/>
               </Option>
             </data_defined_properties>
+<<<<<<< Updated upstream
             <layer locked="0" id="{eb9207e4-d3a1-4009-bc68-01dea788a29c}" pass="0" enabled="1" class="SimpleLine">
               <Option type="Map">
                 <Option type="QString" name="align_dash_pattern" value="0"/>
@@ -454,6 +598,37 @@
                 <Option type="QString" name="tweak_dash_pattern_on_corners" value="0"/>
                 <Option type="QString" name="use_custom_dash" value="0"/>
                 <Option type="QString" name="width_map_unit_scale" value="3x:0,0,0,0,0,0"/>
+=======
+            <layer pass="0" id="{2c0550f1-04d9-484c-b6a8-18b0537b899f}" enabled="1" locked="0" class="SimpleLine">
+              <Option type="Map">
+                <Option type="QString" value="0" name="align_dash_pattern"/>
+                <Option type="QString" value="square" name="capstyle"/>
+                <Option type="QString" value="5;2" name="customdash"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="customdash_map_unit_scale"/>
+                <Option type="QString" value="MM" name="customdash_unit"/>
+                <Option type="QString" value="0" name="dash_pattern_offset"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="dash_pattern_offset_map_unit_scale"/>
+                <Option type="QString" value="MM" name="dash_pattern_offset_unit"/>
+                <Option type="QString" value="0" name="draw_inside_polygon"/>
+                <Option type="QString" value="bevel" name="joinstyle"/>
+                <Option type="QString" value="229,182,54,255" name="line_color"/>
+                <Option type="QString" value="solid" name="line_style"/>
+                <Option type="QString" value="0.6" name="line_width"/>
+                <Option type="QString" value="MM" name="line_width_unit"/>
+                <Option type="QString" value="0" name="offset"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
+                <Option type="QString" value="MM" name="offset_unit"/>
+                <Option type="QString" value="0" name="ring_filter"/>
+                <Option type="QString" value="0" name="trim_distance_end"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="trim_distance_end_map_unit_scale"/>
+                <Option type="QString" value="MM" name="trim_distance_end_unit"/>
+                <Option type="QString" value="0" name="trim_distance_start"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="trim_distance_start_map_unit_scale"/>
+                <Option type="QString" value="MM" name="trim_distance_start_unit"/>
+                <Option type="QString" value="0" name="tweak_dash_pattern_on_corners"/>
+                <Option type="QString" value="0" name="use_custom_dash"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="width_map_unit_scale"/>
+>>>>>>> Stashed changes
               </Option>
               <data_defined_properties>
                 <Option type="Map">
@@ -466,7 +641,11 @@
           </symbol>
         </profileLineSymbol>
         <profileFillSymbol>
+<<<<<<< Updated upstream
           <symbol type="fill" clip_to_extent="1" frame_rate="10" name="" force_rhr="0" alpha="1" is_animated="0">
+=======
+          <symbol force_rhr="0" type="fill" is_animated="0" clip_to_extent="1" frame_rate="10" name="" alpha="1">
+>>>>>>> Stashed changes
             <data_defined_properties>
               <Option type="Map">
                 <Option type="QString" name="name" value=""/>
@@ -474,6 +653,7 @@
                 <Option type="QString" name="type" value="collection"/>
               </Option>
             </data_defined_properties>
+<<<<<<< Updated upstream
             <layer locked="0" id="{33553428-0622-4d9f-9ed4-d1698d8bfbe3}" pass="0" enabled="1" class="SimpleFill">
               <Option type="Map">
                 <Option type="QString" name="border_width_map_unit_scale" value="3x:0,0,0,0,0,0"/>
@@ -487,6 +667,21 @@
                 <Option type="QString" name="outline_width" value="0.2"/>
                 <Option type="QString" name="outline_width_unit" value="MM"/>
                 <Option type="QString" name="style" value="solid"/>
+=======
+            <layer pass="0" id="{2fd1f61c-8fc9-428b-aa13-86aaeac8680b}" enabled="1" locked="0" class="SimpleFill">
+              <Option type="Map">
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale"/>
+                <Option type="QString" value="229,182,54,255" name="color"/>
+                <Option type="QString" value="bevel" name="joinstyle"/>
+                <Option type="QString" value="0,0" name="offset"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
+                <Option type="QString" value="MM" name="offset_unit"/>
+                <Option type="QString" value="164,130,39,255" name="outline_color"/>
+                <Option type="QString" value="solid" name="outline_style"/>
+                <Option type="QString" value="0.2" name="outline_width"/>
+                <Option type="QString" value="MM" name="outline_width_unit"/>
+                <Option type="QString" value="solid" name="style"/>
+>>>>>>> Stashed changes
               </Option>
               <data_defined_properties>
                 <Option type="Map">
@@ -499,7 +694,11 @@
           </symbol>
         </profileFillSymbol>
         <profileMarkerSymbol>
+<<<<<<< Updated upstream
           <symbol type="marker" clip_to_extent="1" frame_rate="10" name="" force_rhr="0" alpha="1" is_animated="0">
+=======
+          <symbol force_rhr="0" type="marker" is_animated="0" clip_to_extent="1" frame_rate="10" name="" alpha="1">
+>>>>>>> Stashed changes
             <data_defined_properties>
               <Option type="Map">
                 <Option type="QString" name="name" value=""/>
@@ -507,6 +706,7 @@
                 <Option type="QString" name="type" value="collection"/>
               </Option>
             </data_defined_properties>
+<<<<<<< Updated upstream
             <layer locked="0" id="{e3079a36-9c20-42c0-af76-f2f741e4d79e}" pass="0" enabled="1" class="SimpleMarker">
               <Option type="Map">
                 <Option type="QString" name="angle" value="0"/>
@@ -528,6 +728,29 @@
                 <Option type="QString" name="size_map_unit_scale" value="3x:0,0,0,0,0,0"/>
                 <Option type="QString" name="size_unit" value="MM"/>
                 <Option type="QString" name="vertical_anchor_point" value="1"/>
+=======
+            <layer pass="0" id="{d5bec164-692e-475d-8fc9-6a8f2c340815}" enabled="1" locked="0" class="SimpleMarker">
+              <Option type="Map">
+                <Option type="QString" value="0" name="angle"/>
+                <Option type="QString" value="square" name="cap_style"/>
+                <Option type="QString" value="229,182,54,255" name="color"/>
+                <Option type="QString" value="1" name="horizontal_anchor_point"/>
+                <Option type="QString" value="bevel" name="joinstyle"/>
+                <Option type="QString" value="diamond" name="name"/>
+                <Option type="QString" value="0,0" name="offset"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
+                <Option type="QString" value="MM" name="offset_unit"/>
+                <Option type="QString" value="164,130,39,255" name="outline_color"/>
+                <Option type="QString" value="solid" name="outline_style"/>
+                <Option type="QString" value="0.2" name="outline_width"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="outline_width_map_unit_scale"/>
+                <Option type="QString" value="MM" name="outline_width_unit"/>
+                <Option type="QString" value="diameter" name="scale_method"/>
+                <Option type="QString" value="3" name="size"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="size_map_unit_scale"/>
+                <Option type="QString" value="MM" name="size_unit"/>
+                <Option type="QString" value="1" name="vertical_anchor_point"/>
+>>>>>>> Stashed changes
               </Option>
               <data_defined_properties>
                 <Option type="Map">
@@ -540,6 +763,7 @@
           </symbol>
         </profileMarkerSymbol>
       </elevation>
+<<<<<<< Updated upstream
       <renderer-v2 type="graduatedSymbol" forceraster="0" enableorderby="0" attr="flow" referencescale="-1" symbollevels="0" graduatedMethod="GraduatedColor">
         <ranges>
           <range lower="0.000000000000000" symbol="0" render="true" uuid="{771e568e-5327-4262-8b8a-a9bd82267d9f}" upper="100.000000000000000" label="Very Low Traffic"/>
@@ -550,6 +774,18 @@
         </ranges>
         <symbols>
           <symbol type="marker" clip_to_extent="1" frame_rate="10" name="0" force_rhr="0" alpha="1" is_animated="0">
+=======
+      <renderer-v2 type="graduatedSymbol" graduatedMethod="GraduatedColor" forceraster="0" referencescale="-1" attr="flow" symbollevels="0" enableorderby="0">
+        <ranges>
+          <range uuid="{a346226c-2701-4136-8d73-fc8beb8738bf}" render="true" label="Very Low Traffic" lower="0.000000000000000" upper="100.000000000000000" symbol="0"/>
+          <range uuid="{9512871b-62be-46c8-9101-12108a14f2a2}" render="true" label="Low Traffic" lower="100.099999999999994" upper="200.000000000000000" symbol="1"/>
+          <range uuid="{39dd2a81-a37f-48cd-ad73-b0533f87c14b}" render="true" label="Normal Traffic" lower="200.099999999999994" upper="300.000000000000000" symbol="2"/>
+          <range uuid="{1a50ee18-cc29-4bbe-b02b-781bfb7a2c2b}" render="true" label="Busy Traffic" lower="300.100000000000023" upper="400.000000000000000" symbol="3"/>
+          <range uuid="{c069d333-b2c9-4ce1-bd56-0c3fefd6bcc4}" render="true" label="Very Busy Traffic" lower="400.100000000000023" upper="1000.000000000000000" symbol="4"/>
+        </ranges>
+        <symbols>
+          <symbol force_rhr="0" type="marker" is_animated="0" clip_to_extent="1" frame_rate="10" name="0" alpha="1">
+>>>>>>> Stashed changes
             <data_defined_properties>
               <Option type="Map">
                 <Option type="QString" name="name" value=""/>
@@ -557,7 +793,11 @@
                 <Option type="QString" name="type" value="collection"/>
               </Option>
             </data_defined_properties>
+<<<<<<< Updated upstream
             <layer locked="0" id="{eea7d202-732c-44ab-afd1-052ea293f979}" pass="0" enabled="1" class="SimpleMarker">
+=======
+            <layer pass="0" id="{51565fa3-b7b3-414c-87b7-d12095f66e54}" enabled="1" locked="0" class="SimpleMarker">
+>>>>>>> Stashed changes
               <Option type="Map">
                 <Option type="QString" name="angle" value="0"/>
                 <Option type="QString" name="cap_style" value="square"/>
@@ -588,7 +828,11 @@
               </data_defined_properties>
             </layer>
           </symbol>
+<<<<<<< Updated upstream
           <symbol type="marker" clip_to_extent="1" frame_rate="10" name="1" force_rhr="0" alpha="1" is_animated="0">
+=======
+          <symbol force_rhr="0" type="marker" is_animated="0" clip_to_extent="1" frame_rate="10" name="1" alpha="1">
+>>>>>>> Stashed changes
             <data_defined_properties>
               <Option type="Map">
                 <Option type="QString" name="name" value=""/>
@@ -596,7 +840,11 @@
                 <Option type="QString" name="type" value="collection"/>
               </Option>
             </data_defined_properties>
+<<<<<<< Updated upstream
             <layer locked="0" id="{92a889d2-fa7a-4cf1-9c77-c1b75bdcd19c}" pass="0" enabled="1" class="SimpleMarker">
+=======
+            <layer pass="0" id="{33ab8bc4-047e-4fa2-9e51-1e2a0f7b759c}" enabled="1" locked="0" class="SimpleMarker">
+>>>>>>> Stashed changes
               <Option type="Map">
                 <Option type="QString" name="angle" value="0"/>
                 <Option type="QString" name="cap_style" value="square"/>
@@ -627,7 +875,11 @@
               </data_defined_properties>
             </layer>
           </symbol>
+<<<<<<< Updated upstream
           <symbol type="marker" clip_to_extent="1" frame_rate="10" name="2" force_rhr="0" alpha="1" is_animated="0">
+=======
+          <symbol force_rhr="0" type="marker" is_animated="0" clip_to_extent="1" frame_rate="10" name="2" alpha="1">
+>>>>>>> Stashed changes
             <data_defined_properties>
               <Option type="Map">
                 <Option type="QString" name="name" value=""/>
@@ -635,7 +887,11 @@
                 <Option type="QString" name="type" value="collection"/>
               </Option>
             </data_defined_properties>
+<<<<<<< Updated upstream
             <layer locked="0" id="{86685a90-a2fc-440f-8935-7662a9c264bc}" pass="0" enabled="1" class="SimpleMarker">
+=======
+            <layer pass="0" id="{d1c89342-8a08-41cd-b355-99066ca81eec}" enabled="1" locked="0" class="SimpleMarker">
+>>>>>>> Stashed changes
               <Option type="Map">
                 <Option type="QString" name="angle" value="0"/>
                 <Option type="QString" name="cap_style" value="square"/>
@@ -666,7 +922,11 @@
               </data_defined_properties>
             </layer>
           </symbol>
+<<<<<<< Updated upstream
           <symbol type="marker" clip_to_extent="1" frame_rate="10" name="3" force_rhr="0" alpha="1" is_animated="0">
+=======
+          <symbol force_rhr="0" type="marker" is_animated="0" clip_to_extent="1" frame_rate="10" name="3" alpha="1">
+>>>>>>> Stashed changes
             <data_defined_properties>
               <Option type="Map">
                 <Option type="QString" name="name" value=""/>
@@ -674,7 +934,11 @@
                 <Option type="QString" name="type" value="collection"/>
               </Option>
             </data_defined_properties>
+<<<<<<< Updated upstream
             <layer locked="0" id="{cae994da-c292-418f-b494-88aa2ab191cd}" pass="0" enabled="1" class="SimpleMarker">
+=======
+            <layer pass="0" id="{60f3a548-c08c-4fd6-8878-4569ce7af7e0}" enabled="1" locked="0" class="SimpleMarker">
+>>>>>>> Stashed changes
               <Option type="Map">
                 <Option type="QString" name="angle" value="0"/>
                 <Option type="QString" name="cap_style" value="square"/>
@@ -705,7 +969,11 @@
               </data_defined_properties>
             </layer>
           </symbol>
+<<<<<<< Updated upstream
           <symbol type="marker" clip_to_extent="1" frame_rate="10" name="4" force_rhr="0" alpha="1" is_animated="0">
+=======
+          <symbol force_rhr="0" type="marker" is_animated="0" clip_to_extent="1" frame_rate="10" name="4" alpha="1">
+>>>>>>> Stashed changes
             <data_defined_properties>
               <Option type="Map">
                 <Option type="QString" name="name" value=""/>
@@ -713,7 +981,11 @@
                 <Option type="QString" name="type" value="collection"/>
               </Option>
             </data_defined_properties>
+<<<<<<< Updated upstream
             <layer locked="0" id="{feef3da2-a721-4d2a-9c70-3fbac778928b}" pass="0" enabled="1" class="SimpleMarker">
+=======
+            <layer pass="0" id="{679720c8-4cfd-4197-a874-a927780c5ecc}" enabled="1" locked="0" class="SimpleMarker">
+>>>>>>> Stashed changes
               <Option type="Map">
                 <Option type="QString" name="angle" value="0"/>
                 <Option type="QString" name="cap_style" value="square"/>
@@ -747,7 +1019,11 @@
         </symbols>
         <classificationMethod id="EqualInterval">
           <symmetricMode astride="0" enabled="0" symmetrypoint="0"/>
+<<<<<<< Updated upstream
           <labelFormat format="%1 - %2" labelprecision="4" trimtrailingzeroes="1"/>
+=======
+          <labelFormat labelprecision="4" trimtrailingzeroes="1" format="%1 - %2"/>
+>>>>>>> Stashed changes
           <parameters>
             <Option/>
           </parameters>
@@ -765,7 +1041,7 @@
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
-      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
         <activeChecks type="StringList">
           <Option type="QString" value=""/>
         </activeChecks>
@@ -867,6 +1143,7 @@
         </field>
       </fieldConfiguration>
       <aliases>
+<<<<<<< Updated upstream
         <alias index="0" name="" field="detid"/>
         <alias index="1" name="" field="Unnamed: 0_x"/>
         <alias index="2" name="" field="timestamp"/>
@@ -880,6 +1157,21 @@
         <alias index="10" name="" field="location_desc"/>
         <alias index="11" name="" field="lat"/>
         <alias index="12" name="" field="lon"/>
+=======
+        <alias field="detid" index="0" name=""/>
+        <alias field="Unnamed: 0_x" index="1" name=""/>
+        <alias field="timestamp" index="2" name=""/>
+        <alias field="flow" index="3" name=""/>
+        <alias field="vehicleTypeFlow" index="4" name=""/>
+        <alias field="speed" index="5" name=""/>
+        <alias field="vehicleTypeSpeed" index="6" name=""/>
+        <alias field="occupancy_percentage" index="7" name=""/>
+        <alias field="Unnamed: 0_y" index="8" name=""/>
+        <alias field="type" index="9" name=""/>
+        <alias field="location_desc" index="10" name=""/>
+        <alias field="lat" index="11" name=""/>
+        <alias field="lon" index="12" name=""/>
+>>>>>>> Stashed changes
       </aliases>
       <splitPolicies>
         <policy field="detid" policy="Duplicate"/>
@@ -897,6 +1189,7 @@
         <policy field="lon" policy="Duplicate"/>
       </splitPolicies>
       <defaults>
+<<<<<<< Updated upstream
         <default field="detid" expression="" applyOnUpdate="0"/>
         <default field="Unnamed: 0_x" expression="" applyOnUpdate="0"/>
         <default field="timestamp" expression="" applyOnUpdate="0"/>
@@ -910,36 +1203,51 @@
         <default field="location_desc" expression="" applyOnUpdate="0"/>
         <default field="lat" expression="" applyOnUpdate="0"/>
         <default field="lon" expression="" applyOnUpdate="0"/>
+=======
+        <default field="detid" applyOnUpdate="0" expression=""/>
+        <default field="Unnamed: 0_x" applyOnUpdate="0" expression=""/>
+        <default field="timestamp" applyOnUpdate="0" expression=""/>
+        <default field="flow" applyOnUpdate="0" expression=""/>
+        <default field="vehicleTypeFlow" applyOnUpdate="0" expression=""/>
+        <default field="speed" applyOnUpdate="0" expression=""/>
+        <default field="vehicleTypeSpeed" applyOnUpdate="0" expression=""/>
+        <default field="occupancy_percentage" applyOnUpdate="0" expression=""/>
+        <default field="Unnamed: 0_y" applyOnUpdate="0" expression=""/>
+        <default field="type" applyOnUpdate="0" expression=""/>
+        <default field="location_desc" applyOnUpdate="0" expression=""/>
+        <default field="lat" applyOnUpdate="0" expression=""/>
+        <default field="lon" applyOnUpdate="0" expression=""/>
+>>>>>>> Stashed changes
       </defaults>
       <constraints>
-        <constraint notnull_strength="0" constraints="0" field="detid" unique_strength="0" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" field="Unnamed: 0_x" unique_strength="0" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" field="timestamp" unique_strength="0" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" field="flow" unique_strength="0" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" field="vehicleTypeFlow" unique_strength="0" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" field="speed" unique_strength="0" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" field="vehicleTypeSpeed" unique_strength="0" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" field="occupancy_percentage" unique_strength="0" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" field="Unnamed: 0_y" unique_strength="0" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" field="type" unique_strength="0" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" field="location_desc" unique_strength="0" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" field="lat" unique_strength="0" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" field="lon" unique_strength="0" exp_strength="0"/>
+        <constraint field="detid" notnull_strength="0" constraints="0" exp_strength="0" unique_strength="0"/>
+        <constraint field="Unnamed: 0_x" notnull_strength="0" constraints="0" exp_strength="0" unique_strength="0"/>
+        <constraint field="timestamp" notnull_strength="0" constraints="0" exp_strength="0" unique_strength="0"/>
+        <constraint field="flow" notnull_strength="0" constraints="0" exp_strength="0" unique_strength="0"/>
+        <constraint field="vehicleTypeFlow" notnull_strength="0" constraints="0" exp_strength="0" unique_strength="0"/>
+        <constraint field="speed" notnull_strength="0" constraints="0" exp_strength="0" unique_strength="0"/>
+        <constraint field="vehicleTypeSpeed" notnull_strength="0" constraints="0" exp_strength="0" unique_strength="0"/>
+        <constraint field="occupancy_percentage" notnull_strength="0" constraints="0" exp_strength="0" unique_strength="0"/>
+        <constraint field="Unnamed: 0_y" notnull_strength="0" constraints="0" exp_strength="0" unique_strength="0"/>
+        <constraint field="type" notnull_strength="0" constraints="0" exp_strength="0" unique_strength="0"/>
+        <constraint field="location_desc" notnull_strength="0" constraints="0" exp_strength="0" unique_strength="0"/>
+        <constraint field="lat" notnull_strength="0" constraints="0" exp_strength="0" unique_strength="0"/>
+        <constraint field="lon" notnull_strength="0" constraints="0" exp_strength="0" unique_strength="0"/>
       </constraints>
       <constraintExpressions>
-        <constraint exp="" desc="" field="detid"/>
-        <constraint exp="" desc="" field="Unnamed: 0_x"/>
-        <constraint exp="" desc="" field="timestamp"/>
-        <constraint exp="" desc="" field="flow"/>
-        <constraint exp="" desc="" field="vehicleTypeFlow"/>
-        <constraint exp="" desc="" field="speed"/>
-        <constraint exp="" desc="" field="vehicleTypeSpeed"/>
-        <constraint exp="" desc="" field="occupancy_percentage"/>
-        <constraint exp="" desc="" field="Unnamed: 0_y"/>
-        <constraint exp="" desc="" field="type"/>
-        <constraint exp="" desc="" field="location_desc"/>
-        <constraint exp="" desc="" field="lat"/>
-        <constraint exp="" desc="" field="lon"/>
+        <constraint field="detid" exp="" desc=""/>
+        <constraint field="Unnamed: 0_x" exp="" desc=""/>
+        <constraint field="timestamp" exp="" desc=""/>
+        <constraint field="flow" exp="" desc=""/>
+        <constraint field="vehicleTypeFlow" exp="" desc=""/>
+        <constraint field="speed" exp="" desc=""/>
+        <constraint field="vehicleTypeSpeed" exp="" desc=""/>
+        <constraint field="occupancy_percentage" exp="" desc=""/>
+        <constraint field="Unnamed: 0_y" exp="" desc=""/>
+        <constraint field="type" exp="" desc=""/>
+        <constraint field="location_desc" exp="" desc=""/>
+        <constraint field="lat" exp="" desc=""/>
+        <constraint field="lon" exp="" desc=""/>
       </constraintExpressions>
       <expressionfields/>
       <attributeactions/>
@@ -968,8 +1276,13 @@
     </maplayer>
   </projectlayers>
   <layerorder>
+<<<<<<< Updated upstream
     <layer id="OSM_f7015535_2e2f_47ca_a86c_0fc86d867635"/>
     <layer id="Points_85db5500_3ba7_4506_a36d_fb8eeed67ee4"/>
+=======
+    <layer id="OSM_621a1361_3d6d_481c_8985_0528c1ee5b83"/>
+    <layer id="Points_6ea7bb06_d239_47b7_9a8f_e98b8ec230d0"/>
+>>>>>>> Stashed changes
   </layerorder>
   <properties>
     <Digitizing>
@@ -1034,26 +1347,40 @@
     <abstract></abstract>
     <links/>
     <dates>
+<<<<<<< Updated upstream
       <date type="Created" value="2023-12-05T18:20:15"/>
     </dates>
     <author>okan alkan</author>
     <creation>2023-12-05T18:20:15</creation>
+=======
+      <date type="Created" value="2023-12-06T17:06:29"/>
+    </dates>
+    <author>Alex</author>
+    <creation>2023-12-06T17:06:29</creation>
+>>>>>>> Stashed changes
   </projectMetadata>
   <Annotations/>
   <Layouts/>
   <mapViewDocks3D/>
   <Bookmarks/>
   <Sensors/>
-  <ProjectViewSettings UseProjectScales="0" rotation="0">
+  <ProjectViewSettings rotation="0" UseProjectScales="0">
     <Scales/>
   </ProjectViewSettings>
+<<<<<<< Updated upstream
   <ProjectStyleSettings RandomizeDefaultSymbolColor="1" DefaultSymbolOpacity="1" projectStyleId="attachment:///EBClgn_styles.db">
     <databases/>
   </ProjectStyleSettings>
   <ProjectTimeSettings timeStepUnit="h" timeStep="1" frameRate="1" cumulativeTemporalRange="0"/>
+=======
+  <ProjectStyleSettings RandomizeDefaultSymbolColor="1" projectStyleId="attachment:///vKVoYF_styles.db" DefaultSymbolOpacity="1">
+    <databases/>
+  </ProjectStyleSettings>
+  <ProjectTimeSettings timeStep="1" cumulativeTemporalRange="0" timeStepUnit="h" frameRate="1"/>
+>>>>>>> Stashed changes
   <ElevationProperties>
     <terrainProvider type="flat">
-      <TerrainProvider scale="1" offset="0"/>
+      <TerrainProvider offset="0" scale="1"/>
     </terrainProvider>
   </ElevationProperties>
   <ProjectDisplaySettings CoordinateAxisOrder="Default" CoordinateType="MapCrs">
@@ -1098,7 +1425,11 @@
       </spatialrefsys>
     </CoordinateCustomCrs>
   </ProjectDisplaySettings>
+<<<<<<< Updated upstream
   <ProjectGpsSettings destinationLayer="" destinationFollowsActiveLayer="1" autoCommitFeatures="0" autoAddTrackVertices="0">
+=======
+  <ProjectGpsSettings destinationLayer="" autoAddTrackVertices="0" autoCommitFeatures="0" destinationFollowsActiveLayer="1">
+>>>>>>> Stashed changes
     <timeStampFields/>
   </ProjectGpsSettings>
 </qgis>

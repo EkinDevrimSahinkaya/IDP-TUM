@@ -27,8 +27,8 @@ if not vlayer.isValid():
 else:
 
     QgsProject.instance().addMapLayer(vlayer)
-# Finally, exitQgis() is called to remove the
 
+# Finally, exitQgis() is called to remove the
 # provider and layer registries from memory
 # Save the project to the same
 project.write()
