@@ -7,9 +7,8 @@ from compare import output_data
 
 
 def run(condition):
-    while datetime.now().minute not in {0, 15, 30,
-                                        45}:  # Wait 1 second until we are synced up with the 'every 15 minutes' clock
-
+    while datetime.now().minute not in {0, 15, 30, 45}:
+        # Wait 1 second until we are synced up with the 'every 15 minutes' clock
         sleep(1)
 
     def task():
@@ -20,8 +19,7 @@ def run(condition):
 
     task()
 
-
-    while condition == True:
+    while condition:
         sleep(60 * 15)  # Wait for 15 minutes
         task()
 

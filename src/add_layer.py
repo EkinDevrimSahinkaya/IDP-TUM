@@ -14,11 +14,11 @@ from shapely import GeometryType
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 outputDataPath = os.path.join(ROOT_DIR, "output_data", "*.csv")
 projectDataRoot = os.path.join(ROOT_DIR, "project_data")
-trafficRanges = [(0.0, 100.0),
-                 (100.1, 200.0),
-                 (200.1, 300.0),
-                 (300.1, 400.0),
-                 (400.1, 1000.0)]
+trafficRanges = [[(0.0, 100.0), 'Very Low Traffic', QtGui.QColor('#008000')],
+                 [(100.1, 200.0), 'Low Traffic', QtGui.QColor('#00a500')],
+                 [(200.1, 300.0), 'Normal Traffic', QtGui.QColor('#f5ff09')],
+                 [(300.1, 400.0), 'Busy Traffic', QtGui.QColor('#ffa634')],
+                 [(400.1, 1000.0), 'Very Busy Traffic', QtGui.QColor('#ff2712')]]
 
 prefixPath = r'C:\Program Files\QGIS 3.34.0\bin'  # TODO: change prefix path to your QGIS root directory
 QgsApplication.setPrefixPath(prefixPath, True)
@@ -47,7 +47,7 @@ def add_color(traffic_range: (float, float),
     Colorize the detector data according to the measured traffic flow
 
     :param traffic_range: Lower and upper bounds for heaviness of traffic
-    :param label: Label the amount of traffic
+    :param label: Label the amount of traffic flow
     :param color: Color corresponding to the measured traffic
     :param geom_type: GeometryType of the loaded detector data
     :param opacity: Opacity of the corresponding points
@@ -91,26 +91,9 @@ def mapAndPoint():
     range_list = []
     geom_type = csvlayer.geometryType()
 
-    # TODO: can pack the color groups into some sort of enum/list/dict and iterate over that
-    # First group 0-100
-    color_range = add_color(trafficRanges[0], 'Very Low Traffic', QtGui.QColor('#008000'), geom_type)
-    range_list.append(color_range)
-
-    # Second Group 100-200
-    color_range = add_color(trafficRanges[1], 'Low Traffic', QtGui.QColor('#00a500'), geom_type)
-    range_list.append(color_range)
-
-    # Third Group 200-300
-    color_range = add_color(trafficRanges[2], 'Normal Traffic', QtGui.QColor('#f5ff09'), geom_type)
-    range_list.append(color_range)
-
-    # Fourth Group 300-400
-    color_range = add_color(trafficRanges[3], 'Busy Traffic', QtGui.QColor('#ffa634'), geom_type)
-    range_list.append(color_range)
-
-    # Fifth Group 400-1000
-    color_range = add_color(trafficRanges[4], 'Very Busy Traffic', QtGui.QColor('#ff2712'), geom_type)
-    range_list.append(color_range)
+    for traffic_range in trafficRanges:
+        color_range = add_color(*traffic_range, geom_type)
+        range_list.append(color_range)
 
     # render the colored csvlayer
     renderer = QgsGraduatedSymbolRenderer('', range_list)
