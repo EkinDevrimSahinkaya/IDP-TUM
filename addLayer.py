@@ -12,7 +12,7 @@ from qgis.PyQt import QtGui
 
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 new_string = ROOT_DIR.replace("\\", "/")
-outputRoot = new_string + "/IDP-TUM/output_data/*.csv"
+outputRoot = new_string + "/IDP-TUM/mergedData/*.csv"
 dataRoot = new_string + "/IDP-TUM/Datas/mapAndPoints.qgs"
 
 prefixPath = r'C:\Program Files\QGIS 3.34.0\bin'  # TODO: change prefix path to your QGIS root directory
