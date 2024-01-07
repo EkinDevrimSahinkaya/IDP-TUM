@@ -4,7 +4,8 @@ from time import sleep
 from pull_xml_to_csv_mobilithek import xml_to_csv
 from pull_static_mobilithek import static_data
 from compare import output_data
-
+from compareLRZandMobilet import compareCsvFile
+from clearFlow import clearFlow
 
 def run(condition):
     while datetime.now().minute not in {0, 15, 30, 45}:
@@ -15,6 +16,8 @@ def run(condition):
         xml_to_csv()
         static_data()
         output_data()
+        compareCsvFile()
+        clearFlow()
         layer()
 
     task()
@@ -29,4 +32,6 @@ if __name__ == '__main__':
     xml_to_csv()
     static_data()
     output_data()
+    compareCsvFile()
+    clearFlow()
     layer()
