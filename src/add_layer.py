@@ -10,9 +10,9 @@ from qgis.core import *
 from qgis.utils import iface
 from qgis.PyQt import QtGui
 from shapely import GeometryType
+from config import ROOT_DIR
 
-ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-outputDataPath = os.path.join(ROOT_DIR, "output_data", "*.csv")
+outputDataPath = os.path.join(ROOT_DIR, "mergedData/*.csv")
 projectDataRoot = os.path.join(ROOT_DIR, "project_data")
 trafficRanges = [[(0.0, 100.0), 'Very Low Traffic', QtGui.QColor('#008000')],
                  [(100.1, 200.0), 'Low Traffic', QtGui.QColor('#00a500')],
@@ -31,7 +31,7 @@ tms = '	crs=EPSG:3857&format&type=xyz&url=https://tile.openstreetmap.org/%7Bz%7D
 rlayer = QgsRasterLayer(tms, 'OSM', 'wms')
 print(rlayer.crs())
 if rlayer.isValid():
-    print("Layer loaded!")
+    print("Base Layer loaded!")
     project.addMapLayer(rlayer)
 else:
     print('invalid layer')
@@ -79,12 +79,12 @@ def mapAndPoint():
     uri = "file:///{}{}".format(latest_output_data_csv, options)
 
     csvlayer = QgsVectorLayer(uri, "Points", "delimitedtext")
-    if not csvlayer.isValid():
-        print("CSV Layer failed to load!")
-    else:
-        print("Layer loaded!")
+    if csvlayer.isValid():
+        print("Detector Layer loaded!")
         print(iface)
         project.addMapLayer(csvlayer)
+    else:
+        print("CSV Layer failed to load!")
 
     # color detector locations according to traffic
     target_field = 'flow'
@@ -101,7 +101,7 @@ def mapAndPoint():
     renderer.setClassificationMethod(classification_method)
     renderer.setClassAttribute(target_field)
     csvlayer.setRenderer(renderer)
-    print("Classify eklendi.", csvlayer)
+    print("Classification of detectors done.", csvlayer)
     QgsProject.instance().setCrs(QgsCoordinateReferenceSystem('EPSG:3857'), True)
 
     # Center QGIS on the rlayer
