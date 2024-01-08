@@ -12,8 +12,8 @@ from qgis.PyQt import QtGui
 from shapely import GeometryType
 from config import ROOT_DIR
 
-outputDataPath = os.path.join(ROOT_DIR, "mergedData/*.csv")
-projectDataRoot = os.path.join(ROOT_DIR, "project_data")
+outputDataRoot = ROOT_DIR + "/merged_data/"
+projectDataRoot = ROOT_DIR + "/project_data/"
 trafficRanges = [[(0.0, 100.0), 'Very Low Traffic', QtGui.QColor('#008000')],
                  [(100.1, 200.0), 'Low Traffic', QtGui.QColor('#00a500')],
                  [(200.1, 300.0), 'Normal Traffic', QtGui.QColor('#f5ff09')],
@@ -70,10 +70,10 @@ def mapAndPoint():
     """
 
     # Adding Points
-    absolute_path_to_csv_file = os.path.join(projectDataRoot, "test.csv")
+    absolute_path_to_csv_file = os.path.join(projectDataRoot+"*.csv", "test.csv")
     # TODO: ':=' available for python >= 3.8 -> compatibility issues?
     latest_output_data_csv = (csv_path
-                              if (csv_path := max(glob.glob(outputDataPath), key=os.path.getctime))
+                              if (csv_path := max(glob.glob(outputDataRoot+"*.csv"), key=os.path.getctime))
                               else absolute_path_to_csv_file)
     options = '?delimiter=,&xField=lon&yField=lat&crs=epsg:4326'
     uri = "file:///{}{}".format(latest_output_data_csv, options)

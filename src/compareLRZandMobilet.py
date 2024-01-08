@@ -7,8 +7,8 @@ from config import ROOT_DIR
 rootPath = ROOT_DIR.replace("\\", "/")
 lrzRoot = rootPath + "/LRZ/munich_loops_mapping_in_progress.csv"
 outputDataRoot = rootPath + "/output_data/"
-comparedDataRoot = rootPath + "/comparedData/"
-mergedDataRoot = rootPath + "/mergedData/"
+comparedDataRoot = rootPath + "/compared_data/"
+mergedDataRoot = rootPath + "/merged_data/"
 
 
 def compareCsvFile():
