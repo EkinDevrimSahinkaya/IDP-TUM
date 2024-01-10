@@ -12,7 +12,7 @@ from qgis.PyQt import QtGui
 from shapely import GeometryType
 from config import ROOT_DIR
 
-outputDataRoot = ROOT_DIR + "/merged_data/"
+mergedDataRoot = ROOT_DIR + "/merged_data/"
 projectDataRoot = ROOT_DIR + "/project_data/"
 trafficRanges = [[(0.0, 100.0), 'Very Low Traffic', QtGui.QColor('#008000')],
                  [(100.1, 200.0), 'Low Traffic', QtGui.QColor('#00a500')],
@@ -70,13 +70,11 @@ def mapAndPoint():
     """
 
     # Adding Points
-    absolute_path_to_csv_file = os.path.join(projectDataRoot+"*.csv", "test.csv")
     # TODO: ':=' available for python >= 3.8 -> compatibility issues?
-    latest_output_data_csv = (csv_path
-                              if (csv_path := max(glob.glob(outputDataRoot+"*.csv"), key=os.path.getctime))
-                              else absolute_path_to_csv_file)
+    if not (latest_merged_data_csv := max(glob.glob(mergedDataRoot + "*.csv"), key=os.path.getctime)):
+        print("No files found in {}".format(mergedDataRoot))
     options = '?delimiter=,&xField=lon&yField=lat&crs=epsg:4326'
-    uri = "file:///{}{}".format(latest_output_data_csv, options)
+    uri = "file:///{}{}".format(latest_merged_data_csv, options)
 
     csvlayer = QgsVectorLayer(uri, "Points", "delimitedtext")
     if csvlayer.isValid():
