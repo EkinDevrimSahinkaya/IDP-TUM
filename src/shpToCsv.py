@@ -25,8 +25,8 @@ from qgis.utils import iface
 from config import ROOT_DIR
 
 rootPath = ROOT_DIR.replace("\\", "/")
-path_to_csv_file = rootPath + "/LRZ/munich_loops_mapping_in_progress.csv"
-path_to_shp_file = rootPath + "/LRZ/munich_loops_mapping_in_progress.shp"
+path_to_csv_file = rootPath + "/data/LRZ/munich_loops_mapping_in_progress.csv"
+path_to_shp_file = rootPath + "/data/LRZ/munich_loops_mapping_in_progress.shp"
 
 
 df = gpd.read_file(path_to_shp_file)

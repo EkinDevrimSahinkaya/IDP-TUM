@@ -11,15 +11,15 @@ import os
 from config import ROOT_DIR
 
 rootPath = ROOT_DIR.replace("\\", "/")
-lrzRoot = rootPath + "/LRZ/munich_loops_mapping_in_progress.csv"
-outputDataRoot = rootPath + "/output_data/"
-comparedDataRoot = rootPath + "/compared_data/"
-mergedDataRoot = rootPath + "/merged_data/"
-staticDataRoot = rootPath + "/static_data/"
-xmlDataRoot = rootPath + "/xml_data/"
+outputDataRoot = rootPath + "/data/output_data/"
+comparedDataRoot = rootPath + "/data/compared_data/"
+mergedDataRoot = rootPath + "/data/merged_data/"
+staticDataRoot = rootPath + "/data/static_data/"
+xmlDataRoot = rootPath + "/data/xml_data/"
 
-lrz_csv_file_path = rootPath + "/LRZ/munich_loops_mapping_in_progress.csv"
-lrz_shp_file_path = rootPath + "/LRZ/munich_loops_mapping_in_progress.shp"
+lrz_munich_loops_path = rootPath + "/data/LRZ/munich_loops_mapping_in_progress.csv"
+lrz_csv_file_path = rootPath + "/data/LRZ/munich_loops_mapping_in_progress.csv"
+lrz_shp_file_path = rootPath + "/data/LRZ/munich_loops_mapping_in_progress.shp"
 
 # read LRZ shapefile and convert to csv file
 df = gpd.read_file(lrz_shp_file_path)
@@ -33,7 +33,7 @@ df.to_csv(lrz_csv_file_path, sep=',', encoding='utf-8')
 def compare_csv_files():
     latest_outputdata_data_csv = max(glob.glob(outputDataRoot+"*.csv"), key=os.path.getctime)
 
-    a = pd.read_csv(lrzRoot)
+    a = pd.read_csv(lrz_munich_loops_path)
     b = pd.read_csv(latest_outputdata_data_csv)
 
     output = a.merge(b, on="detid", how="left").fillna(0).set_index("detid")
@@ -72,7 +72,7 @@ def output_data():
 
     output.to_csv(
         os.path.join(
-            ROOT_DIR, "output_data",
+            outputDataRoot,
             datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S").replace("-", "_") + "_output.csv"
         )
     )

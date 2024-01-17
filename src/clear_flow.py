@@ -4,7 +4,7 @@ import pandas as pd
 from config import ROOT_DIR
 
 rootPath = ROOT_DIR.replace("\\", "/")
-mergedDataRoot = rootPath + "/merged_data"
+mergedDataRoot = rootPath + "/data/merged_data"
 
 
 def get_detector_ids(folder_path: str):

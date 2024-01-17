@@ -12,8 +12,8 @@ from qgis.PyQt import QtGui
 from shapely import GeometryType
 from config import ROOT_DIR
 
-mergedDataRoot = ROOT_DIR + "/merged_data/"
-projectDataRoot = ROOT_DIR + "/project_data/"
+mergedDataRoot = ROOT_DIR + "/data/merged_data/"
+projectDataRoot = ROOT_DIR + "/data/project_data/"
 trafficRanges = [[(0.0, 100.0), 'Very Low Traffic', QtGui.QColor('#008000')],
                  [(100.1, 200.0), 'Low Traffic', QtGui.QColor('#00a500')],
                  [(200.1, 300.0), 'Normal Traffic', QtGui.QColor('#f5ff09')],

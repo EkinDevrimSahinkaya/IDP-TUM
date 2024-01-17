@@ -5,6 +5,7 @@ from pull_xml_to_csv_mobilithek import xml_to_csv
 from pull_static_mobilithek import static_data
 from compare import output_data, compare_csv_files
 from clear_flow import clear_flow
+from visualise_network import plot
 
 
 def run(condition: bool):
@@ -24,6 +25,7 @@ def run(condition: bool):
         compare_csv_files()
         clear_flow()
         layer()
+        # plot() -> i think this suspends program until the plot instance is closed
 
     task()
 
@@ -40,3 +42,4 @@ if __name__ == '__main__':
     compare_csv_files()
     clear_flow()
     layer()
+    plot()

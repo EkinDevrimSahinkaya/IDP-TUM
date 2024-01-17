@@ -5,10 +5,10 @@ import os
 from config import ROOT_DIR
 
 rootPath = ROOT_DIR.replace("\\", "/")
-lrzRoot = rootPath + "/LRZ/munich_loops_mapping_in_progress.csv"
-outputDataRoot = rootPath + "/output_data/"
-comparedDataRoot = rootPath + "/compared_data/"
-mergedDataRoot = rootPath + "/merged_data/"
+lrzRoot = rootPath + "/data/LRZ/munich_loops_mapping_in_progress.csv"
+outputDataRoot = rootPath + "/data/output_data/"
+comparedDataRoot = rootPath + "/data/compared_data/"
+mergedDataRoot = rootPath + "/data/merged_data/"
 
 
 def compareCsvFile():

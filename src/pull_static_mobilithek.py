@@ -8,9 +8,9 @@ import sys
 import pandas_read_xml as pdx
 
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-# new_string = ROOT_DIR.replace("\\", "/")
-# Root = new_string + "/static_data"
-Root = os.path.join(ROOT_DIR, "static_data")
+# rootPath = ROOT_DIR.replace("\\", "/")
+# Root = rootPath + "/static_data"
+Root = os.path.join(ROOT_DIR, "/data/static_data")
 # URL for the DATEX II v2 SOAP endpoint
 soap_url = 'https://mobilithek.info:8443/mobilithek/api/v1.0/subscription/soap/610481569602957312/clientPullService'
 
