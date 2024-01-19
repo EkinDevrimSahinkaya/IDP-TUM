@@ -33,5 +33,5 @@ if __name__ == '__main__':
     static_data()
     output_data()
     compareCsvFile()
-    clearFlow()
+    # clearFlow()
     layer()
