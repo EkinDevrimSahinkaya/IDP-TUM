@@ -1,0 +1,1 @@
+# make config.py visible for /src/*.py files without adjusting PYTHONPATH
