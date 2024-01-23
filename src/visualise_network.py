@@ -11,6 +11,7 @@ from networkx import MultiDiGraph, Graph
 from geopandas import GeoDataFrame
 from shapely.geometry import Point
 from osmnx import settings, utils_graph, io
+# from subprocess import Popen, PIPE
 from config import ROOT_DIR
 
 # Use this citation when referencing OSMnx in work
@@ -92,9 +93,9 @@ def get_detectors() -> (GeoDataFrame, [Point]):
     """
     Get the latest merged detector locations and add a geometry column containing
     Points with lon, lat values
-
     :return: The resulting GeoDataFrame and a list of the created Points
     """
+    
     # load detector static_data
     latest_merged_data_csv = max(glob.glob(mergedDataRoot + "*.csv"), key=os.path.getctime)
     detector_df = pd.read_csv(latest_merged_data_csv)
@@ -104,10 +105,8 @@ def get_detectors() -> (GeoDataFrame, [Point]):
     crs = {'init': 'epsg:4326'}
     detector_gdf = GeoDataFrame(detector_df, crs=crs, geometry=geometry)
 
-    # Add the point geometry as column to points.csv for fmm in cygwin
-    #detector_df.insert(11, "geom", geometry, True)
-    # TODO: replace path to local cygwin64 installation or comment it out -> example result of fmm
-    # in data/network/matched.csv
+    # TODO: replace path to local cygwin64 installation or comment it out -> contains example result of fmm
+    #  in data/network/matched.csv
     detector_gdf.to_csv("D:\\cygwin64\\home\\User\\fmm\\matching\\network\\points.csv", sep=";")
 
     return detector_gdf, geometry
@@ -128,13 +127,26 @@ def plot():
     print("The resulting file is data/network/matched.csv")
 
     # get mapped points
+    # TODO: for the server, we can just move matched.csv to the correct location instead of reading and writing the file
+    with open("D:\\cygwin64\\home\\User\\fmm\\matching\\network\\matched.csv", mode='r') as f_cyg:
+        with open(networkDataRoot+"matched.csv", mode='w') as f_local:
+            f_local.write(f_cyg.read())
+
     df_matched = pd.read_csv(networkDataRoot + "matched.csv", sep=";")
     matched_locs = df_matched["mgeom"]
+    # add Geometry column to matched.csv so we can add it to add_layer.py
     nodes = []
     # reformat detector locations from [LINESTRING(lon lat,lon lat)] to [(lat, lon)]
     for node in matched_locs:
         lon_lat = node.split(',')[0][11:].split(' ')
         nodes.append((lon_lat[1], lon_lat[0]))
+    # write updated dataframe to matched.csv
+    if 'lon' not in df_matched:
+        # https://stackoverflow.com/questions/5917522/unzipping-and-the-operator#:~:text=25-,zip
+        lats, lons = zip(*nodes)
+        df_matched.insert(len(df_matched.columns), "lat", list(lats))
+        df_matched.insert(len(df_matched.columns), "lon", list(lons))
+        df_matched.to_csv(networkDataRoot + "matched.csv", sep=";", index=False)
 
     # add matched detector locations to base map and graph the result
     map.add_nodes_from(nodes)
@@ -149,4 +161,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-

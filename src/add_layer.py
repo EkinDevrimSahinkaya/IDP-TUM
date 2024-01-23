@@ -73,7 +73,11 @@ def mapAndPoint():
     # TODO: ':=' available for python >= 3.8 -> compatibility issues?
     if not (latest_merged_data_csv := max(glob.glob(mergedDataRoot + "*.csv"), key=os.path.getctime)):
         print("No files found in {}".format(mergedDataRoot))
-    options = '?delimiter=,&xField=lon&yField=lat&crs=epsg:4326'
+    # TODO: include line below to use map matched detector locations
+    latest_merged_data_csv = ROOT_DIR + "/data/network/matched.csv"
+    # matched.csv uses ';' as delimiter -> check if we use the matched detector locations as the csvlayer
+    delim = ';' if "matched.csv" in latest_merged_data_csv[-11:] else ','
+    options = '?delimiter={}&xField=lon&yField=lat&crs=epsg:4326'.format(delim)
     uri = "file:///{}{}".format(latest_merged_data_csv, options)
 
     csvlayer = QgsVectorLayer(uri, "Points", "delimitedtext")
