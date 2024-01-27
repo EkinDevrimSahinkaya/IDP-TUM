@@ -1,0 +1,865 @@
+detid,Unnamed: 0_x,timestamp,flow,vehicleTypeFlow,speed,vehicleTypeSpeed,occupancy_percentage,Unnamed: 0_y,type,location_desc,lat,lon
+4000011,0,2023-12-05T18:00:00.000+01:00,100,anyVehicle,42.84,carOrLightVehicle,5.0,0.0,Doppelschleife,Effnerstr. ca. 20m sÃÂ¼dl. Wahnfriedallee,48.160583,11.621928
+4000012,1,2023-12-05T18:00:00.000+01:00,90,anyVehicle,47.88,carOrLightVehicle,4.0,1.0,Doppelschleife,Effnerstr. ca. 20m sÃÂ¼dl. Wahnfriedallee,48.1606,11.621894
+4001011,4,2023-12-05T18:00:00.000+01:00,71,anyVehicle,54.0,carOrLightVehicle,4.0,6.0,Doppelschleife,"Frankfurter Ring,  zw. Lilienthal Allee und Stuttgarter Str.,  550 m westl. Lilienthal Allee",48.1876,11.594869
+4001012,5,2023-12-05T18:00:00.000+01:00,118,anyVehicle,55.44,carOrLightVehicle,6.0,7.0,Doppelschleife,"Frankfurter Ring,  zw. Lilienthal Allee und Stuttgarter Str.,  550 m westl. Lilienthal Allee",48.18766,11.594881
+4001013,6,2023-12-05T18:00:00.000+01:00,72,anyVehicle,47.88,carOrLightVehicle,5.0,8.0,Doppelschleife,"Frankfurter Ring,  zw. Lilienthal Allee und Stuttgarter Str.,  550 m westl. Lilienthal Allee",48.18783,11.594907
+4001014,7,2023-12-05T18:00:00.000+01:00,69,anyVehicle,0.0,carOrLightVehicle,5.0,9.0,Doppelschleife,"Frankfurter Ring,  zw. Lilienthal Allee und Stuttgarter Str.,  550 m westl. Lilienthal Allee",48.18778,11.594907
+4003011,8,2023-12-05T18:00:00.000+01:00,285,anyVehicle,41.76,carOrLightVehicle,16.0,14.0,Doppelschleife,"Isarring - Fahrtrichtung Ost, ca. 50 m nach KennedybrÃÂ¼ckeHeinrich-Mann-Allee",48.156414,11.606162
+4003012,9,2023-12-05T18:00:00.000+01:00,366,anyVehicle,45.72,carOrLightVehicle,16.0,15.0,Doppelschleife,"Isarring - Fahrtrichtung Ost, ca. 50 m nach KennedybrÃÂ¼ckeHeinrich-Mann-Allee",48.15644,11.606175
+4004011,12,2023-12-05T18:00:00.000+01:00,256,anyVehicle,21.24,carOrLightVehicle,27.0,20.0,Doppelschleife,"Isarring -  hinter Ausfahrt Biederstein-Tunnel, bei Dietlindenstr., Fahrtrichtung Effnerplatz",48.163513,11.596337
+4004012,13,2023-12-05T18:00:00.000+01:00,362,anyVehicle,22.68,carOrLightVehicle,33.0,21.0,Doppelschleife,"Isarring -  hinter Ausfahrt Biederstein-Tunnel, bei Dietlindenstr., Fahrtrichtung Effnerplatz",48.1635,11.596284
+4005011,16,2023-12-05T18:00:00.000+01:00,176,anyVehicle,41.04,carOrLightVehicle,14.0,24.0,Doppelschleife,"Schenkendorfstr.  Richtung Osten, unter BAB 9-ÃÅberfÃÂ¼hrung",48.175503,11.592866
+4005012,17,2023-12-05T18:00:00.000+01:00,253,anyVehicle,39.96,carOrLightVehicle,23.0,25.0,Doppelschleife,"Schenkendorfstr.  Richtung Osten, unter BAB 9-ÃÅberfÃÂ¼hrung",48.17552,11.592879
+4005013,18,2023-12-05T18:00:00.000+01:00,212,anyVehicle,44.64,carOrLightVehicle,18.0,26.0,Doppelschleife,"Schenkendorfstr.  Richtung Osten, unter BAB 9-ÃÅberfÃÂ¼hrung",48.17554,11.592893
+4005014,19,2023-12-05T18:00:00.000+01:00,55,anyVehicle,46.08,carOrLightVehicle,3.0,27.0,Doppelschleife,"Schenkendorfstr.  Richtung Westen, unter BAB 9-ÃÅberfÃÂ¼hrung",48.175613,11.592959
+4005015,20,2023-12-05T18:00:00.000+01:00,169,anyVehicle,49.68,carOrLightVehicle,11.0,28.0,Doppelschleife,"Schenkendorfstr.  Richtung Westen, unter BAB 9-ÃÅberfÃÂ¼hrung",48.175594,11.592946
+4005016,21,2023-12-05T18:00:00.000+01:00,205,anyVehicle,52.92,carOrLightVehicle,12.0,29.0,Doppelschleife,"Schenkendorfstr.  Richtung Westen, unter BAB 9-ÃÅberfÃÂ¼hrung",48.175575,11.592933
+4006011,22,2023-12-05T18:00:00.000+01:00,111,anyVehicle,42.84,carOrLightVehicle,6.0,30.0,Doppelschleife,Frankfurter Ring - Haus 12  (ca. 50 m ÃÂ¶stlich der Korbianstr.),48.187363,11.570449
+4006012,23,2023-12-05T18:00:00.000+01:00,47,anyVehicle,46.08,carOrLightVehicle,5.0,31.0,Doppelschleife,Frankfurter Ring - Haus 12  (ca. 50 m ÃÂ¶stlich der Korbianstr.),48.18742,11.570416
+4006021,24,2023-12-05T18:00:00.000+01:00,113,anyVehicle,39.96,carOrLightVehicle,7.0,32.0,Doppelschleife,Frankfurter Ring - Haus 12  (ca. 50 m ÃÂ¶stlich der Korbianstr.),48.187504,11.570299
+4006022,25,2023-12-05T18:00:00.000+01:00,148,anyVehicle,38.52,carOrLightVehicle,9.0,33.0,Doppelschleife,Frankfurter Ring - Haus 12  (ca. 50 m ÃÂ¶stlich der Korbianstr.),48.187454,11.570406
+4007011,26,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,100.0,34.0,Doppelschleife,"Moosacher Str.,  ca. 100 m westl. des Anhalter Platzes",48.186646,11.560828
+4007012,27,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,100.0,35.0,Doppelschleife,"Moosacher Str.,  ca. 100 m westl. des Anhalter Platzes",48.18668,11.560828
+4007013,28,2023-12-05T18:00:00.000+01:00,102,anyVehicle,46.8,carOrLightVehicle,7.0,36.0,Doppelschleife,"Moosacher Str.,  ca. 100 m westl. des Anhalter Platzes",48.18679,11.560803
+4007014,29,2023-12-05T18:00:00.000+01:00,81,anyVehicle,48.24,carOrLightVehicle,48.0,37.0,Doppelschleife,"Moosacher Str.,  ca. 100 m westl. des Anhalter Platzes",48.186768,11.560803
+4007015,30,2023-12-05T18:00:00.000+01:00,36,anyVehicle,54.72,carOrLightVehicle,2.0,38.0,Doppelschleife,"Moosacher Str.,  ca. 100 m westl. des Anhalter Platzes",48.18674,11.560806
+4009011,31,2023-12-05T18:00:00.000+01:00,178,anyVehicle,57.96,carOrLightVehicle,6.0,45.0,Doppelschleife,Landshuter Allee  - HÃÂ¶he Kusocinskidamm,48.18309,11.540322
+4009012,32,2023-12-05T18:00:00.000+01:00,131,anyVehicle,61.92,carOrLightVehicle,4.0,46.0,Doppelschleife,Landshuter Allee  - HÃÂ¶he Kusocinskidamm,48.183083,11.540381
+4009021,33,2023-12-05T18:00:00.000+01:00,193,anyVehicle,56.88,carOrLightVehicle,7.0,47.0,Doppelschleife,Landshuter Allee  - HÃÂ¶he Kusocinskidamm,48.18304,11.540547
+4009022,34,2023-12-05T18:00:00.000+01:00,113,anyVehicle,65.88,carOrLightVehicle,3.0,48.0,Doppelschleife,Landshuter Allee  - HÃÂ¶he Kusocinskidamm,48.183064,11.540488
+4010011,35,2023-12-05T18:00:00.000+01:00,94,anyVehicle,41.4,carOrLightVehicle,5.0,49.0,Doppelschleife,Tegernseer Landstr./Waltramstr. (McGraw-Graben),48.106987,11.580435
+4010012,36,2023-12-05T18:00:00.000+01:00,241,anyVehicle,39.96,carOrLightVehicle,14.0,50.0,Doppelschleife,Tegernseer Landstr./Waltramstr. (McGraw-Graben),48.106976,11.5803995
+4010013,37,2023-12-05T18:00:00.000+01:00,215,anyVehicle,41.04,carOrLightVehicle,13.0,51.0,Doppelschleife,Tegernseer Landstr./Waltramstr. (McGraw-Graben),48.106964,11.580356
+4010014,38,2023-12-05T18:00:00.000+01:00,212,anyVehicle,49.68,carOrLightVehicle,10.0,52.0,Doppelschleife,Tegernseer Landstr./Waltramstr. (McGraw-Graben),48.10695,11.580318
+4010021,39,2023-12-05T18:00:00.000+01:00,162,anyVehicle,46.08,carOrLightVehicle,8.0,53.0,Doppelschleife,Tegernseer Landstr./Waltramstr. (McGraw-Graben),48.106884,11.580142
+4010022,40,2023-12-05T18:00:00.000+01:00,225,anyVehicle,45.36,carOrLightVehicle,11.0,54.0,Doppelschleife,Tegernseer Landstr./Waltramstr. (McGraw-Graben),48.106895,11.58017
+4010023,41,2023-12-05T18:00:00.000+01:00,235,anyVehicle,46.08,carOrLightVehicle,13.0,55.0,Doppelschleife,Tegernseer Landstr./Waltramstr. (McGraw-Graben),48.106915,11.580216
+4010024,42,2023-12-05T18:00:00.000+01:00,318,anyVehicle,51.12,carOrLightVehicle,14.0,56.0,Doppelschleife,Tegernseer Landstr./Waltramstr. (McGraw-Graben),48.106926,11.58024
+4012011,43,2023-12-05T18:00:00.000+01:00,161,anyVehicle,51.84,carOrLightVehicle,10.0,57.0,Doppelschleife,Garmischer Str./Siegenburger Str.,48.127865,11.524555
+4012012,44,2023-12-05T18:00:00.000+01:00,303,anyVehicle,48.96,carOrLightVehicle,20.0,58.0,Doppelschleife,Garmischer Str./Siegenburger Str.,48.127884,11.52452
+4012013,45,2023-12-05T18:00:00.000+01:00,324,anyVehicle,54.36,carOrLightVehicle,19.0,59.0,Doppelschleife,Garmischer Str./Siegenburger Str.,48.1279,11.524496
+4012014,46,2023-12-05T18:00:00.000+01:00,221,anyVehicle,38.88,carOrLightVehicle,17.0,60.0,Doppelschleife,Garmischer Str./Siegenburger Str.,48.12799,11.524388
+4012015,47,2023-12-05T18:00:00.000+01:00,367,anyVehicle,34.92,carOrLightVehicle,34.0,61.0,Doppelschleife,Garmischer Str./Siegenburger Str.,48.12797,11.524421
+4012016,48,2023-12-05T18:00:00.000+01:00,347,anyVehicle,42.48,carOrLightVehicle,26.0,62.0,Doppelschleife,Garmischer Str./Siegenburger Str.,48.12795,11.524449
+4013011,49,2023-12-05T18:00:00.000+01:00,82,anyVehicle,34.2,carOrLightVehicle,5.0,63.0,Doppelschleife,Landshuter Allee/Hirschbergstr.,48.149174,11.536535
+4013012,50,2023-12-05T18:00:00.000+01:00,172,anyVehicle,36.0,carOrLightVehicle,10.0,64.0,Doppelschleife,Landshuter Allee/Hirschbergstr.,48.149166,11.53661
+4013013,51,2023-12-05T18:00:00.000+01:00,292,anyVehicle,24.84,carOrLightVehicle,25.0,65.0,Doppelschleife,Landshuter Allee/Hirschbergstr.,48.14919,11.5366745
+4013014,52,2023-12-05T18:00:00.000+01:00,270,anyVehicle,22.32,carOrLightVehicle,32.0,66.0,Doppelschleife,Landshuter Allee/Hirschbergstr.,48.149174,11.536739
+4013021,53,2023-12-05T18:00:00.000+01:00,287,anyVehicle,41.76,carOrLightVehicle,14.0,70.0,Doppelschleife,Landshuter Allee/Hirschbergstr.,48.149197,11.537071
+4013022,54,2023-12-05T18:00:00.000+01:00,281,anyVehicle,45.36,carOrLightVehicle,12.0,71.0,Doppelschleife,Landshuter Allee/Hirschbergstr.,48.1492,11.536975
+4013023,55,2023-12-05T18:00:00.000+01:00,110,anyVehicle,36.72,carOrLightVehicle,6.0,72.0,Doppelschleife,Landshuter Allee/Hirschbergstr.,48.149208,11.536889
+4013024,56,2023-12-05T18:00:00.000+01:00,167,anyVehicle,39.24,carOrLightVehicle,8.0,73.0,Doppelschleife,Landshuter Allee/Hirschbergstr.,48.14924,11.536825
+4014011,57,2023-12-05T18:00:00.000+01:00,123,anyVehicle,38.16,carOrLightVehicle,11.0,74.0,Doppelschleife,Landshuter Allee/Dom-Pedro-Str.,48.15967,11.53757
+4014012,58,2023-12-05T18:00:00.000+01:00,281,anyVehicle,45.0,carOrLightVehicle,19.0,75.0,Doppelschleife,Landshuter Allee/Dom-Pedro-Str.,48.15967,11.537543
+4014013,59,2023-12-05T18:00:00.000+01:00,278,anyVehicle,50.76,carOrLightVehicle,16.0,76.0,Doppelschleife,Landshuter Allee/Dom-Pedro-Str.,48.15967,11.537517
+4014014,60,2023-12-05T18:00:00.000+01:00,123,anyVehicle,33.84,carOrLightVehicle,11.0,77.0,Doppelschleife,Landshuter Allee/Dom-Pedro-Str.,48.159683,11.537409
+4014015,61,2023-12-05T18:00:00.000+01:00,262,anyVehicle,35.28,carOrLightVehicle,23.0,78.0,Doppelschleife,Landshuter Allee/Dom-Pedro-Str.,48.159683,11.537436
+4014016,62,2023-12-05T18:00:00.000+01:00,303,anyVehicle,32.76,carOrLightVehicle,34.0,79.0,Doppelschleife,Landshuter Allee/Dom-Pedro-Str.,48.159683,11.537463
+4019011,63,2023-12-05T18:00:00.000+01:00,47,anyVehicle,43.56,carOrLightVehicle,4.0,82.0,Einfachschleife,HeidemannstraÃÅ¸e,48.20046,11.604775
+4019012,64,2023-12-05T18:00:00.000+01:00,34,anyVehicle,45.0,carOrLightVehicle,2.0,83.0,Einfachschleife,HeidemannstraÃÅ¸e,48.200512,11.604789
+4019013,65,2023-12-05T18:00:00.000+01:00,44,anyVehicle,47.52,carOrLightVehicle,3.0,84.0,Einfachschleife,HeidemannstraÃÅ¸e,48.2007,11.604828
+4019014,66,2023-12-05T18:00:00.000+01:00,46,anyVehicle,52.56,carOrLightVehicle,2.0,85.0,Einfachschleife,HeidemannstraÃÅ¸e,48.200645,11.604815
+4020013,67,2023-12-05T18:00:00.000+01:00,78,anyVehicle,42.12,carOrLightVehicle,5.0,88.0,Doppelschleife,Effnerstr.,48.155308,11.616897
+4020014,68,2023-12-05T18:00:00.000+01:00,88,anyVehicle,43.56,carOrLightVehicle,6.0,89.0,Doppelschleife,Effnerstr.,48.155315,11.616856
+4022011,69,2023-12-05T18:00:00.000+01:00,88,anyVehicle,46.8,carOrLightVehicle,4.0,94.0,Doppelschleife,"Schatzbogen, 30m sÃÂ¼dl. Heltauer Str.",48.129498,11.657216
+4022012,70,2023-12-05T18:00:00.000+01:00,81,anyVehicle,50.04,carOrLightVehicle,3.0,95.0,Doppelschleife,"Schatzbogen, 30m sÃÂ¼dl. Heltauer Str.",48.12948,11.6572695
+4024011,73,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,100.0,104.0,Einfachschleife,Stadelheimer Str.,48.100685,11.589469
+4024012,74,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,100.0,105.0,Einfachschleife,Stadelheimer Str.,48.10071,11.589456
+4024013,75,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,100.0,106.0,Einfachschleife,Stadelheimer Str.,48.100872,11.589347
+4024014,76,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,100.0,107.0,Einfachschleife,Stadelheimer Str.,48.100845,11.58936
+4025011,77,2023-12-05T18:00:00.000+01:00,162,anyVehicle,36.36,carOrLightVehicle,10.0,108.0,Doppelschleife,"Wolfratshauser Str., nÃÂ¶rdlich LudwigshÃÂ¶her Str.",48.091743,11.53938
+4027011,79,2023-12-05T18:00:00.000+01:00,139,anyVehicle,51.48,carOrLightVehicle,5.0,112.0,Doppelschleife,"Landshuter Allee, sÃÂ¼dl. Georg-Brauchle-Ring, bei HengelstraÃÅ¸e",48.171394,11.5385
+4027012,80,2023-12-05T18:00:00.000+01:00,273,anyVehicle,45.36,carOrLightVehicle,13.0,113.0,Doppelschleife,"Landshuter Allee, sÃÂ¼dl. Georg-Brauchle-Ring, bei HengelstraÃÅ¸e",48.171394,11.5385275
+4033011,85,2023-12-05T18:00:00.000+01:00,39,anyVehicle,42.84,carOrLightVehicle,2.0,132.0,Doppelschleife,"Prinzregentenstrasse, 20m westl. Wagenbauerstr.",48.138115,11.618207
+4033012,86,2023-12-05T18:00:00.000+01:00,88,anyVehicle,42.84,carOrLightVehicle,6.0,133.0,Doppelschleife,"Prinzregentenstrasse, 20m westl. Wagenbauerstr.",48.138096,11.618207
+4035011,87,2023-12-05T18:00:00.000+01:00,163,anyVehicle,42.12,carOrLightVehicle,7.0,136.0,Doppelschleife,"SÃÂ¼drÃÂ¶hre, Rampe Belgradstr. + Hauptfahrbahn,  Block 47 (MQ 2)",48.177963,11.574196
+4035012,88,2023-12-05T18:00:00.000+01:00,294,anyVehicle,45.72,carOrLightVehicle,13.0,137.0,Doppelschleife,"SÃÂ¼drÃÂ¶hre, Rampe Belgradstr. + Hauptfahrbahn,  Block 47 (MQ 2)",48.177982,11.5741825
+4035013,89,2023-12-05T18:00:00.000+01:00,346,anyVehicle,37.44,carOrLightVehicle,21.0,138.0,Doppelschleife,"SÃÂ¼drÃÂ¶hre, Rampe Belgradstr. + Hauptfahrbahn,  Block 47 (MQ 2)",48.178017,11.5741825
+4036011,90,2023-12-05T18:00:00.000+01:00,141,anyVehicle,39.96,carOrLightVehicle,8.0,139.0,Doppelschleife,"SÃÂ¼drÃÂ¶hre Ausfahrt LeopoldstraÃÅ¸e + Hauptfahrbahn, Block 91 (MQ 3)",48.17752,11.583437
+4037011,91,2023-12-05T18:00:00.000+01:00,347,anyVehicle,48.24,carOrLightVehicle,16.0,143.0,Doppelschleife,"SÃÂ¼drÃÂ¶hre Ausfahrt BAB A9 + Hauptfahrbahn,  Block 109 (MQ 4)",48.17736,11.586639
+4037012,92,2023-12-05T18:00:00.000+01:00,181,anyVehicle,60.12,carOrLightVehicle,6.0,144.0,Doppelschleife,"SÃÂ¼drÃÂ¶hre Ausfahrt BAB A9 + Hauptfahrbahn,  Block 109 (MQ 4)",48.177387,11.586638
+4037013,93,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,145.0,Doppelschleife,"SÃÂ¼drÃÂ¶hre Ausfahrt BAB A9 + Hauptfahrbahn,  Block 109 (MQ 4)",48.1774,11.586638
+4038011,94,2023-12-05T18:00:00.000+01:00,332,anyVehicle,40.32,carOrLightVehicle,18.0,146.0,Doppelschleife,"NordrÃÂ¶hre Hauptfahrbahn, Ostportal  Block 119 (MQ 5)",48.177704,11.587214
+4038012,95,2023-12-05T18:00:00.000+01:00,309,anyVehicle,45.0,carOrLightVehicle,14.0,147.0,Doppelschleife,"NordrÃÂ¶hre Hauptfahrbahn, Ostportal  Block 119 (MQ 5)",48.17769,11.587214
+4039011,96,2023-12-05T18:00:00.000+01:00,146,anyVehicle,45.36,carOrLightVehicle,6.0,148.0,Doppelschleife,"NordrÃÂ¶hre Einfahrt Rampe LeopoldstraÃÅ¸e, Block 90 (MQ 6)",48.177692,11.583436
+4041011,97,2023-12-05T18:00:00.000+01:00,209,anyVehicle,46.08,carOrLightVehicle,9.0,152.0,Doppelschleife,NordrÃÂ¶hre Hauptfahrbahn + 1 Ausfahrt Knorr-/Belgradstr. Block 48 (MQ 8),48.17818,11.574544
+4041012,98,2023-12-05T18:00:00.000+01:00,286,anyVehicle,51.12,carOrLightVehicle,12.0,153.0,Doppelschleife,NordrÃÂ¶hre Hauptfahrbahn + 1 Ausfahrt Knorr-/Belgradstr. Block 48 (MQ 8),48.178146,11.574544
+4041013,99,2023-12-05T18:00:00.000+01:00,306,anyVehicle,57.6,carOrLightVehicle,11.0,154.0,Doppelschleife,NordrÃÂ¶hre Hauptfahrbahn + 1 Ausfahrt Knorr-/Belgradstr. Block 48 (MQ 8),48.17811,11.574544
+4044011,100,2023-12-05T18:00:00.000+01:00,65,anyVehicle,37.8,carOrLightVehicle,9.0,157.0,Doppelschleife,Riemer Str. Haus Nr. 274 (ca. 20m ÃÂ¶stlich Schatzbogen),48.13976,11.669388
+4044012,101,2023-12-05T18:00:00.000+01:00,76,anyVehicle,36.36,carOrLightVehicle,11.0,158.0,Doppelschleife,Riemer Str. Haus Nr. 274 (ca. 20m ÃÂ¶stlich Schatzbogen),48.13976,11.669388
+4045011,102,2023-12-05T18:00:00.000+01:00,38,anyVehicle,35.28,carOrLightVehicle,4.0,159.0,Doppelschleife,Am Mitterfeld gegenÃÂ¼ber Hs. Nr. 150,48.13975,11.678177
+4046011,103,2023-12-05T18:00:00.000+01:00,58,anyVehicle,45.0,carOrLightVehicle,4.0,160.0,Doppelschleife,Riemer Str / bei SB Mast 76,48.140068,11.677234
+4047011,104,2023-12-05T18:00:00.000+01:00,8,anyVehicle,45.36,carOrLightVehicle,0.0,161.0,Doppelschleife,Paul Henri Spaak Str / bei SB Mast 4,48.13913,11.690129
+4047012,105,2023-12-05T18:00:00.000+01:00,19,anyVehicle,42.12,carOrLightVehicle,1.0,162.0,Doppelschleife,Paul Henri Spaak Str / bei SB Mast 4,48.139194,11.690086
+4048011,106,2023-12-05T18:00:00.000+01:00,72,anyVehicle,38.16,carOrLightVehicle,6.0,163.0,Doppelschleife,Olof Palme Str / bei SB Mast 2,48.138275,11.689418
+4048012,107,2023-12-05T18:00:00.000+01:00,105,anyVehicle,39.6,carOrLightVehicle,10.0,164.0,Doppelschleife,Olof Palme Str / bei SB Mast 2,48.138275,11.689418
+4049011,108,2023-12-05T18:00:00.000+01:00,21,anyVehicle,43.92,carOrLightVehicle,1.0,165.0,Doppelschleife,Am HÃÂ¼llgraben / HÃÂ¶he SB Mast 26,48.138264,11.688123
+4049012,109,2023-12-05T18:00:00.000+01:00,84,anyVehicle,38.16,carOrLightVehicle,9.0,166.0,Doppelschleife,Am HÃÂ¼llgraben / HÃÂ¶he SB Mast 26,48.13833,11.688101
+4050011,110,2023-12-05T18:00:00.000+01:00,51,anyVehicle,41.76,carOrLightVehicle,4.0,167.0,Doppelschleife,Am HÃÂ¼llgraben / bei SB Mast 27,48.138542,11.688272
+4050012,111,2023-12-05T18:00:00.000+01:00,42,anyVehicle,43.2,carOrLightVehicle,3.0,168.0,Doppelschleife,Am HÃÂ¼llgraben / bei SB Mast 27,48.138508,11.688305
+4051011,112,2023-12-05T18:00:00.000+01:00,33,anyVehicle,44.28,carOrLightVehicle,2.0,169.0,Doppelschleife,Paul Henri Spaak Str / bei SB Mast 76,48.138065,11.707974
+4051012,113,2023-12-05T18:00:00.000+01:00,23,anyVehicle,45.72,carOrLightVehicle,1.0,170.0,Doppelschleife,Paul Henri Spaak Str / bei SB Mast 76,48.138065,11.707974
+4054011,114,2023-12-05T18:00:00.000+01:00,21,anyVehicle,51.12,carOrLightVehicle,1.0,171.0,Doppelschleife,Paul Henri Spaak Str / bei SB Mast 66,48.13832,11.705729
+4054012,115,2023-12-05T18:00:00.000+01:00,6,anyVehicle,50.76,carOrLightVehicle,0.0,172.0,Doppelschleife,Paul Henri Spaak Str / bei SB Mast 66,48.138412,11.705771
+4055011,116,2023-12-05T18:00:00.000+01:00,17,anyVehicle,52.56,carOrLightVehicle,1.0,173.0,Doppelschleife,Paul Henri Spaak Str / bei SB Mast 66,48.138527,11.705782
+4055012,117,2023-12-05T18:00:00.000+01:00,6,anyVehicle,56.16,carOrLightVehicle,0.0,174.0,Doppelschleife,Paul Henri Spaak Str / bei SB Mast 66,48.138493,11.70575
+4059011,118,2023-12-05T18:00:00.000+01:00,13,anyVehicle,41.04,carOrLightVehicle,1.0,179.0,Doppelschleife,Ottendichler Str bei SchilderbrÃÂ¼cke,48.13973,11.712385
+4059012,119,2023-12-05T18:00:00.000+01:00,34,anyVehicle,40.68,carOrLightVehicle,3.0,180.0,Doppelschleife,Ottendichler Str bei SchilderbrÃÂ¼cke,48.13973,11.712385
+4059013,120,2023-12-05T18:00:00.000+01:00,36,anyVehicle,36.36,carOrLightVehicle,3.0,181.0,Doppelschleife,Ottendichler Str bei SchilderbrÃÂ¼cke,48.13973,11.712385
+4060011,121,2023-12-05T18:00:00.000+01:00,75,anyVehicle,42.12,carOrLightVehicle,7.0,182.0,Doppelschleife,Olof Palme Str / bei SB Mast 16,48.135986,11.690265
+4060012,122,2023-12-05T18:00:00.000+01:00,72,anyVehicle,46.8,carOrLightVehicle,5.0,183.0,Doppelschleife,Olof Palme Str / bei SB Mast 16,48.135986,11.690265
+4061011,123,2023-12-05T18:00:00.000+01:00,42,anyVehicle,24.84,carOrLightVehicle,7.0,184.0,Doppelschleife,Olof Palme Str / bei SB Mast 19,48.135017,11.690295
+4061012,124,2023-12-05T18:00:00.000+01:00,174,anyVehicle,27.36,carOrLightVehicle,24.0,185.0,Doppelschleife,Olof Palme Str / bei SB Mast 19,48.13502,11.690332
+4063011,125,2023-12-05T18:00:00.000+01:00,83,anyVehicle,37.44,carOrLightVehicle,7.0,188.0,Doppelschleife,Willy Brandt Allee / bei SB Mast 8,48.133415,11.692522
+4063012,126,2023-12-05T18:00:00.000+01:00,69,anyVehicle,36.0,carOrLightVehicle,7.0,189.0,Doppelschleife,Willy Brandt Allee / bei SB Mast 8,48.133457,11.692511
+4066011,127,2023-12-05T18:00:00.000+01:00,24,anyVehicle,43.92,carOrLightVehicle,2.0,190.0,Doppelschleife,Willy Brandt Allee / bei SB Mast 35,48.133636,11.702661
+4066012,128,2023-12-05T18:00:00.000+01:00,48,anyVehicle,47.16,carOrLightVehicle,3.0,191.0,Doppelschleife,Willy Brandt Allee / bei SB Mast 35,48.133602,11.702692
+4070011,129,2023-12-05T18:00:00.000+01:00,38,anyVehicle,50.4,carOrLightVehicle,3.0,192.0,Doppelschleife,De Gasperi Bogen bei Mast 37,48.134617,11.714044
+4070012,130,2023-12-05T18:00:00.000+01:00,47,anyVehicle,52.92,carOrLightVehicle,3.0,193.0,Doppelschleife,De Gasperi Bogen bei Mast 37,48.134674,11.714001
+4071011,131,2023-12-05T18:00:00.000+01:00,79,anyVehicle,52.92,carOrLightVehicle,5.0,194.0,Doppelschleife,De Gasperi Bogen bei Mast 52,48.136925,11.71517
+4071012,132,2023-12-05T18:00:00.000+01:00,29,anyVehicle,54.72,carOrLightVehicle,1.0,195.0,Doppelschleife,De Gasperi Bogen bei Mast 52,48.13691,11.715149
+4072011,133,2023-12-05T18:00:00.000+01:00,87,anyVehicle,42.84,carOrLightVehicle,7.0,196.0,Doppelschleife,An der Point Richtung Stadtgrenze,48.1421,11.685859
+4072012,134,2023-12-05T18:00:00.000+01:00,124,anyVehicle,42.12,carOrLightVehicle,10.0,197.0,Doppelschleife,An der Point Richtung Stadtgrenze,48.142128,11.685913
+4073011,135,2023-12-05T18:00:00.000+01:00,2,anyVehicle,29.88,carOrLightVehicle,0.0,198.0,Doppelschleife,Riemer Str / bei SB Mast ?,48.141434,11.687608
+4073012,136,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,199.0,Doppelschleife,Riemer Str / bei SB Mast ?,48.141464,11.687575
+4075011,137,2023-12-05T18:00:00.000+01:00,59,anyVehicle,33.84,carOrLightVehicle,6.0,202.0,Doppelschleife,Riemer Str. / stadteinwÃÂ¤rts bei SB Mast 98,48.14113,11.686138
+4077011,138,2023-12-05T18:00:00.000+01:00,23,anyVehicle,51.12,carOrLightVehicle,2.0,203.0,Doppelschleife,Paul Henri Spaak Str / bei SB Mast 11,48.139988,11.691599
+4077012,139,2023-12-05T18:00:00.000+01:00,22,anyVehicle,41.04,carOrLightVehicle,1.0,204.0,Doppelschleife,Paul Henri Spaak Str / bei SB Mast 11,48.13992,11.691611
+4081011,140,2023-12-05T18:00:00.000+01:00,19,anyVehicle,51.48,carOrLightVehicle,1.0,205.0,Doppelschleife,Paul Henri Spaak Str / bei SB Mast 23,48.140556,11.694712
+4081012,141,2023-12-05T18:00:00.000+01:00,9,anyVehicle,57.6,carOrLightVehicle,0.0,206.0,Doppelschleife,Paul Henri Spaak Str / bei SB Mast 23,48.140556,11.694712
+4083011,142,2023-12-05T18:00:00.000+01:00,86,anyVehicle,32.04,carOrLightVehicle,9.0,209.0,Doppelschleife,HollerithstraÃÅ¸e / HÃÂ¶he SB Mast 2,48.134907,11.671059
+4087011,143,2023-12-05T18:00:00.000+01:00,27,anyVehicle,47.88,carOrLightVehicle,1.0,210.0,Doppelschleife,Am HÃÂ¼llgraben / An der Mauer vor Kurve,48.13729,11.67337
+4087012,144,2023-12-05T18:00:00.000+01:00,32,anyVehicle,47.16,carOrLightVehicle,2.0,211.0,Doppelschleife,Am HÃÂ¼llgraben / An der Mauer vor Kurve,48.137245,11.67337
+4088011,145,2023-12-05T18:00:00.000+01:00,39,anyVehicle,37.08,carOrLightVehicle,3.0,212.0,Doppelschleife,Am HÃÂ¼llgraben in der Kurve Richtg. Messe,48.137157,11.672629
+4089011,146,2023-12-05T18:00:00.000+01:00,75,anyVehicle,39.96,carOrLightVehicle,7.0,213.0,Doppelschleife,Riemer Str. nach Ausfahrt BAB Am Moosfeld,48.13869,11.673439
+4091011,147,2023-12-05T18:00:00.000+01:00,93,anyVehicle,40.32,carOrLightVehicle,7.0,214.0,Doppelschleife,Riemer Str. / HS Nr. 303,48.139698,11.672515
+4093011,148,2023-12-05T18:00:00.000+01:00,68,anyVehicle,45.72,carOrLightVehicle,5.0,215.0,Doppelschleife,Am HÃÂ¼llgraben / HÃÂ¶he SB Mast 19,48.137836,11.686181
+4097011,149,2023-12-05T18:00:00.000+01:00,152,anyVehicle,57.24,carOrLightVehicle,5.0,218.0,Doppelschleife,BrudermÃÂ¼hltunnel Richtung W - O   Block 58,48.11217,11.548109
+4097012,150,2023-12-05T18:00:00.000+01:00,284,anyVehicle,53.64,carOrLightVehicle,11.0,219.0,Doppelschleife,BrudermÃÂ¼hltunnel Richtung W - O   Block 58,48.112152,11.548109
+4097013,151,2023-12-05T18:00:00.000+01:00,282,anyVehicle,56.16,carOrLightVehicle,9.0,220.0,Doppelschleife,BrudermÃÂ¼hltunnel Richtung W - O   Block 58,48.112133,11.548111
+4097021,152,2023-12-05T18:00:00.000+01:00,166,anyVehicle,47.88,carOrLightVehicle,7.0,221.0,Doppelschleife,BrudermÃÂ¼hltunnel Richtung O - W Block 55,48.112034,11.548114
+4097022,153,2023-12-05T18:00:00.000+01:00,263,anyVehicle,35.64,carOrLightVehicle,22.0,222.0,Doppelschleife,BrudermÃÂ¼hltunnel Richtung O - W Block 55,48.112064,11.548109
+4097023,154,2023-12-05T18:00:00.000+01:00,248,anyVehicle,38.52,carOrLightVehicle,20.0,223.0,Doppelschleife,BrudermÃÂ¼hltunnel Richtung O - W Block 55,48.112095,11.548106
+4099011,155,2023-12-05T18:00:00.000+01:00,77,anyVehicle,35.64,carOrLightVehicle,7.0,224.0,Doppelschleife,Prinzregenten - Oettingenstr. W - O 20m ÃÂ¶stlich der ÃÂ¶stlichen RSk Oettingenstr.,48.142212,11.592404
+4099012,156,2023-12-05T18:00:00.000+01:00,144,anyVehicle,32.76,carOrLightVehicle,14.0,225.0,Doppelschleife,Prinzregenten - Oettingenstr. W - O 20m ÃÂ¶stlich der ÃÂ¶stlichen RSk Oettingenstr.,48.142235,11.592414
+4099013,157,2023-12-05T18:00:00.000+01:00,125,anyVehicle,32.76,carOrLightVehicle,12.0,226.0,Doppelschleife,Prinzregenten - Oettingenstr. W - O 20m ÃÂ¶stlich der ÃÂ¶stlichen RSk Oettingenstr.,48.14226,11.592422
+4100011,158,2023-12-05T18:00:00.000+01:00,200,anyVehicle,51.12,carOrLightVehicle,8.0,227.0,Doppelschleife,Innsbrucker Ring Richtung S - N Block 7,48.129597,11.615408
+4100012,159,2023-12-05T18:00:00.000+01:00,146,anyVehicle,56.16,carOrLightVehicle,5.0,228.0,Doppelschleife,Innsbrucker Ring Richtung S - N Block 7,48.129597,11.615368
+4100021,160,2023-12-05T18:00:00.000+01:00,199,anyVehicle,53.64,carOrLightVehicle,8.0,229.0,Doppelschleife,Innsbrucker Ring Richtung N - S Block 7,48.129597,11.615207
+4100022,161,2023-12-05T18:00:00.000+01:00,202,anyVehicle,57.6,carOrLightVehicle,7.0,230.0,Doppelschleife,Innsbrucker Ring Richtung N - S Block 7,48.129597,11.615274
+4100031,162,2023-12-05T18:00:00.000+01:00,95,anyVehicle,56.52,carOrLightVehicle,3.0,231.0,Doppelschleife,Innsbrucker Ring N - S Ausfahrt,48.12965,11.615019
+4100032,163,2023-12-05T18:00:00.000+01:00,32,anyVehicle,57.24,carOrLightVehicle,1.0,232.0,Doppelschleife,Innsbrucker Ring N - S Ausfahrt,48.129642,11.615059
+4101011,164,2023-12-05T18:00:00.000+01:00,171,anyVehicle,50.76,carOrLightVehicle,7.0,233.0,Doppelschleife,Richard-Strauss-Tunnel S - N Block 1,48.136684,11.61506
+4101012,165,2023-12-05T18:00:00.000+01:00,149,anyVehicle,54.0,carOrLightVehicle,5.0,234.0,Doppelschleife,Richard-Strauss-Tunnel S - N Block 1,48.136684,11.61502
+4102011,166,2023-12-05T18:00:00.000+01:00,44,anyVehicle,56.16,carOrLightVehicle,1.0,235.0,Doppelschleife,Richard-Strauss-Tunnel S - N Block 65,48.142857,11.615551
+4102012,167,2023-12-05T18:00:00.000+01:00,265,anyVehicle,54.0,carOrLightVehicle,10.0,236.0,Doppelschleife,Richard-Strauss-Tunnel S - N Block 65,48.142857,11.615551
+4102013,168,2023-12-05T18:00:00.000+01:00,205,anyVehicle,57.6,carOrLightVehicle,7.0,237.0,Doppelschleife,Richard-Strauss-Tunnel S - N Block 65,48.142857,11.615551
+4102021,169,2023-12-05T18:00:00.000+01:00,341,anyVehicle,43.56,carOrLightVehicle,17.0,238.0,Doppelschleife,Richard-Strauss-Tunnel N - S Block 65,48.142845,11.615323
+4102022,170,2023-12-05T18:00:00.000+01:00,312,anyVehicle,47.88,carOrLightVehicle,14.0,239.0,Doppelschleife,Richard-Strauss-Tunnel N - S Block 65,48.142845,11.615323
+4103011,171,2023-12-05T18:00:00.000+01:00,37,anyVehicle,47.52,carOrLightVehicle,1.0,240.0,Doppelschleife,"Richard-Strauss-Tunnel, N - S Block 123",48.150932,11.615827
+4103012,172,2023-12-05T18:00:00.000+01:00,305,anyVehicle,47.16,carOrLightVehicle,14.0,241.0,Doppelschleife,"Richard-Strauss-Tunnel, N - S Block 123",48.150932,11.615856
+4103013,173,2023-12-05T18:00:00.000+01:00,297,anyVehicle,51.12,carOrLightVehicle,12.0,242.0,Doppelschleife,"Richard-Strauss-Tunnel, N - S Block 123",48.150936,11.61588
+4104011,174,2023-12-05T18:00:00.000+01:00,179,anyVehicle,54.0,carOrLightVehicle,6.0,243.0,Doppelschleife,Effner Tunnel S - N Block 1,48.152378,11.614755
+4104012,175,2023-12-05T18:00:00.000+01:00,225,anyVehicle,57.6,carOrLightVehicle,7.0,244.0,Doppelschleife,Effner Tunnel S - N Block 1,48.15236,11.614728
+4105011,176,2023-12-05T18:00:00.000+01:00,204,anyVehicle,52.2,carOrLightVehicle,7.0,245.0,Doppelschleife,Effner Tunnel N - S Block 9,48.152805,11.613877
+4105012,177,2023-12-05T18:00:00.000+01:00,308,anyVehicle,55.8,carOrLightVehicle,10.0,246.0,Doppelschleife,Effner Tunnel N - S Block 9,48.152813,11.613918
+4106011,178,2023-12-05T18:00:00.000+01:00,176,anyVehicle,45.0,carOrLightVehicle,8.0,247.0,Doppelschleife,"Richard-Strauss-Tunnel, Seitenarm BAB A94, O - W, Block S09",48.137325,11.618105
+4106021,179,2023-12-05T18:00:00.000+01:00,189,anyVehicle,46.08,carOrLightVehicle,9.0,248.0,Doppelschleife,"Richard-Strauss-Tunnel, Seitenarm, W - O,   Block S09",48.137074,11.618067
+4107011,180,2023-12-05T18:00:00.000+01:00,145,anyVehicle,53.64,carOrLightVehicle,6.0,249.0,Doppelschleife,Dachauer Str. B 304   Dachauerstr. einwÃÂ¤rts.20m v.BrÃÂ¼cke,48.199066,11.494017
+4107012,181,2023-12-05T18:00:00.000+01:00,116,anyVehicle,57.6,carOrLightVehicle,4.0,250.0,Doppelschleife,Dachauer Str. B 304   Dachauerstr. einwÃÂ¤rts.20m v.BrÃÂ¼cke,48.199047,11.493968
+4108011,184,2023-12-05T18:00:00.000+01:00,34,anyVehicle,41.76,carOrLightVehicle,2.0,253.0,Doppelschleife,"Freisinger Landstr., nÃÂ¶rdl. der Heidemannstr.",48.195847,11.624235
+4108012,185,2023-12-05T18:00:00.000+01:00,53,anyVehicle,44.64,carOrLightVehicle,3.0,254.0,Doppelschleife,"Freisinger Landstr., nÃÂ¶rdl. der Heidemannstr.",48.195827,11.624289
+4108021,186,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,255.0,Doppelschleife,"Freisinger Landstr., nÃÂ¶rdl. der Heidemannstr.",48.196255,11.6247425
+4108022,187,2023-12-05T18:00:00.000+01:00,59,anyVehicle,39.6,carOrLightVehicle,5.0,256.0,Doppelschleife,"Freisinger Landstr., nÃÂ¶rdl. der Heidemannstr.",48.196262,11.624704
+4110011,188,2023-12-05T18:00:00.000+01:00,79,anyVehicle,45.36,carOrLightVehicle,6.0,261.0,Doppelschleife,"Landsberger Str., westl. Lohensteinstr. (stadteinwÃÂ¤rts)",48.14508,11.480659
+4110012,189,2023-12-05T18:00:00.000+01:00,123,anyVehicle,45.36,carOrLightVehicle,9.0,262.0,Doppelschleife,"Landsberger Str., westl. Lohensteinstr. (stadteinwÃÂ¤rts)",48.145107,11.4806595
+4110021,190,2023-12-05T18:00:00.000+01:00,115,anyVehicle,34.92,carOrLightVehicle,12.0,263.0,Doppelschleife,"Landsberger Str., westl. Lohensteinstr. (stadtauswÃÂ¤rts)",48.145172,11.480662
+4110022,191,2023-12-05T18:00:00.000+01:00,138,anyVehicle,35.64,carOrLightVehicle,16.0,264.0,Doppelschleife,"Landsberger Str., westl. Lohensteinstr. (stadtauswÃÂ¤rts)",48.145138,11.4806595
+4111011,192,2023-12-05T18:00:00.000+01:00,130,anyVehicle,29.52,carOrLightVehicle,26.0,265.0,Doppelschleife,"Lerchenauer Str. , S-N,  85m v. Wilhelmine-Reichard-Str.",48.190823,11.549463
+4111012,193,2023-12-05T18:00:00.000+01:00,34,anyVehicle,33.48,carOrLightVehicle,3.0,266.0,Doppelschleife,"Lerchenauer Str. , S-N,  85m v. Wilhelmine-Reichard-Str.",48.19081,11.54941
+4111013,194,2023-12-05T18:00:00.000+01:00,52,anyVehicle,44.64,carOrLightVehicle,3.0,267.0,Doppelschleife,"Lerchenauer Str. , N-S,  85m v. Wilhelmine-Reichard-Str.",48.19079,11.549313
+4111014,195,2023-12-05T18:00:00.000+01:00,46,anyVehicle,47.52,carOrLightVehicle,3.0,268.0,Doppelschleife,"Lerchenauer Str. , N-S,  85m v. Wilhelmine-Reichard-Str.",48.190792,11.549351
+4112011,196,2023-12-05T18:00:00.000+01:00,43,anyVehicle,32.76,carOrLightVehicle,5.0,269.0,Doppelschleife,"Lerchenauer Str, nÃÂ¶rdl. der Lerchenstr. auswÃÂ¤rts",48.201103,11.542554
+4112012,197,2023-12-05T18:00:00.000+01:00,69,anyVehicle,37.44,carOrLightVehicle,7.0,270.0,Doppelschleife,"Lerchenauer Str, nÃÂ¶rdl. der Lerchenstr. einwÃÂ¤rts",48.201077,11.542524
+4115011,198,2023-12-05T18:00:00.000+01:00,19,anyVehicle,36.72,carOrLightVehicle,2.0,279.0,Doppelschleife,"Ungererstr., zwischen Gundelinden und Stengelstr.",48.16963,11.593642
+4115012,199,2023-12-05T18:00:00.000+01:00,84,anyVehicle,43.92,carOrLightVehicle,6.0,280.0,Doppelschleife,"Ungererstr., zwischen Gundelinden und Stengelstr.",48.16964,11.593607
+4118011,200,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,100.0,287.0,Doppelschleife,Von Kahr Str. - Willi Wien Str.   Von Kahr Str.  einwÃÂ¤rts,48.177387,11.468605
+4118012,201,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,100.0,288.0,Doppelschleife,Von Kahr Str. - Willi Wien Str.   Von Kahr Str.  einwÃÂ¤rts,48.17742,11.468605
+4118013,202,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,100.0,289.0,Doppelschleife,"Von Kahr Str. auswÃÂ¤rts, HÃÂ¶he: Willi Wien Str., Im Abfluss zur LZA  848.",48.177536,11.467776
+4118014,203,2023-12-05T18:00:00.000+01:00,34,anyVehicle,32.04,carOrLightVehicle,3.0,290.0,Doppelschleife,"Von Kahr Str. auswÃÂ¤rts, HÃÂ¶he: Willi Wien Str., Im Abfluss zur LZA  848.",48.177505,11.467772
+4119011,204,2023-12-05T18:00:00.000+01:00,39,anyVehicle,0.0,carOrLightVehicle,4.0,291.0,Einfachschleife,"Leopoldstr., zw. Giselastr. und Martiusstr. FR Nord",48.15641,11.584125
+4119012,205,2023-12-05T18:00:00.000+01:00,75,anyVehicle,0.0,carOrLightVehicle,14.0,292.0,Einfachschleife,"Leopoldstr., zw. Giselastr. und Martiusstr. FR Nord",48.156414,11.584085
+4119013,206,2023-12-05T18:00:00.000+01:00,33,anyVehicle,0.0,carOrLightVehicle,5.0,293.0,Einfachschleife,"Leopoldstr., zw. Giselastr. und Martiusstr. FR SÃÂ¼d",48.15643,11.583993
+4119014,207,2023-12-05T18:00:00.000+01:00,164,anyVehicle,0.0,carOrLightVehicle,22.0,294.0,Einfachschleife,"Leopoldstr., zw. Giselastr. und Martiusstr. FR SÃÂ¼d",48.156425,11.584023
+4128011,243,2023-12-05T18:00:00.000+01:00,153,anyVehicle,38.16,carOrLightVehicle,8.0,330.0,Doppelschleife,BodenseestraÃÅ¸e B2 stadtauswÃÂ¤rts,48.142487,11.421737
+4128021,244,2023-12-05T18:00:00.000+01:00,161,anyVehicle,37.08,carOrLightVehicle,10.0,331.0,Doppelschleife,BodenseestraÃÅ¸e B2 stadteinwÃÂ¤rts,48.142567,11.421715
+4129011,245,2023-12-05T18:00:00.000+01:00,74,anyVehicle,35.64,carOrLightVehicle,4.0,332.0,Doppelschleife,Wasserburger LandstraÃÅ¸e / B304 bei Haus-Nr: 248a stadtauswÃÂ¤rts,48.111893,11.70677
+4129012,246,2023-12-05T18:00:00.000+01:00,169,anyVehicle,37.08,carOrLightVehicle,9.0,333.0,Doppelschleife,Wasserburger LandstraÃÅ¸e / B304 bei Haus-Nr: 248a stadtauswÃÂ¤rts,48.111958,11.70678
+4129021,247,2023-12-05T18:00:00.000+01:00,72,anyVehicle,40.68,carOrLightVehicle,4.0,334.0,Doppelschleife,Wasserburger LandstraÃÅ¸e / B304 bei Haus-Nr: 248a stadteinwÃÂ¤rts,48.11206,11.706877
+4129022,248,2023-12-05T18:00:00.000+01:00,132,anyVehicle,44.28,carOrLightVehicle,6.0,335.0,Doppelschleife,Wasserburger LandstraÃÅ¸e / B304 bei Haus-Nr: 248a stadteinwÃÂ¤rts,48.112007,11.706844
+4130011,249,2023-12-05T18:00:00.000+01:00,157,anyVehicle,47.16,carOrLightVehicle,7.0,336.0,Doppelschleife,Putzbrunner StraÃÅ¸e / St2079 stadtauswÃÂ¤rts,48.08668,11.672534
+4130021,250,2023-12-05T18:00:00.000+01:00,98,anyVehicle,51.12,carOrLightVehicle,4.0,337.0,Doppelschleife,Putzbrunner StraÃÅ¸e / St2079 stadteinwÃÂ¤rts,48.08675,11.67262
+4131011,251,2023-12-05T18:00:00.000+01:00,189,anyVehicle,54.36,carOrLightVehicle,7.0,338.0,Doppelschleife,StÃÂ¤ndlerstraÃÅ¸e nÃÂ¤he FuÃÅ¸gÃÂ¤ngerbrÃÂ¼cke stadtauswÃÂ¤rts,48.105797,11.640701
+4131012,252,2023-12-05T18:00:00.000+01:00,108,anyVehicle,63.0,carOrLightVehicle,3.0,339.0,Doppelschleife,StÃÂ¤ndlerstraÃÅ¸e nÃÂ¤he FuÃÅ¸gÃÂ¤ngerbrÃÂ¼cke stadtauswÃÂ¤rts,48.105846,11.640701
+4131021,253,2023-12-05T18:00:00.000+01:00,146,anyVehicle,59.76,carOrLightVehicle,5.0,340.0,Doppelschleife,StÃÂ¤ndlerstraÃÅ¸e nÃÂ¤he FuÃÅ¸gÃÂ¤ngerbrÃÂ¼cke stadteinwÃÂ¤rts,48.105934,11.640948
+4131022,254,2023-12-05T18:00:00.000+01:00,51,anyVehicle,64.44,carOrLightVehicle,1.0,341.0,Doppelschleife,StÃÂ¤ndlerstraÃÅ¸e nÃÂ¤he FuÃÅ¸gÃÂ¤ngerbrÃÂ¼cke stadteinwÃÂ¤rts,48.105904,11.640948
+4132011,255,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,342.0,Doppelschleife,Georg-Brauchle-Ring / Olympiaknoten Fahrtrichtung Ost,48.17603,11.543359
+4132012,256,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,343.0,Doppelschleife,Georg-Brauchle-Ring / Olympiaknoten Fahrtrichtung Ost,48.17611,11.543326
+4132013,257,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,344.0,Doppelschleife,Georg-Brauchle-Ring / Olympiaknoten Fahrtrichtung Ost,48.176197,11.543369
+4132014,258,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,345.0,Doppelschleife,Georg-Brauchle-Ring / Olympiaknoten Fahrtrichtung Ost,48.176266,11.543348
+4132021,259,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,346.0,Doppelschleife,Georg-Brauchle-Ring / Olympiaknoten Fahrtrichtung West,48.176662,11.543359
+4132022,260,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,347.0,Doppelschleife,Georg-Brauchle-Ring / Olympiaknoten Fahrtrichtung West,48.176582,11.543283
+4132023,261,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,348.0,Doppelschleife,Georg-Brauchle-Ring / Olympiaknoten Fahrtrichtung West,48.176517,11.543283
+4132024,262,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,349.0,Doppelschleife,Georg-Brauchle-Ring / Olympiaknoten Fahrtrichtung West,48.176376,11.543359
+4132025,263,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,350.0,Doppelschleife,Georg-Brauchle-Ring / Olympiaknoten Fahrtrichtung West,48.176323,11.543359
+4133011,264,2023-12-05T18:00:00.000+01:00,107,anyVehicle,38.88,carOrLightVehicle,6.0,351.0,Doppelschleife,LuitpoldbrÃÂ¼cke stadtauswÃÂ¤rts Richtung Europaplatz,48.141064,11.595683
+4133012,265,2023-12-05T18:00:00.000+01:00,135,anyVehicle,38.52,carOrLightVehicle,7.0,352.0,Doppelschleife,LuitpoldbrÃÂ¼cke stadtauswÃÂ¤rts Richtung Europaplatz,48.14105,11.595791
+4133021,266,2023-12-05T18:00:00.000+01:00,87,anyVehicle,36.0,carOrLightVehicle,5.0,353.0,Doppelschleife,LuitpoldbrÃÂ¼cke stadteinwÃÂ¤rts Richtung Altstadtringtunnel,48.142086,11.596145
+4133022,267,2023-12-05T18:00:00.000+01:00,122,anyVehicle,33.12,carOrLightVehicle,7.0,354.0,Doppelschleife,LuitpoldbrÃÂ¼cke stadteinwÃÂ¤rts Richtung Altstadtringtunnel,48.14206,11.596273
+4134011,268,2023-12-05T18:00:00.000+01:00,117,anyVehicle,33.48,carOrLightVehicle,7.0,355.0,Doppelschleife,"Wittelsbacherbruecke, bei Schyrenplatz",48.121822,11.568904
+4134021,269,2023-12-05T18:00:00.000+01:00,13,anyVehicle,38.52,carOrLightVehicle,1.0,356.0,Doppelschleife,"Wittelsbacherbruecke, bei Schyrenplatz",48.121906,11.569065
+4134022,270,2023-12-05T18:00:00.000+01:00,69,anyVehicle,43.56,carOrLightVehicle,3.0,357.0,Doppelschleife,"Wittelsbacherbruecke, bei Schyrenplatz",48.121887,11.569033
+4134023,271,2023-12-05T18:00:00.000+01:00,68,anyVehicle,38.88,carOrLightVehicle,3.0,358.0,Doppelschleife,"Wittelsbacherbruecke, bei Schyrenplatz",48.12188,11.56899
+4135011,272,2023-12-05T18:00:00.000+01:00,308,anyVehicle,21.6,carOrLightVehicle,31.0,359.0,Doppelschleife,FÃÂ¶hringer Ring Fahrtrichtung Ost,48.186176,11.621325
+4135021,274,2023-12-05T18:00:00.000+01:00,297,anyVehicle,55.44,carOrLightVehicle,11.0,360.0,Doppelschleife,FÃÂ¶hringer Ring Fahrtrichtung West BAB A9,48.186275,11.621475
+4136011,276,2023-12-05T18:00:00.000+01:00,80,anyVehicle,39.24,carOrLightVehicle,4.0,361.0,Doppelschleife,Thalkirchner BrÃÂ¼cke,48.100266,11.553884
+4136021,277,2023-12-05T18:00:00.000+01:00,67,anyVehicle,36.72,carOrLightVehicle,3.0,362.0,Doppelschleife,Thalkirchner BrÃÂ¼cke,48.100353,11.553916
+4137011,278,2023-12-05T18:00:00.000+01:00,15,anyVehicle,43.92,carOrLightVehicle,1.0,363.0,Doppelschleife,Dachauer StraÃÅ¸e,48.172825,11.527405
+4137012,279,2023-12-05T18:00:00.000+01:00,68,anyVehicle,44.64,carOrLightVehicle,3.0,364.0,Doppelschleife,Dachauer StraÃÅ¸e,48.172867,11.527437
+4137013,280,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,365.0,Doppelschleife,Dachauer StraÃÅ¸e,48.17292,11.527491
+4137021,281,2023-12-05T18:00:00.000+01:00,58,anyVehicle,48.24,carOrLightVehicle,3.0,366.0,Doppelschleife,Dachauer StraÃÅ¸e,48.173046,11.527619
+4137022,282,2023-12-05T18:00:00.000+01:00,106,anyVehicle,48.96,carOrLightVehicle,5.0,367.0,Doppelschleife,Dachauer StraÃÅ¸e,48.172997,11.527555
+4138011,283,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,368.0,Doppelschleife,FÃÂ¼rstenrieder StraÃÅ¸e,48.103275,11.501055
+4138012,284,2023-12-05T18:00:00.000+01:00,128,anyVehicle,52.2,carOrLightVehicle,5.0,369.0,Doppelschleife,FÃÂ¼rstenrieder StraÃÅ¸e,48.10325,11.5011835
+4138013,285,2023-12-05T18:00:00.000+01:00,128,anyVehicle,50.76,carOrLightVehicle,5.0,370.0,Doppelschleife,FÃÂ¼rstenrieder StraÃÅ¸e,48.10309,11.501291
+4138014,286,2023-12-05T18:00:00.000+01:00,86,anyVehicle,53.64,carOrLightVehicle,3.0,371.0,Doppelschleife,FÃÂ¼rstenrieder StraÃÅ¸e,48.10312,11.501398
+4138021,287,2023-12-05T18:00:00.000+01:00,87,anyVehicle,50.04,carOrLightVehicle,3.0,372.0,Doppelschleife,FÃÂ¼rstenrieder StraÃÅ¸e,48.10365,11.502792
+4138022,288,2023-12-05T18:00:00.000+01:00,3,anyVehicle,48.24,carOrLightVehicle,0.0,373.0,Doppelschleife,FÃÂ¼rstenrieder StraÃÅ¸e,48.10362,11.502686
+4138023,289,2023-12-05T18:00:00.000+01:00,100,anyVehicle,51.48,carOrLightVehicle,4.0,374.0,Doppelschleife,FÃÂ¼rstenrieder StraÃÅ¸e,48.103333,11.5016985
+4138024,290,2023-12-05T18:00:00.000+01:00,46,anyVehicle,55.44,carOrLightVehicle,2.0,375.0,Doppelschleife,FÃÂ¼rstenrieder StraÃÅ¸e,48.103317,11.50157
+4139011,291,2023-12-05T18:00:00.000+01:00,144,anyVehicle,35.28,carOrLightVehicle,9.0,376.0,Doppelschleife,PlinganserstraÃÅ¸e,48.115017,11.539614
+4139021,292,2023-12-05T18:00:00.000+01:00,146,anyVehicle,20.52,carOrLightVehicle,27.0,377.0,Doppelschleife,PlinganserstraÃÅ¸e,48.11496,11.539807
+4139022,293,2023-12-05T18:00:00.000+01:00,26,anyVehicle,29.16,carOrLightVehicle,3.0,378.0,Doppelschleife,PlinganserstraÃÅ¸e,48.114975,11.539732
+4140011,294,2023-12-05T18:00:00.000+01:00,66,anyVehicle,42.84,carOrLightVehicle,3.0,379.0,Doppelschleife,GrÃÂ¼nwalder Str. / (sÃÂ¼dl. Schorerstr.),48.107388,11.572445
+4140012,295,2023-12-05T18:00:00.000+01:00,71,anyVehicle,43.2,carOrLightVehicle,3.0,380.0,Doppelschleife,GrÃÂ¼nwalder Str. / (sÃÂ¼dl. Schorerstr.),48.10736,11.572509
+4140021,296,2023-12-05T18:00:00.000+01:00,75,anyVehicle,37.8,carOrLightVehicle,4.0,381.0,Doppelschleife,GrÃÂ¼nwalder Str. / (sÃÂ¼dl. Schorerstr.),48.107258,11.572713
+4140022,297,2023-12-05T18:00:00.000+01:00,106,anyVehicle,36.72,carOrLightVehicle,5.0,382.0,Doppelschleife,GrÃÂ¼nwalder Str. / (sÃÂ¼dl. Schorerstr.),48.10729,11.572638
+4141011,298,2023-12-05T18:00:00.000+01:00,67,anyVehicle,34.92,carOrLightVehicle,4.0,383.0,Doppelschleife,"Berg-am-Laim-StraÃÅ¸e, JosephsburgstraÃÅ¸e",48.129196,11.625885
+4141012,299,2023-12-05T18:00:00.000+01:00,146,anyVehicle,34.56,carOrLightVehicle,8.0,384.0,Doppelschleife,"Berg-am-Laim-StraÃÅ¸e, JosephsburgstraÃÅ¸e",48.12925,11.625906
+4141021,300,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,100.0,385.0,Doppelschleife,"Berg-am-Laim-StraÃÅ¸e, JosephsburgstraÃÅ¸e",48.129383,11.625959
+4141022,301,2023-12-05T18:00:00.000+01:00,107,anyVehicle,38.88,carOrLightVehicle,5.0,386.0,Doppelschleife,"Berg-am-Laim-StraÃÅ¸e, JosephsburgstraÃÅ¸e",48.129333,11.625928
+4144011,304,2023-12-05T18:00:00.000+01:00,21,anyVehicle,43.92,carOrLightVehicle,1.0,389.0,Doppelschleife,Paul-Heyse-UnterfÃÂ¼hrung,48.140724,11.555825
+4144012,305,2023-12-05T18:00:00.000+01:00,50,anyVehicle,43.56,carOrLightVehicle,2.0,390.0,Doppelschleife,Paul-Heyse-UnterfÃÂ¼hrung,48.14074,11.55589
+4144021,306,2023-12-05T18:00:00.000+01:00,59,anyVehicle,45.36,carOrLightVehicle,3.0,391.0,Doppelschleife,Paul-Heyse-UnterfÃÂ¼hrung,48.14073,11.556093
+4144022,307,2023-12-05T18:00:00.000+01:00,76,anyVehicle,45.36,carOrLightVehicle,3.0,392.0,Doppelschleife,Paul-Heyse-UnterfÃÂ¼hrung,48.140747,11.556019
+4146011,314,2023-12-05T18:00:00.000+01:00,146,anyVehicle,34.56,carOrLightVehicle,9.0,399.0,Doppelschleife,Truderinger StraÃÅ¸e,48.1353,11.633105
+4146021,315,2023-12-05T18:00:00.000+01:00,124,anyVehicle,27.0,carOrLightVehicle,13.0,400.0,Doppelschleife,Truderinger StraÃÅ¸e / UnterfÃÂ¼hrung DB,48.1353,11.633224
+4147011,316,2023-12-05T18:00:00.000+01:00,68,anyVehicle,48.96,carOrLightVehicle,3.0,401.0,Doppelschleife,Fahrtrichtung Ost Candidtunnel,48.112797,11.565857
+4147012,317,2023-12-05T18:00:00.000+01:00,130,anyVehicle,50.76,carOrLightVehicle,5.0,402.0,Doppelschleife,Fahrtrichtung Ost Candidtunnel,48.11284,11.565857
+4147013,318,2023-12-05T18:00:00.000+01:00,335,anyVehicle,41.76,carOrLightVehicle,18.0,403.0,Doppelschleife,Fahrtrichtung Ost Candidtunnel,48.112885,11.56591
+4147014,319,2023-12-05T18:00:00.000+01:00,389,anyVehicle,47.88,carOrLightVehicle,17.0,404.0,Doppelschleife,Fahrtrichtung Ost Candidtunnel,48.112934,11.5659
+4147021,320,2023-12-05T18:00:00.000+01:00,185,anyVehicle,42.84,carOrLightVehicle,9.0,405.0,Doppelschleife,Fahrtrichtung West BrudermÃÂ¼hltunnel,48.113148,11.5645485
+4147022,321,2023-12-05T18:00:00.000+01:00,339,anyVehicle,44.28,carOrLightVehicle,16.0,406.0,Doppelschleife,Fahrtrichtung West BrudermÃÂ¼hltunnel,48.113106,11.564516
+4147023,322,2023-12-05T18:00:00.000+01:00,293,anyVehicle,52.56,carOrLightVehicle,11.0,407.0,Doppelschleife,Fahrtrichtung West BrudermÃÂ¼hltunnel,48.113075,11.564527
+4148011,323,2023-12-05T18:00:00.000+01:00,219,anyVehicle,42.48,carOrLightVehicle,10.0,408.0,Doppelschleife,Leuchtenbergring Tunnel,48.135666,11.615274
+4148021,324,2023-12-05T18:00:00.000+01:00,150,anyVehicle,47.52,carOrLightVehicle,7.0,409.0,Doppelschleife,Leuchtenbergring Tunnel,48.13584,11.615392
+4149011,325,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,410.0,Doppelschleife,Tumblingerstr,48.12271,11.554345
+4149021,326,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,411.0,Doppelschleife,Tumblingerstr,48.122738,11.554495
+4149022,327,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,412.0,Doppelschleife,Tumblingerstr,48.122738,11.554452
+4150011,328,2023-12-05T18:00:00.000+01:00,246,anyVehicle,29.16,carOrLightVehicle,21.0,413.0,Doppelschleife,SchenkendorfstraÃÅ¸e,48.174614,11.594792
+4150012,329,2023-12-05T18:00:00.000+01:00,242,anyVehicle,27.36,carOrLightVehicle,23.0,414.0,Doppelschleife,SchenkendorfstraÃÅ¸e,48.174656,11.594835
+4150021,330,2023-12-05T18:00:00.000+01:00,221,anyVehicle,48.6,carOrLightVehicle,10.0,415.0,Doppelschleife,SchenkendorfstraÃÅ¸e,48.17486,11.595072
+4150022,331,2023-12-05T18:00:00.000+01:00,46,anyVehicle,47.16,carOrLightVehicle,2.0,416.0,Doppelschleife,SchenkendorfstraÃÅ¸e,48.17481,11.594986
+4150023,332,2023-12-05T18:00:00.000+01:00,79,anyVehicle,48.24,carOrLightVehicle,3.0,417.0,Doppelschleife,SchenkendorfstraÃÅ¸e,48.17476,11.594933
+4150024,333,2023-12-05T18:00:00.000+01:00,153,anyVehicle,51.84,carOrLightVehicle,6.0,418.0,Doppelschleife,SchenkendorfstraÃÅ¸e,48.174736,11.5949
+4150025,334,2023-12-05T18:00:00.000+01:00,208,anyVehicle,54.36,carOrLightVehicle,8.0,419.0,Doppelschleife,SchenkendorfstraÃÅ¸e,48.17471,11.594868
+4151011,335,2023-12-05T18:00:00.000+01:00,76,anyVehicle,50.04,carOrLightVehicle,3.0,420.0,Doppelschleife,VerdistraÃÅ¸e,48.163967,11.484136
+4151012,336,2023-12-05T18:00:00.000+01:00,101,anyVehicle,53.64,carOrLightVehicle,4.0,421.0,Doppelschleife,VerdistraÃÅ¸e,48.164017,11.484125
+4151021,337,2023-12-05T18:00:00.000+01:00,96,anyVehicle,48.24,carOrLightVehicle,4.0,422.0,Doppelschleife,VerdistraÃÅ¸e,48.16408,11.484146
+4151022,338,2023-12-05T18:00:00.000+01:00,143,anyVehicle,49.68,carOrLightVehicle,6.0,423.0,Doppelschleife,VerdistraÃÅ¸e,48.164066,11.484125
+4152011,339,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,424.0,Doppelschleife,Von-Kahr-StraÃÅ¸e,48.17744,11.470135
+4152012,340,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,425.0,Doppelschleife,Von-Kahr-StraÃÅ¸e,48.177505,11.470113
+4152021,341,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,426.0,Doppelschleife,Von-Kahr-StraÃÅ¸e,48.177647,11.470091
+4152022,342,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,427.0,Doppelschleife,Von-Kahr-StraÃÅ¸e,48.177597,11.47007
+4153011,343,2023-12-05T18:00:00.000+01:00,54,anyVehicle,31.68,carOrLightVehicle,4.0,428.0,Doppelschleife,Lortzingstr.,48.151894,11.456294
+4153012,344,2023-12-05T18:00:00.000+01:00,80,anyVehicle,33.48,carOrLightVehicle,7.0,429.0,Doppelschleife,Lortzingstr.,48.151886,11.4563265
+4153013,345,2023-12-05T18:00:00.000+01:00,71,anyVehicle,38.16,carOrLightVehicle,4.0,430.0,Doppelschleife,Lortzingstr.,48.15188,11.456369
+4153014,346,2023-12-05T18:00:00.000+01:00,21,anyVehicle,38.16,carOrLightVehicle,1.0,431.0,Doppelschleife,Lortzingstr.,48.151894,11.456444
+4153021,347,2023-12-05T18:00:00.000+01:00,98,anyVehicle,43.92,carOrLightVehicle,5.0,432.0,Doppelschleife,Lortzingstr.,48.151764,11.456627
+4153022,348,2023-12-05T18:00:00.000+01:00,84,anyVehicle,46.8,carOrLightVehicle,4.0,433.0,Doppelschleife,Lortzingstr.,48.151787,11.4565735
+4153023,349,2023-12-05T18:00:00.000+01:00,80,anyVehicle,39.6,carOrLightVehicle,4.0,434.0,Doppelschleife,Lortzingstr.,48.15178,11.456498
+4154011,350,2023-12-05T18:00:00.000+01:00,150,anyVehicle,39.6,carOrLightVehicle,8.0,435.0,Doppelschleife,WÃÂ¼rmtalstr./ St 2343,48.114773,11.469651
+4154021,351,2023-12-05T18:00:00.000+01:00,79,anyVehicle,42.48,carOrLightVehicle,4.0,436.0,Doppelschleife,WÃÂ¼rmtalstr./ St 2343,48.114876,11.469651
+4155011,352,2023-12-05T18:00:00.000+01:00,97,anyVehicle,30.96,carOrLightVehicle,9.0,437.0,Doppelschleife,Neurieder StraÃÅ¸e / JÃÂ¤gerhuber StraÃÅ¸e,48.08878,11.477602
+4155012,353,2023-12-05T18:00:00.000+01:00,89,anyVehicle,27.72,carOrLightVehicle,9.0,438.0,Doppelschleife,Neurieder StraÃÅ¸e / JÃÂ¤gerhuber StraÃÅ¸e,48.088837,11.477602
+4155021,354,2023-12-05T18:00:00.000+01:00,82,anyVehicle,40.68,carOrLightVehicle,4.0,439.0,Doppelschleife,Neurieder StraÃÅ¸e / JÃÂ¤gerhuber StraÃÅ¸e,48.088966,11.477623
+4155022,355,2023-12-05T18:00:00.000+01:00,171,anyVehicle,40.68,carOrLightVehicle,9.0,440.0,Doppelschleife,Neurieder StraÃÅ¸e / JÃÂ¤gerhuber StraÃÅ¸e,48.088924,11.477623
+4157011,358,2023-12-05T18:00:00.000+01:00,49,anyVehicle,46.08,carOrLightVehicle,3.0,443.0,Doppelschleife,"Candidtunnel OberflÃÂ¤che, Candidstr.",48.11066,11.571479
+4157012,359,2023-12-05T18:00:00.000+01:00,68,anyVehicle,50.04,carOrLightVehicle,3.0,444.0,Doppelschleife,"Candidtunnel OberflÃÂ¤che, Candidstr.",48.110706,11.571479
+4157013,360,2023-12-05T18:00:00.000+01:00,78,anyVehicle,85.68,carOrLightVehicle,5.0,445.0,Doppelschleife,"Candidtunnel OberflÃÂ¤che, Candidstr.",48.11074,11.571468
+4157021,361,2023-12-05T18:00:00.000+01:00,47,anyVehicle,44.28,carOrLightVehicle,4.0,446.0,Doppelschleife,"Candidtunnel OberflÃÂ¤che, Candidstr.",48.110847,11.57135
+4157022,362,2023-12-05T18:00:00.000+01:00,85,anyVehicle,43.92,carOrLightVehicle,4.0,447.0,Doppelschleife,"Candidtunnel OberflÃÂ¤che, Candidstr.",48.110813,11.571329
+4157023,363,2023-12-05T18:00:00.000+01:00,30,anyVehicle,43.2,carOrLightVehicle,1.0,448.0,Doppelschleife,"Candidtunnel OberflÃÂ¤che, Candidstr.",48.11077,11.571307
+4158011,364,2023-12-05T18:00:00.000+01:00,81,anyVehicle,27.36,carOrLightVehicle,6.0,449.0,Doppelschleife,Landshuter Allee Tunnel OberflÃÂ¤che,48.15293,11.536771
+4158012,365,2023-12-05T18:00:00.000+01:00,134,anyVehicle,27.0,carOrLightVehicle,14.0,450.0,Doppelschleife,Landshuter Allee Tunnel OberflÃÂ¤che,48.152946,11.536814
+4158021,366,2023-12-05T18:00:00.000+01:00,19,anyVehicle,33.84,carOrLightVehicle,1.0,451.0,Doppelschleife,Landshuter Allee-Tunnel OberflÃÂ¤che,48.15291,11.537275
+4158022,367,2023-12-05T18:00:00.000+01:00,73,anyVehicle,38.16,carOrLightVehicle,4.0,452.0,Doppelschleife,Landshuter Allee-Tunnel OberflÃÂ¤che,48.15291,11.537222
+4158023,368,2023-12-05T18:00:00.000+01:00,106,anyVehicle,32.4,carOrLightVehicle,7.0,453.0,Doppelschleife,Landshuter Allee-Tunnel OberflÃÂ¤che,48.152924,11.5371895
+4158024,369,2023-12-05T18:00:00.000+01:00,31,anyVehicle,34.92,carOrLightVehicle,2.0,454.0,Doppelschleife,Landshuter Allee-Tunnel OberflÃÂ¤che,48.152924,11.537147
+4160011,370,2023-12-05T18:00:00.000+01:00,66,anyVehicle,30.96,carOrLightVehicle,5.0,455.0,Doppelschleife,Richard-Strauss-Tunnel OberflÃÂ¤che,48.141033,11.615124
+4160021,371,2023-12-05T18:00:00.000+01:00,64,anyVehicle,33.12,carOrLightVehicle,4.0,456.0,Doppelschleife,Richard-Strauss-Tunnel OberflÃÂ¤che,48.141014,11.615285
+4161011,372,2023-12-05T18:00:00.000+01:00,7,anyVehicle,36.0,carOrLightVehicle,0.0,457.0,Doppelschleife,Innsbrucker Ring Tunnel / Oberfl.,48.1294,11.6147375
+4161012,373,2023-12-05T18:00:00.000+01:00,28,anyVehicle,40.32,carOrLightVehicle,2.0,458.0,Doppelschleife,Innsbrucker Ring Tunnel / Oberfl.,48.12937,11.614823
+4161013,374,2023-12-05T18:00:00.000+01:00,23,anyVehicle,36.36,carOrLightVehicle,1.0,459.0,Doppelschleife,Innsbrucker Ring Tunnel / Oberfl.,48.129047,11.61522
+4161021,375,2023-12-05T18:00:00.000+01:00,11,anyVehicle,45.72,carOrLightVehicle,1.0,460.0,Doppelschleife,Innsbrucker Ring Tunnel / Oberfl.,48.129097,11.615563
+4161022,376,2023-12-05T18:00:00.000+01:00,9,anyVehicle,39.24,carOrLightVehicle,1.0,461.0,Doppelschleife,Innsbrucker Ring Tunnel / Oberfl.,48.129185,11.614963
+4161023,377,2023-12-05T18:00:00.000+01:00,140,anyVehicle,38.16,carOrLightVehicle,8.0,462.0,Doppelschleife,Innsbrucker Ring Tunnel / Oberfl.,48.129227,11.614899
+4163011,381,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,466.0,Doppelschleife,Auf Seite der ZweibrÃÂ¼ckenstraÃÅ¸e,48.132164,11.58504
+4163012,382,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,467.0,Doppelschleife,Auf Seite der ZweibrÃÂ¼ckenstraÃÅ¸e,48.13223,11.585115
+4163021,383,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,468.0,Doppelschleife,Auf Seite der Rosenheimer StraÃÅ¸e,48.131706,11.587379
+4163022,384,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,469.0,Doppelschleife,Auf Seite der Rosenheimer StraÃÅ¸e,48.131634,11.587347
+4164011,385,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,470.0,0,0,48.143047,11.548615
+4164021,386,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,471.0,0,0,48.14305,11.548756
+4165011,387,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,472.0,Doppelschleife,OhlmÃÂ¼llerstr / Eduard-Schmid-Str.,48.12664,11.577755
+4165021,388,2023-12-05T18:00:00.000+01:00,25,anyVehicle,40.32,carOrLightVehicle,1.0,473.0,Doppelschleife,OhlmÃÂ¼llerstr / Eduard-Schmid-Str.,48.12677,11.577894
+4165022,389,2023-12-05T18:00:00.000+01:00,63,anyVehicle,39.96,carOrLightVehicle,3.0,474.0,Doppelschleife,OhlmÃÂ¼llerstr / Eduard-Schmid-Str.,48.126743,11.577841
+4166011,390,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,475.0,0,0,48.135937,11.595973
+4166012,391,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,476.0,0,0,48.135994,11.5959835
+4166021,392,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,477.0,0,0,48.13618,11.596037
+4166022,393,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,478.0,0,0,48.13613,11.5960045
+4167011,394,2023-12-05T18:00:00.000+01:00,75,anyVehicle,37.8,carOrLightVehicle,4.0,479.0,Doppelschleife,Donnersberger BrÃÂ¼cke / Nord Zufahrt Arnulfstrasse,48.1453,11.53484
+4167012,395,2023-12-05T18:00:00.000+01:00,154,anyVehicle,37.08,carOrLightVehicle,10.0,480.0,Doppelschleife,Donnersberger BrÃÂ¼cke / Nord Zufahrt Arnulfstrasse,48.1453,11.534937
+4167021,396,2023-12-05T18:00:00.000+01:00,1,anyVehicle,10.08,carOrLightVehicle,0.0,481.0,Doppelschleife,Donnersberger BrÃÂ¼cke / SÃÂ¼d Zufahrt Landsberger StraÃÅ¸e,48.14052,11.534743
+4167022,397,2023-12-05T18:00:00.000+01:00,191,anyVehicle,26.64,carOrLightVehicle,16.0,482.0,Doppelschleife,Donnersberger BrÃÂ¼cke / SÃÂ¼d Zufahrt Landsberger StraÃÅ¸e,48.140526,11.5346575
+4168011,398,2023-12-05T18:00:00.000+01:00,148,anyVehicle,33.84,carOrLightVehicle,10.0,483.0,Doppelschleife,Offenbachstr./ DB UnterfÃÂ¼hrung,48.14865,11.466079
+4168021,399,2023-12-05T18:00:00.000+01:00,116,anyVehicle,29.88,carOrLightVehicle,10.0,484.0,Doppelschleife,Offenbachstr./ DB UnterfÃÂ¼hrung,48.148636,11.466197
+4169011,400,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,485.0,0,Laimer UnterfÃÂ¼hrung / Wotanstr,48.14553,11.503201
+4169021,401,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,486.0,0,Laimer UnterfÃÂ¼hrung / Wotanstr,48.14553,11.503329
+4170011,402,2023-12-05T18:00:00.000+01:00,33,anyVehicle,36.36,carOrLightVehicle,2.0,487.0,Doppelschleife,Leinthaler BrÃÂ¼cke,48.185432,11.624329
+4170021,403,2023-12-05T18:00:00.000+01:00,39,anyVehicle,33.12,carOrLightVehicle,2.0,488.0,Doppelschleife,Leinthaler BrÃÂ¼cke,48.18559,11.624414
+4171011,404,2023-12-05T18:00:00.000+01:00,60,anyVehicle,28.44,carOrLightVehicle,5.0,489.0,Doppelschleife,Max-Joseph-BrÃÂ¼cke,48.149387,11.597882
+4171012,405,2023-12-05T18:00:00.000+01:00,39,anyVehicle,0.0,carOrLightVehicle,4.0,490.0,Doppelschleife,Max-Joseph-BrÃÂ¼cke,48.149437,11.597915
+4171021,406,2023-12-05T18:00:00.000+01:00,49,anyVehicle,32.04,carOrLightVehicle,4.0,491.0,Einfachschleife,Max-Joseph-BrÃÂ¼cke,48.149075,11.59902
+4171022,407,2023-12-05T18:00:00.000+01:00,69,anyVehicle,0.0,carOrLightVehicle,6.0,492.0,Einfachschleife,Max-Joseph-BrÃÂ¼cke,48.149044,11.598988
+4172011,408,2023-12-05T18:00:00.000+01:00,146,anyVehicle,36.0,carOrLightVehicle,9.0,493.0,Doppelschleife,Friedenheimer BrÃÂ¼cke,48.1426,11.51909
+4172021,409,2023-12-05T18:00:00.000+01:00,151,anyVehicle,32.4,carOrLightVehicle,11.0,494.0,Doppelschleife,Friedenheimer BrÃÂ¼cke,48.142582,11.519208
+4173011,410,2023-12-05T18:00:00.000+01:00,75,anyVehicle,37.08,carOrLightVehicle,4.0,495.0,Doppelschleife,IngolstÃÂ¤dter Str./ B 13,48.211575,11.587122
+4173012,411,2023-12-05T18:00:00.000+01:00,70,anyVehicle,36.0,carOrLightVehicle,7.0,496.0,Doppelschleife,IngolstÃÂ¤dter Str./ B 13,48.211575,11.587196
+4173013,412,2023-12-05T18:00:00.000+01:00,51,anyVehicle,37.8,carOrLightVehicle,3.0,497.0,Doppelschleife,IngolstÃÂ¤dter Str./ B 13,48.211582,11.587272
+4173021,413,2023-12-05T18:00:00.000+01:00,77,anyVehicle,50.76,carOrLightVehicle,4.0,498.0,Doppelschleife,IngolstÃÂ¤dter Str./ B 13,48.211555,11.58754
+4173022,414,2023-12-05T18:00:00.000+01:00,109,anyVehicle,52.92,carOrLightVehicle,4.0,499.0,Doppelschleife,IngolstÃÂ¤dter Str./ B 13,48.21157,11.587476
+4173023,415,2023-12-05T18:00:00.000+01:00,83,anyVehicle,52.56,carOrLightVehicle,3.0,500.0,Doppelschleife,IngolstÃÂ¤dter Str./ B 13,48.211582,11.5874
+4177011,429,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,0,0.0,514.0,Einfachschleife,0,48.14208,11.555085
+4177021,430,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,0,0.0,515.0,Einfachschleife,0,48.142136,11.555118
+4180011,431,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,0,0.0,520.0,Einfachschleife,0,48.168835,11.549999
+4180021,432,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,0,0.0,521.0,Einfachschleife,0,48.168877,11.550129
+4181011,433,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,0,0.0,522.0,Einfachschleife,0,48.14566,11.517792
+4181021,434,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,0,0.0,523.0,Einfachschleife,0,48.14576,11.517813
+4182011,435,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,0,0.0,524.0,Einfachschleife,0,48.120224,11.536513
+4182021,436,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,0,0.0,525.0,Einfachschleife,0,48.12033,11.536524
+4183011,437,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,0,0.0,526.0,Doppelschleife,0,48.131878,11.584375
+4183021,438,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,0,0.0,527.0,Doppelschleife,0,48.131847,11.584439
+10011001,554,2023-12-05T18:00:00.000+01:00,45,anyVehicle,0.0,carOrLightVehicle,10.0,659.0,LZA-Detektor,Franz-Joseph-/ Leopoldstr.,48.156815,11.584323
+10011002,555,2023-12-05T18:00:00.000+01:00,86,anyVehicle,0.0,carOrLightVehicle,23.0,660.0,LZA-Detektor,Franz-Joseph-/ Leopoldstr.,48.156822,11.584285
+10011003,556,2023-12-05T18:00:00.000+01:00,10,anyVehicle,0.0,carOrLightVehicle,4.0,661.0,LZA-Detektor,Franz-Joseph-/ Leopoldstr.,48.15729,11.583937
+10011004,557,2023-12-05T18:00:00.000+01:00,28,anyVehicle,0.0,carOrLightVehicle,3.0,662.0,LZA-Detektor,Franz-Joseph-/ Leopoldstr.,48.15735,11.583896
+10011005,558,2023-12-05T18:00:00.000+01:00,34,anyVehicle,0.0,carOrLightVehicle,42.0,663.0,LZA-Detektor,Franz-Joseph-/ Leopoldstr.,48.15741,11.583747
+10011006,559,2023-12-05T18:00:00.000+01:00,30,anyVehicle,0.0,carOrLightVehicle,76.0,664.0,LZA-Detektor,Franz-Joseph-/ Leopoldstr.,48.157326,11.584136
+10011007,560,2023-12-05T18:00:00.000+01:00,60,anyVehicle,0.0,carOrLightVehicle,24.0,665.0,LZA-Detektor,Franz-Joseph-/ Leopoldstr.,48.15768,11.584571
+10011008,561,2023-12-05T18:00:00.000+01:00,120,anyVehicle,0.0,carOrLightVehicle,25.0,666.0,LZA-Detektor,Franz-Joseph-/ Leopoldstr.,48.157673,11.584607
+10011009,562,2023-12-05T18:00:00.000+01:00,21,anyVehicle,0.0,carOrLightVehicle,27.0,667.0,LZA-Detektor,Franz-Joseph-/ Leopoldstr.,48.157536,11.584586
+10011010,563,2023-12-05T18:00:00.000+01:00,21,anyVehicle,0.0,carOrLightVehicle,56.0,668.0,LZA-Detektor,Franz-Joseph-/ Leopoldstr.,48.157425,11.584536
+10011011,564,2023-12-05T18:00:00.000+01:00,28,anyVehicle,0.0,carOrLightVehicle,31.0,669.0,LZA-Detektor,Franz-Joseph-/ Leopoldstr.,48.157185,11.584884
+10020001,651,2023-12-05T18:00:00.000+01:00,69,anyVehicle,0.0,carOrLightVehicle,10.0,760.0,LZA-Detektor,Landwehr-/ Paul-Heyse-Str.,48.136677,11.555808
+10020002,652,2023-12-05T18:00:00.000+01:00,125,anyVehicle,0.0,carOrLightVehicle,11.0,761.0,LZA-Detektor,Landwehr-/ Paul-Heyse-Str.,48.136765,11.555852
+10020003,653,2023-12-05T18:00:00.000+01:00,7,anyVehicle,0.0,carOrLightVehicle,0.0,762.0,LZA-Detektor,Landwehr-/ Paul-Heyse-Str.,48.136395,11.55632
+10020004,654,2023-12-05T18:00:00.000+01:00,36,anyVehicle,0.0,carOrLightVehicle,29.0,763.0,LZA-Detektor,Landwehr-/ Paul-Heyse-Str.,48.136356,11.556319
+10020005,655,2023-12-05T18:00:00.000+01:00,40,anyVehicle,0.0,carOrLightVehicle,3.0,764.0,LZA-Detektor,Landwehr-/ Paul-Heyse-Str.,48.136,11.555903
+10020006,656,2023-12-05T18:00:00.000+01:00,84,anyVehicle,0.0,carOrLightVehicle,19.0,765.0,LZA-Detektor,Landwehr-/ Paul-Heyse-Str.,48.13618,11.555869
+10039001,829,2023-12-05T18:00:00.000+01:00,24,anyVehicle,0.0,carOrLightVehicle,10.0,952.0,LZA-Detektor,Icho-/ Tegernseer Landstr.,48.115467,11.579954
+10039002,830,2023-12-05T18:00:00.000+01:00,69,anyVehicle,0.0,carOrLightVehicle,34.0,953.0,LZA-Detektor,Icho-/ Tegernseer Landstr.,48.11613,11.580421
+10039003,831,2023-12-05T18:00:00.000+01:00,70,anyVehicle,0.0,carOrLightVehicle,38.0,954.0,LZA-Detektor,Icho-/ Tegernseer Landstr.,48.115574,11.580806
+10039004,832,2023-12-05T18:00:00.000+01:00,32,anyVehicle,0.0,carOrLightVehicle,8.0,955.0,LZA-Detektor,Icho-/ Tegernseer Landstr.,48.115547,11.580796
+10062007,1029,2023-12-05T18:00:00.000+01:00,19,anyVehicle,0.0,carOrLightVehicle,2.0,1165.0,LZA-Detektor,Freisinger Land-/ Situlistr.,48.19015,11.615714
+10062008,1030,2023-12-05T18:00:00.000+01:00,81,anyVehicle,0.0,carOrLightVehicle,11.0,1166.0,LZA-Detektor,Freisinger Land-/ Situlistr.,48.19017,11.615693
+10062009,1031,2023-12-05T18:00:00.000+01:00,65,anyVehicle,0.0,carOrLightVehicle,29.0,1167.0,LZA-Detektor,Freisinger Land-/ Situlistr.,48.190308,11.616004
+10062010,1032,2023-12-05T18:00:00.000+01:00,9,anyVehicle,0.0,carOrLightVehicle,25.0,1168.0,LZA-Detektor,Freisinger Land-/ Situlistr.,48.19055,11.616159
+10062011,1033,2023-12-05T18:00:00.000+01:00,50,anyVehicle,0.0,carOrLightVehicle,4.0,1169.0,LZA-Detektor,Freisinger Land-/ Situlistr.,48.19064,11.617175
+10062012,1034,2023-12-05T18:00:00.000+01:00,91,anyVehicle,0.0,carOrLightVehicle,7.0,1170.0,LZA-Detektor,Freisinger Land-/ Situlistr.,48.190617,11.617187
+10062013,1035,2023-12-05T18:00:00.000+01:00,4,anyVehicle,0.0,carOrLightVehicle,1.0,1171.0,LZA-Detektor,Freisinger Land-/ Situlistr.,48.190285,11.616159
+10070001,1077,2023-12-05T18:00:00.000+01:00,79,anyVehicle,0.0,carOrLightVehicle,17.0,1217.0,LZA-Detektor,Cornelius-/ Erhardtstr.,48.129066,11.578893
+10070002,1078,2023-12-05T18:00:00.000+01:00,86,anyVehicle,0.0,carOrLightVehicle,19.0,1218.0,LZA-Detektor,Cornelius-/ Erhardtstr.,48.129036,11.57876
+10070003,1079,2023-12-05T18:00:00.000+01:00,17,anyVehicle,0.0,carOrLightVehicle,13.0,1219.0,LZA-Detektor,Cornelius-/ Erhardtstr.,48.129513,11.578991
+10070004,1080,2023-12-05T18:00:00.000+01:00,80,anyVehicle,0.0,carOrLightVehicle,18.0,1220.0,LZA-Detektor,Cornelius-/ Erhardtstr.,48.129528,11.57959
+10070005,1081,2023-12-05T18:00:00.000+01:00,107,anyVehicle,0.0,carOrLightVehicle,29.0,1221.0,LZA-Detektor,Cornelius-/ Erhardtstr.,48.129566,11.579732
+10070006,1082,2023-12-05T18:00:00.000+01:00,54,anyVehicle,0.0,carOrLightVehicle,42.0,1222.0,LZA-Detektor,Cornelius-/ Erhardtstr.,48.12947,11.579605
+10070007,1083,2023-12-05T18:00:00.000+01:00,26,anyVehicle,0.0,carOrLightVehicle,12.0,1223.0,LZA-Detektor,Cornelius-/ Erhardtstr.,48.129086,11.57958
+10070008,1084,2023-12-05T18:00:00.000+01:00,35,anyVehicle,0.0,carOrLightVehicle,26.0,1224.0,LZA-Detektor,Cornelius-/ Erhardtstr.,48.129066,11.579546
+10070009,1085,2023-12-05T18:00:00.000+01:00,34,anyVehicle,0.0,carOrLightVehicle,57.0,1225.0,LZA-Detektor,Cornelius-/ Erhardtstr.,48.129158,11.579438
+10075001,1120,2023-12-05T18:00:00.000+01:00,46,anyVehicle,0.0,carOrLightVehicle,12.0,1260.0,LZA-Detektor,Karl-/ Luisenstr.,48.143864,11.5625725
+10075002,1121,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,1261.0,LZA-Detektor,Karl-/ Luisenstr.,48.143955,11.562591
+10075003,1122,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,100.0,1262.0,LZA-Detektor,Karl-/ Luisenstr.,48.144333,11.562166
+10075004,1123,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,1263.0,LZA-Detektor,Karl-/ Luisenstr.,48.144524,11.562909
+10075005,1124,2023-12-05T18:00:00.000+01:00,10,anyVehicle,0.0,carOrLightVehicle,1.0,1264.0,LZA-Detektor,Karl-/ Luisenstr.,48.144432,11.562889
+10075006,1125,2023-12-05T18:00:00.000+01:00,31,anyVehicle,0.0,carOrLightVehicle,4.0,1265.0,LZA-Detektor,Karl-/ Luisenstr.,48.144028,11.563291
+10079001,1193,2023-12-05T18:00:00.000+01:00,84,anyVehicle,0.0,carOrLightVehicle,9.0,1339.0,LZA-Detektor,Ismaninger-/ Prinzregentenstr.,48.140774,11.599577
+10079002,1194,2023-12-05T18:00:00.000+01:00,144,anyVehicle,0.0,carOrLightVehicle,12.0,1340.0,LZA-Detektor,Ismaninger-/ Prinzregentenstr.,48.1408,11.599591
+10079003,1195,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,1341.0,LZA-Detektor,Ismaninger-/ Prinzregentenstr.,48.140858,11.60013
+10079004,1196,2023-12-05T18:00:00.000+01:00,88,anyVehicle,0.0,carOrLightVehicle,65.0,1342.0,LZA-Detektor,Ismaninger-/ Prinzregentenstr.,48.14108,11.600343
+10079005,1197,2023-12-05T18:00:00.000+01:00,54,anyVehicle,0.0,carOrLightVehicle,4.0,1343.0,LZA-Detektor,Ismaninger-/ Prinzregentenstr.,48.14063,11.600696
+10079006,1198,2023-12-05T18:00:00.000+01:00,142,anyVehicle,0.0,carOrLightVehicle,17.0,1344.0,LZA-Detektor,Ismaninger-/ Prinzregentenstr.,48.140606,11.600683
+10079007,1199,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,1345.0,LZA-Detektor,Ismaninger-/ Prinzregentenstr.,48.14055,11.600056
+10079008,1200,2023-12-05T18:00:00.000+01:00,60,anyVehicle,0.0,carOrLightVehicle,24.0,1346.0,LZA-Detektor,Ismaninger-/ Prinzregentenstr.,48.140312,11.599874
+10113005,1509,2023-12-05T18:00:00.000+01:00,39,anyVehicle,0.0,carOrLightVehicle,21.0,1707.0,LZA-Detektor,Tivoli-/ Widenmayerstr.,48.14977,11.597155
+10113006,1510,2023-12-05T18:00:00.000+01:00,11,anyVehicle,0.0,carOrLightVehicle,3.0,1708.0,LZA-Detektor,Tivoli-/ Widenmayerstr.,48.149895,11.59688
+10113009,1513,2023-12-05T18:00:00.000+01:00,20,anyVehicle,0.0,carOrLightVehicle,5.0,1711.0,LZA-Detektor,Tivoli-/ Widenmayerstr.,48.15013,11.59656
+10113010,1514,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,1712.0,LZA-Detektor,Tivoli-/ Widenmayerstr.,48.149868,11.596338
+10113011,1515,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,1713.0,LZA-Detektor,Tivoli-/ Widenmayerstr.,48.14988,11.596313
+10113022,1526,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,1724.0,LZA-Detektor,Tivoli-/ Widenmayerstr.,48.14994,11.596928
+10113023,1527,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,1725.0,LZA-Detektor,Tivoli-/ Widenmayerstr.,48.149834,11.596262
+10113024,1528,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,1726.0,LZA-Detektor,Tivoli-/ Widenmayerstr.,48.15006,11.596616
+10113025,1529,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,1727.0,LZA-Detektor,Tivoli-/ Widenmayerstr.,48.149967,11.596517
+10128001,1675,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,1877.0,LZA-Detektor,Franziskaner-/ Gebsattelstr.,48.124584,11.588597
+10128002,1676,2023-12-05T18:00:00.000+01:00,10,anyVehicle,0.0,carOrLightVehicle,0.0,1878.0,LZA-Detektor,Franziskaner-/ Gebsattelstr.,48.124672,11.588703
+10128003,1677,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,1879.0,LZA-Detektor,Franziskaner-/ Gebsattelstr.,48.124825,11.588986
+10128004,1678,2023-12-05T18:00:00.000+01:00,74,anyVehicle,0.0,carOrLightVehicle,11.0,1880.0,LZA-Detektor,Franziskaner-/ Gebsattelstr.,48.125053,11.588647
+10128005,1679,2023-12-05T18:00:00.000+01:00,30,anyVehicle,0.0,carOrLightVehicle,17.0,1881.0,LZA-Detektor,Franziskaner-/ Gebsattelstr.,48.12505,11.589329
+10128006,1680,2023-12-05T18:00:00.000+01:00,29,anyVehicle,0.0,carOrLightVehicle,4.0,1882.0,LZA-Detektor,Franziskaner-/ Gebsattelstr.,48.125034,11.58937
+10128028,1685,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,1887.0,LZA-Detektor,Franziskaner-/ Gebsattelstr.,48.123997,11.5876665
+10128029,1686,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,1888.0,LZA-Detektor,Franziskaner-/ Gebsattelstr.,48.1249,11.589075
+10129001,1687,2023-12-05T18:00:00.000+01:00,8,anyVehicle,0.0,carOrLightVehicle,23.0,1889.0,LZA-Detektor,Boschetsrieder-/ TÃÂ¶lzer Str.,48.100594,11.538191
+10129002,1688,2023-12-05T18:00:00.000+01:00,7,anyVehicle,0.0,carOrLightVehicle,15.0,1890.0,LZA-Detektor,Boschetsrieder-/ TÃÂ¶lzer Str.,48.1006,11.53823
+10184002,2165,2023-12-05T18:00:00.000+01:00,54,anyVehicle,0.0,carOrLightVehicle,9.0,2438.0,LZA-Detektor,Hohenzollernplatz / Tengstr.,48.161224,11.568711
+10199001,2234,2023-12-05T18:00:00.000+01:00,59,anyVehicle,0.0,carOrLightVehicle,28.0,2515.0,LZA-Detektor,Thomasiusplatz,48.115417,11.601597
+10199002,2235,2023-12-05T18:00:00.000+01:00,71,anyVehicle,0.0,carOrLightVehicle,13.0,2516.0,LZA-Detektor,Thomasiusplatz,48.11544,11.601576
+10199003,2236,2023-12-05T18:00:00.000+01:00,29,anyVehicle,0.0,carOrLightVehicle,20.0,2517.0,LZA-Detektor,Thomasiusplatz,48.11552,11.601691
+10199004,2237,2023-12-05T18:00:00.000+01:00,31,anyVehicle,0.0,carOrLightVehicle,3.0,2518.0,LZA-Detektor,Thomasiusplatz,48.116196,11.601832
+10199005,2238,2023-12-05T18:00:00.000+01:00,29,anyVehicle,0.0,carOrLightVehicle,3.0,2519.0,LZA-Detektor,Thomasiusplatz,48.116207,11.601871
+10199006,2239,2023-12-05T18:00:00.000+01:00,42,anyVehicle,0.0,carOrLightVehicle,6.0,2520.0,LZA-Detektor,Thomasiusplatz,48.116093,11.602704
+10199007,2240,2023-12-05T18:00:00.000+01:00,70,anyVehicle,0.0,carOrLightVehicle,20.0,2521.0,LZA-Detektor,Thomasiusplatz,48.11607,11.602722
+10199008,2241,2023-12-05T18:00:00.000+01:00,29,anyVehicle,0.0,carOrLightVehicle,27.0,2522.0,LZA-Detektor,Thomasiusplatz,48.115982,11.602565
+10199009,2242,2023-12-05T18:00:00.000+01:00,56,anyVehicle,0.0,carOrLightVehicle,12.0,2523.0,LZA-Detektor,Thomasiusplatz,48.11531,11.60236
+10199010,2243,2023-12-05T18:00:00.000+01:00,36,anyVehicle,0.0,carOrLightVehicle,3.0,2524.0,LZA-Detektor,Thomasiusplatz,48.115307,11.60232
+10199027,2248,2023-12-05T18:00:00.000+01:00,52,anyVehicle,0.0,carOrLightVehicle,8.0,2529.0,LZA-Detektor,Thomasiusplatz,48.115555,11.601581
+10199028,2249,2023-12-05T18:00:00.000+01:00,84,anyVehicle,0.0,carOrLightVehicle,7.0,2530.0,LZA-Detektor,Thomasiusplatz,48.115532,11.601601
+10199029,2250,2023-12-05T18:00:00.000+01:00,28,anyVehicle,0.0,carOrLightVehicle,1.0,2531.0,LZA-Detektor,Thomasiusplatz,48.116226,11.601943
+10199030,2251,2023-12-05T18:00:00.000+01:00,72,anyVehicle,0.0,carOrLightVehicle,5.0,2532.0,LZA-Detektor,Thomasiusplatz,48.116215,11.601909
+10199031,2252,2023-12-05T18:00:00.000+01:00,43,anyVehicle,0.0,carOrLightVehicle,10.0,2533.0,LZA-Detektor,Thomasiusplatz,48.115955,11.602703
+10199032,2253,2023-12-05T18:00:00.000+01:00,52,anyVehicle,0.0,carOrLightVehicle,3.0,2534.0,LZA-Detektor,Thomasiusplatz,48.11598,11.602681
+10199033,2254,2023-12-05T18:00:00.000+01:00,80,anyVehicle,0.0,carOrLightVehicle,5.0,2535.0,LZA-Detektor,Thomasiusplatz,48.11538,11.6022415
+10204001,2281,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,2564.0,LZA-Detektor,Cornelius-/ MÃÂ¼llerstr.,48.133247,11.574645
+10204002,2282,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,2565.0,LZA-Detektor,Cornelius-/ MÃÂ¼llerstr.,48.133247,11.574679
+10204003,2283,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,2566.0,LZA-Detektor,Cornelius-/ MÃÂ¼llerstr.,48.13266,11.574685
+10204004,2284,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,2567.0,LZA-Detektor,Cornelius-/ MÃÂ¼llerstr.,48.132637,11.573915
+10204005,2285,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,2568.0,LZA-Detektor,Cornelius-/ MÃÂ¼llerstr.,48.132633,11.573881
+10204006,2286,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,2569.0,LZA-Detektor,Cornelius-/ MÃÂ¼llerstr.,48.13317,11.57386
+10204007,2287,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,2570.0,LZA-Detektor,Cornelius-/ MÃÂ¼llerstr.,48.13313,11.57399
+10220001,2404,2023-12-05T18:00:00.000+01:00,148,anyVehicle,0.0,carOrLightVehicle,44.0,2690.0,LZA-Detektor,Nymphenburger-/ Pappenheimstr.,48.149677,11.555155
+10220002,2405,2023-12-05T18:00:00.000+01:00,44,anyVehicle,0.0,carOrLightVehicle,56.0,2691.0,LZA-Detektor,Nymphenburger-/ Pappenheimstr.,48.149586,11.5547495
+10236001,2512,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,2809.0,LZA-Detektor,Kazmair-/ Trappentreustr.,48.134995,11.533693
+10236002,2513,2023-12-05T18:00:00.000+01:00,44,anyVehicle,0.0,carOrLightVehicle,1.0,2810.0,LZA-Detektor,Kazmair-/ Trappentreustr.,48.134983,11.534346
+10248001,2614,2023-12-05T18:00:00.000+01:00,67,anyVehicle,0.0,carOrLightVehicle,37.0,2930.0,LZA-Detektor,Landsberger-/ Offenbachstr.,48.146214,11.465762
+10248002,2615,2023-12-05T18:00:00.000+01:00,92,anyVehicle,0.0,carOrLightVehicle,20.0,2931.0,LZA-Detektor,Landsberger-/ Offenbachstr.,48.146145,11.466014
+10248004,2616,2023-12-05T18:00:00.000+01:00,58,anyVehicle,0.0,carOrLightVehicle,87.0,2933.0,LZA-Detektor,Landsberger-/ Offenbachstr.,48.145836,11.465139
+10248005,2617,2023-12-05T18:00:00.000+01:00,78,anyVehicle,0.0,carOrLightVehicle,21.0,2934.0,LZA-Detektor,Landsberger-/ Offenbachstr.,48.14625,11.464525
+10248007,2619,2023-12-05T18:00:00.000+01:00,54,anyVehicle,0.0,carOrLightVehicle,30.0,2936.0,LZA-Detektor,Landsberger-/ Offenbachstr.,48.14656,11.465288
+10248008,2620,2023-12-05T18:00:00.000+01:00,98,anyVehicle,0.0,carOrLightVehicle,32.0,2937.0,LZA-Detektor,Landsberger-/ Offenbachstr.,48.14664,11.465359
+10248009,2621,2023-12-05T18:00:00.000+01:00,67,anyVehicle,0.0,carOrLightVehicle,78.0,2938.0,LZA-Detektor,Landsberger-/ Offenbachstr.,48.146633,11.465402
+10253001,2718,2023-12-05T18:00:00.000+01:00,134,anyVehicle,0.0,carOrLightVehicle,21.0,3035.0,LZA-Detektor,Hechtseestr./ Innsbrucker Ring,48.11485,11.617585
+10253002,2719,2023-12-05T18:00:00.000+01:00,193,anyVehicle,0.0,carOrLightVehicle,25.0,3036.0,LZA-Detektor,Hechtseestr./ Innsbrucker Ring,48.114857,11.61755
+10253003,2720,2023-12-05T18:00:00.000+01:00,138,anyVehicle,0.0,carOrLightVehicle,15.0,3037.0,LZA-Detektor,Hechtseestr./ Innsbrucker Ring,48.114864,11.617513
+10253004,2721,2023-12-05T18:00:00.000+01:00,34,anyVehicle,0.0,carOrLightVehicle,15.0,3038.0,LZA-Detektor,Hechtseestr./ Innsbrucker Ring,48.115475,11.617055
+10253005,2722,2023-12-05T18:00:00.000+01:00,24,anyVehicle,0.0,carOrLightVehicle,6.0,3039.0,LZA-Detektor,Hechtseestr./ Innsbrucker Ring,48.1155,11.617066
+10253006,2723,2023-12-05T18:00:00.000+01:00,164,anyVehicle,0.0,carOrLightVehicle,39.0,3040.0,LZA-Detektor,Hechtseestr./ Innsbrucker Ring,48.11589,11.61786
+10253007,2724,2023-12-05T18:00:00.000+01:00,174,anyVehicle,0.0,carOrLightVehicle,38.0,3041.0,LZA-Detektor,Hechtseestr./ Innsbrucker Ring,48.115883,11.617897
+10253008,2725,2023-12-05T18:00:00.000+01:00,157,anyVehicle,0.0,carOrLightVehicle,27.0,3042.0,LZA-Detektor,Hechtseestr./ Innsbrucker Ring,48.115875,11.617932
+10253009,2726,2023-12-05T18:00:00.000+01:00,17,anyVehicle,0.0,carOrLightVehicle,2.0,3043.0,LZA-Detektor,Hechtseestr./ Innsbrucker Ring,48.115295,11.618167
+10253010,2727,2023-12-05T18:00:00.000+01:00,43,anyVehicle,0.0,carOrLightVehicle,11.0,3044.0,LZA-Detektor,Hechtseestr./ Innsbrucker Ring,48.115273,11.618154
+10275001,2926,2023-12-05T18:00:00.000+01:00,55,anyVehicle,0.0,carOrLightVehicle,4.0,3262.0,LZA-Detektor,Ackermann-/ Schwere-Reiter-Str.,48.161324,11.552418
+10275002,2927,2023-12-05T18:00:00.000+01:00,89,anyVehicle,0.0,carOrLightVehicle,17.0,3263.0,LZA-Detektor,Ackermann-/ Schwere-Reiter-Str.,48.16135,11.552419
+10275003,2928,2023-12-05T18:00:00.000+01:00,42,anyVehicle,0.0,carOrLightVehicle,21.0,3264.0,LZA-Detektor,Ackermann-/ Schwere-Reiter-Str.,48.161377,11.55255
+10275004,2929,2023-12-05T18:00:00.000+01:00,10,anyVehicle,0.0,carOrLightVehicle,5.0,3265.0,LZA-Detektor,Ackermann-/ Schwere-Reiter-Str.,48.161404,11.55255
+10275005,2930,2023-12-05T18:00:00.000+01:00,20,anyVehicle,0.0,carOrLightVehicle,3.0,3266.0,LZA-Detektor,Ackermann-/ Schwere-Reiter-Str.,48.16185,11.552785
+10275006,2931,2023-12-05T18:00:00.000+01:00,48,anyVehicle,0.0,carOrLightVehicle,22.0,3267.0,LZA-Detektor,Ackermann-/ Schwere-Reiter-Str.,48.16185,11.552824
+10275007,2932,2023-12-05T18:00:00.000+01:00,40,anyVehicle,0.0,carOrLightVehicle,3.0,3268.0,LZA-Detektor,Ackermann-/ Schwere-Reiter-Str.,48.161987,11.552868
+10275008,2933,2023-12-05T18:00:00.000+01:00,19,anyVehicle,0.0,carOrLightVehicle,5.0,3269.0,LZA-Detektor,Ackermann-/ Schwere-Reiter-Str.,48.161865,11.552908
+10275009,2934,2023-12-05T18:00:00.000+01:00,46,anyVehicle,0.0,carOrLightVehicle,4.0,3270.0,LZA-Detektor,Ackermann-/ Schwere-Reiter-Str.,48.161556,11.553745
+10275010,2935,2023-12-05T18:00:00.000+01:00,96,anyVehicle,0.0,carOrLightVehicle,9.0,3271.0,LZA-Detektor,Ackermann-/ Schwere-Reiter-Str.,48.16153,11.553744
+10275011,2936,2023-12-05T18:00:00.000+01:00,19,anyVehicle,0.0,carOrLightVehicle,1.0,3272.0,LZA-Detektor,Ackermann-/ Schwere-Reiter-Str.,48.161507,11.553568
+10275012,2937,2023-12-05T18:00:00.000+01:00,9,anyVehicle,0.0,carOrLightVehicle,1.0,3273.0,LZA-Detektor,Ackermann-/ Schwere-Reiter-Str.,48.161057,11.553397
+10275029,2942,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,3278.0,LZA-Detektor,Ackermann-/ Schwere-Reiter-Str.,48.16146,11.553461
+10280001,2981,2023-12-05T18:00:00.000+01:00,12,anyVehicle,0.0,carOrLightVehicle,6.0,3317.0,LZA-Detektor,Ampfing-/ Grafinger Str.,48.124355,11.613226
+10280002,2982,2023-12-05T18:00:00.000+01:00,107,anyVehicle,0.0,carOrLightVehicle,21.0,3318.0,LZA-Detektor,Ampfing-/ Grafinger Str.,48.124233,11.613171
+10280003,2983,2023-12-05T18:00:00.000+01:00,34,anyVehicle,0.0,carOrLightVehicle,15.0,3319.0,LZA-Detektor,Ampfing-/ Grafinger Str.,48.124676,11.612576
+10280004,2984,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,100.0,3320.0,LZA-Detektor,Ampfing-/ Grafinger Str.,48.125023,11.613108
+10280005,2985,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,100.0,3321.0,LZA-Detektor,Ampfing-/ Grafinger Str.,48.12502,11.6131525
+10280006,2986,2023-12-05T18:00:00.000+01:00,14,anyVehicle,0.0,carOrLightVehicle,9.0,3322.0,LZA-Detektor,Ampfing-/ Grafinger Str.,48.1247,11.613755
+10280029,2993,2023-12-05T18:00:00.000+01:00,20,anyVehicle,0.0,carOrLightVehicle,14.0,3329.0,LZA-Detektor,Ampfing-/ Grafinger Str.,48.12436,11.613147
+10280030,2994,2023-12-05T18:00:00.000+01:00,41,anyVehicle,0.0,carOrLightVehicle,16.0,3330.0,LZA-Detektor,Ampfing-/ Grafinger Str.,48.124702,11.612577
+10285001,3071,2023-12-05T18:00:00.000+01:00,57,anyVehicle,0.0,carOrLightVehicle,9.0,3407.0,LZA-Detektor,Effner-/ Englschalkinger Str.,48.153492,11.615589
+10285002,3072,2023-12-05T18:00:00.000+01:00,76,anyVehicle,0.0,carOrLightVehicle,13.0,3408.0,LZA-Detektor,Effner-/ Englschalkinger Str.,48.1535,11.615552
+10285003,3073,2023-12-05T18:00:00.000+01:00,42,anyVehicle,0.0,carOrLightVehicle,6.0,3409.0,LZA-Detektor,Effner-/ Englschalkinger Str.,48.15359,11.615742
+10285004,3074,2023-12-05T18:00:00.000+01:00,79,anyVehicle,0.0,carOrLightVehicle,26.0,3410.0,LZA-Detektor,Effner-/ Englschalkinger Str.,48.153603,11.615705
+10285005,3075,2023-12-05T18:00:00.000+01:00,9,anyVehicle,0.0,carOrLightVehicle,21.0,3411.0,LZA-Detektor,Effner-/ Englschalkinger Str.,48.154274,11.615397
+10285006,3076,2023-12-05T18:00:00.000+01:00,1,anyVehicle,0.0,carOrLightVehicle,3.0,3412.0,LZA-Detektor,Effner-/ Englschalkinger Str.,48.15458,11.6160345
+10285007,3077,2023-12-05T18:00:00.000+01:00,93,anyVehicle,0.0,carOrLightVehicle,21.0,3413.0,LZA-Detektor,Effner-/ Englschalkinger Str.,48.154568,11.616064
+10285008,3078,2023-12-05T18:00:00.000+01:00,76,anyVehicle,0.0,carOrLightVehicle,18.0,3414.0,LZA-Detektor,Effner-/ Englschalkinger Str.,48.154552,11.616096
+10285009,3079,2023-12-05T18:00:00.000+01:00,40,anyVehicle,0.0,carOrLightVehicle,58.0,3415.0,LZA-Detektor,Effner-/ Englschalkinger Str.,48.154305,11.615922
+10285010,3080,2023-12-05T18:00:00.000+01:00,27,anyVehicle,0.0,carOrLightVehicle,26.0,3416.0,LZA-Detektor,Effner-/ Englschalkinger Str.,48.154446,11.616044
+10285011,3081,2023-12-05T18:00:00.000+01:00,69,anyVehicle,0.0,carOrLightVehicle,15.0,3417.0,LZA-Detektor,Effner-/ Englschalkinger Str.,48.153973,11.61655
+10285012,3082,2023-12-05T18:00:00.000+01:00,41,anyVehicle,0.0,carOrLightVehicle,8.0,3418.0,LZA-Detektor,Effner-/ Englschalkinger Str.,48.153946,11.616536
+10285019,3086,2023-12-05T18:00:00.000+01:00,101,anyVehicle,0.0,carOrLightVehicle,10.0,3425.0,LZA-Detektor,Effner-/ Englschalkinger Str.,48.152843,11.615162
+10285020,3087,2023-12-05T18:00:00.000+01:00,142,anyVehicle,0.0,carOrLightVehicle,14.0,3426.0,LZA-Detektor,Effner-/ Englschalkinger Str.,48.152855,11.615126
+10285021,3088,2023-12-05T18:00:00.000+01:00,65,anyVehicle,0.0,carOrLightVehicle,5.0,3427.0,LZA-Detektor,Effner-/ Englschalkinger Str.,48.153893,11.615466
+10285022,3089,2023-12-05T18:00:00.000+01:00,156,anyVehicle,0.0,carOrLightVehicle,13.0,3428.0,LZA-Detektor,Effner-/ Englschalkinger Str.,48.153877,11.615502
+10285023,3090,2023-12-05T18:00:00.000+01:00,117,anyVehicle,0.0,carOrLightVehicle,11.0,3429.0,LZA-Detektor,Effner-/ Englschalkinger Str.,48.153866,11.61554
+10287008,3113,2023-12-05T18:00:00.000+01:00,119,anyVehicle,0.0,carOrLightVehicle,27.0,3452.0,LZA-Detektor,SchlÃÂ¼sselberg-/ AltÃÂ¶ttinger Str.,48.12609,11.621699
+10287009,3114,2023-12-05T18:00:00.000+01:00,5,anyVehicle,0.0,carOrLightVehicle,68.0,3453.0,LZA-Detektor,SchlÃÂ¼sselberg-/ AltÃÂ¶ttinger Str.,48.12648,11.621455
+10287010,3115,2023-12-05T18:00:00.000+01:00,89,anyVehicle,0.0,carOrLightVehicle,21.0,3454.0,LZA-Detektor,SchlÃÂ¼sselberg-/ AltÃÂ¶ttinger Str.,48.12687,11.621835
+10287011,3116,2023-12-05T18:00:00.000+01:00,7,anyVehicle,0.0,carOrLightVehicle,21.0,3455.0,LZA-Detektor,SchlÃÂ¼sselberg-/ AltÃÂ¶ttinger Str.,48.126472,11.622012
+10310005,3274,2023-12-05T18:00:00.000+01:00,23,anyVehicle,0.0,carOrLightVehicle,14.0,3627.0,LZA-Detektor,Frauen-/ Reichenbachstr.,48.134293,11.576409
+10338001,3469,2023-12-05T18:00:00.000+01:00,10,anyVehicle,0.0,carOrLightVehicle,1.0,3842.0,LZA-Detektor,WÃÂ¼rmtal-/ Rebholzstr.,48.115128,11.481027
+10395001,3883,2023-12-05T18:00:00.000+01:00,197,anyVehicle,0.0,carOrLightVehicle,0.0,4266.0,LZA-Detektor,Dachauer-/ GrÃÂ¶benzeller Str.,48.18291,11.508619
+10395002,3884,2023-12-05T18:00:00.000+01:00,61,anyVehicle,0.0,carOrLightVehicle,0.0,4267.0,LZA-Detektor,Dachauer-/ GrÃÂ¶benzeller Str.,48.18304,11.50818
+10395003,3885,2023-12-05T18:00:00.000+01:00,34,anyVehicle,0.0,carOrLightVehicle,0.0,4268.0,LZA-Detektor,Dachauer-/ GrÃÂ¶benzeller Str.,48.182907,11.507739
+10395004,3886,2023-12-05T18:00:00.000+01:00,4,anyVehicle,0.0,carOrLightVehicle,0.0,4269.0,LZA-Detektor,Dachauer-/ GrÃÂ¶benzeller Str.,48.182945,11.507871
+10395005,3887,2023-12-05T18:00:00.000+01:00,37,anyVehicle,0.0,carOrLightVehicle,0.0,4270.0,LZA-Detektor,Dachauer-/ GrÃÂ¶benzeller Str.,48.182945,11.507825
+10395006,3888,2023-12-05T18:00:00.000+01:00,36,anyVehicle,0.0,carOrLightVehicle,0.0,4271.0,LZA-Detektor,Dachauer-/ GrÃÂ¶benzeller Str.,48.183334,11.50741
+10395007,3889,2023-12-05T18:00:00.000+01:00,107,anyVehicle,0.0,carOrLightVehicle,0.0,4272.0,LZA-Detektor,Dachauer-/ GrÃÂ¶benzeller Str.,48.183384,11.507384
+10395008,3890,2023-12-05T18:00:00.000+01:00,9,anyVehicle,0.0,carOrLightVehicle,0.0,4273.0,LZA-Detektor,Dachauer-/ GrÃÂ¶benzeller Str.,48.18329,11.508105
+10395009,3891,2023-12-05T18:00:00.000+01:00,24,anyVehicle,0.0,carOrLightVehicle,0.0,4274.0,LZA-Detektor,Dachauer-/ GrÃÂ¶benzeller Str.,48.183273,11.508137
+10416001,4032,2023-12-05T18:00:00.000+01:00,73,anyVehicle,0.0,carOrLightVehicle,22.0,4423.0,LZA-Detektor,Belgradstr./ Petuelring,48.17854,11.573072
+10416002,4033,2023-12-05T18:00:00.000+01:00,83,anyVehicle,0.0,carOrLightVehicle,16.0,4424.0,LZA-Detektor,Belgradstr./ Petuelring,48.17853,11.5731125
+10416003,4034,2023-12-05T18:00:00.000+01:00,50,anyVehicle,0.0,carOrLightVehicle,26.0,4425.0,LZA-Detektor,Belgradstr./ Petuelring,48.17847,11.573138
+10416004,4035,2023-12-05T18:00:00.000+01:00,14,anyVehicle,0.0,carOrLightVehicle,13.0,4426.0,LZA-Detektor,Belgradstr./ Petuelring,48.178467,11.573175
+10416005,4036,2023-12-05T18:00:00.000+01:00,163,anyVehicle,0.0,carOrLightVehicle,55.0,4427.0,LZA-Detektor,Belgradstr./ Petuelring,48.17815,11.573982
+10416006,4037,2023-12-05T18:00:00.000+01:00,89,anyVehicle,0.0,carOrLightVehicle,36.0,4428.0,LZA-Detektor,Belgradstr./ Petuelring,48.178123,11.573981
+10416007,4038,2023-12-05T18:00:00.000+01:00,30,anyVehicle,0.0,carOrLightVehicle,14.0,4429.0,LZA-Detektor,Belgradstr./ Petuelring,48.17759,11.572928
+10416008,4039,2023-12-05T18:00:00.000+01:00,30,anyVehicle,0.0,carOrLightVehicle,5.0,4430.0,LZA-Detektor,Belgradstr./ Petuelring,48.17744,11.572834
+10416009,4040,2023-12-05T18:00:00.000+01:00,88,anyVehicle,0.0,carOrLightVehicle,10.0,4431.0,LZA-Detektor,Belgradstr./ Petuelring,48.177444,11.572794
+10416010,4041,2023-12-05T18:00:00.000+01:00,32,anyVehicle,0.0,carOrLightVehicle,23.0,4432.0,LZA-Detektor,Belgradstr./ Petuelring,48.1775,11.57277
+10416011,4042,2023-12-05T18:00:00.000+01:00,61,anyVehicle,0.0,carOrLightVehicle,10.0,4433.0,LZA-Detektor,Belgradstr./ Petuelring,48.177845,11.57219
+10416012,4043,2023-12-05T18:00:00.000+01:00,54,anyVehicle,0.0,carOrLightVehicle,11.0,4434.0,LZA-Detektor,Belgradstr./ Petuelring,48.17787,11.5721855
+10416013,4044,2023-12-05T18:00:00.000+01:00,41,anyVehicle,0.0,carOrLightVehicle,19.0,4435.0,LZA-Detektor,Belgradstr./ Petuelring,48.17791,11.572285
+10416014,4045,2023-12-05T18:00:00.000+01:00,51,anyVehicle,0.0,carOrLightVehicle,43.0,4436.0,LZA-Detektor,Belgradstr./ Petuelring,48.1781,11.573693
+10417001,4051,2023-12-05T18:00:00.000+01:00,69,anyVehicle,0.0,carOrLightVehicle,10.0,4442.0,LZA-Detektor,Kriegerheim-/ WÃÂ¼rmtalstr.,48.112286,11.495327
+10417002,4052,2023-12-05T18:00:00.000+01:00,116,anyVehicle,0.0,carOrLightVehicle,24.0,4443.0,LZA-Detektor,Kriegerheim-/ WÃÂ¼rmtalstr.,48.112255,11.495455
+10417003,4053,2023-12-05T18:00:00.000+01:00,52,anyVehicle,0.0,carOrLightVehicle,31.0,4444.0,LZA-Detektor,Kriegerheim-/ WÃÂ¼rmtalstr.,48.112244,11.49492
+10417006,4056,2023-12-05T18:00:00.000+01:00,155,anyVehicle,0.0,carOrLightVehicle,40.0,4447.0,LZA-Detektor,Kriegerheim-/ WÃÂ¼rmtalstr.,48.1123,11.494027
+10417007,4057,2023-12-05T18:00:00.000+01:00,163,anyVehicle,0.0,carOrLightVehicle,35.0,4448.0,LZA-Detektor,Kriegerheim-/ WÃÂ¼rmtalstr.,48.112328,11.494041
+10442001,4225,2023-12-05T18:00:00.000+01:00,28,anyVehicle,0.0,carOrLightVehicle,2.0,4628.0,LZA-Detektor,Ganghofer-/ Ridlerstr.,48.130577,11.539216
+10442002,4226,2023-12-05T18:00:00.000+01:00,26,anyVehicle,0.0,carOrLightVehicle,40.0,4629.0,LZA-Detektor,Ganghofer-/ Ridlerstr.,48.1308,11.538943
+10442003,4227,2023-12-05T18:00:00.000+01:00,46,anyVehicle,0.0,carOrLightVehicle,45.0,4630.0,LZA-Detektor,Ganghofer-/ Ridlerstr.,48.130825,11.538954
+10442004,4228,2023-12-05T18:00:00.000+01:00,90,anyVehicle,0.0,carOrLightVehicle,10.0,4631.0,LZA-Detektor,Ganghofer-/ Ridlerstr.,48.13128,11.539319
+10442008,4232,2023-12-05T18:00:00.000+01:00,22,anyVehicle,0.0,carOrLightVehicle,1.0,4635.0,LZA-Detektor,Ganghofer-/ Ridlerstr.,48.130287,11.539189
+10460001,4361,2023-12-05T18:00:00.000+01:00,111,anyVehicle,0.0,carOrLightVehicle,53.0,4764.0,LZA-Detektor,Sollner-/ Wolfratshauser Str.,48.077187,11.525655
+10460002,4362,2023-12-05T18:00:00.000+01:00,42,anyVehicle,0.0,carOrLightVehicle,56.0,4765.0,LZA-Detektor,Sollner-/ Wolfratshauser Str.,48.077343,11.525794
+10460003,4363,2023-12-05T18:00:00.000+01:00,73,anyVehicle,0.0,carOrLightVehicle,47.0,4766.0,LZA-Detektor,Sollner-/ Wolfratshauser Str.,48.077896,11.525825
+10460004,4364,2023-12-05T18:00:00.000+01:00,30,anyVehicle,0.0,carOrLightVehicle,29.0,4767.0,LZA-Detektor,Sollner-/ Wolfratshauser Str.,48.077843,11.526256
+10460005,4365,2023-12-05T18:00:00.000+01:00,108,anyVehicle,0.0,carOrLightVehicle,61.0,4768.0,LZA-Detektor,Sollner-/ Wolfratshauser Str.,48.077892,11.526351
+10460006,4366,2023-12-05T18:00:00.000+01:00,15,anyVehicle,0.0,carOrLightVehicle,6.0,4769.0,LZA-Detektor,Sollner-/ Wolfratshauser Str.,48.077694,11.526194
+10493001,4617,2023-12-05T18:00:00.000+01:00,137,anyVehicle,0.0,carOrLightVehicle,12.0,5055.0,LZA-Detektor,Menzinger-/ Schragenhofstr.,48.16592,11.493529
+10493002,4618,2023-12-05T18:00:00.000+01:00,138,anyVehicle,0.0,carOrLightVehicle,11.0,5056.0,LZA-Detektor,Menzinger-/ Schragenhofstr.,48.165882,11.493529
+10493003,4619,2023-12-05T18:00:00.000+01:00,18,anyVehicle,0.0,carOrLightVehicle,12.0,5057.0,LZA-Detektor,Menzinger-/ Schragenhofstr.,48.165535,11.492742
+10493004,4620,2023-12-05T18:00:00.000+01:00,24,anyVehicle,0.0,carOrLightVehicle,5.0,5058.0,LZA-Detektor,Menzinger-/ Schragenhofstr.,48.166092,11.492485
+10493005,4621,2023-12-05T18:00:00.000+01:00,130,anyVehicle,0.0,carOrLightVehicle,24.0,5059.0,LZA-Detektor,Menzinger-/ Schragenhofstr.,48.165775,11.494446
+10493006,4622,2023-12-05T18:00:00.000+01:00,135,anyVehicle,0.0,carOrLightVehicle,18.0,5060.0,LZA-Detektor,Menzinger-/ Schragenhofstr.,48.165745,11.494425
+10493007,4623,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,5061.0,LZA-Detektor,Menzinger-/ Schragenhofstr.,48.1655,11.492649
+10493008,4624,2023-12-05T18:00:00.000+01:00,10,anyVehicle,0.0,carOrLightVehicle,1.0,5062.0,LZA-Detektor,Menzinger-/ Schragenhofstr.,48.165504,11.492688
+10493009,4625,2023-12-05T18:00:00.000+01:00,19,anyVehicle,0.0,carOrLightVehicle,4.0,5063.0,LZA-Detektor,Menzinger-/ Schragenhofstr.,48.165943,11.492577
+10495001,4631,2023-12-05T18:00:00.000+01:00,21,anyVehicle,0.0,carOrLightVehicle,2.0,5069.0,LZA-Detektor,Claude-Lorrain-/ Schyrenstr.,48.12018,11.570165
+10495002,4632,2023-12-05T18:00:00.000+01:00,16,anyVehicle,0.0,carOrLightVehicle,29.0,5070.0,LZA-Detektor,Claude-Lorrain-/ Schyrenstr.,48.120678,11.570314
+10495003,4633,2023-12-05T18:00:00.000+01:00,15,anyVehicle,0.0,carOrLightVehicle,16.0,5071.0,LZA-Detektor,Claude-Lorrain-/ Schyrenstr.,48.120857,11.570941
+10495004,4634,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,5072.0,LZA-Detektor,Claude-Lorrain-/ Schyrenstr.,48.12047,11.570639
+10498001,4661,2023-12-05T18:00:00.000+01:00,111,anyVehicle,0.0,carOrLightVehicle,9.0,5102.0,LZA-Detektor,Arnulf-/ SchÃÂ¤ringerstr.,48.14769,11.52821
+10498002,4662,2023-12-05T18:00:00.000+01:00,78,anyVehicle,0.0,carOrLightVehicle,10.0,5103.0,LZA-Detektor,Arnulf-/ SchÃÂ¤ringerstr.,48.147663,11.528189
+10498003,4663,2023-12-05T18:00:00.000+01:00,76,anyVehicle,0.0,carOrLightVehicle,16.0,5104.0,LZA-Detektor,Arnulf-/ SchÃÂ¤ringerstr.,48.147907,11.527125
+10498004,4664,2023-12-05T18:00:00.000+01:00,108,anyVehicle,0.0,carOrLightVehicle,24.0,5105.0,LZA-Detektor,Arnulf-/ SchÃÂ¤ringerstr.,48.147934,11.527145
+10507001,4694,2023-12-05T18:00:00.000+01:00,3,anyVehicle,0.0,carOrLightVehicle,0.0,5144.0,LZA-Detektor,Marsstr./ SpatenbrÃÂ¤uausfahrt,48.145115,11.553097
+10518009,4753,2023-12-05T18:00:00.000+01:00,78,anyVehicle,0.0,carOrLightVehicle,8.0,5203.0,LZA-Detektor,Tegernseer Land-/ Alpenstr.,48.1171,11.581638
+10518010,4754,2023-12-05T18:00:00.000+01:00,58,anyVehicle,0.0,carOrLightVehicle,3.0,5204.0,LZA-Detektor,Tegernseer Land-/ Alpenstr.,48.11756,11.582023
+10519002,4756,2023-12-05T18:00:00.000+01:00,115,anyVehicle,0.0,carOrLightVehicle,26.0,5206.0,LZA-Detektor,Milbertshofener-/ SchleiÃÅ¸heimer Str.,48.18502,11.566364
+10519003,4757,2023-12-05T18:00:00.000+01:00,60,anyVehicle,0.0,carOrLightVehicle,5.0,5207.0,LZA-Detektor,Milbertshofener-/ SchleiÃÅ¸heimer Str.,48.185024,11.566416
+10519004,4758,2023-12-05T18:00:00.000+01:00,60,anyVehicle,0.0,carOrLightVehicle,41.0,5208.0,LZA-Detektor,Milbertshofener-/ SchleiÃÅ¸heimer Str.,48.184734,11.566444
+10519005,4759,2023-12-05T18:00:00.000+01:00,33,anyVehicle,0.0,carOrLightVehicle,33.0,5209.0,LZA-Detektor,Milbertshofener-/ SchleiÃÅ¸heimer Str.,48.184574,11.566808
+10519016,4763,2023-12-05T18:00:00.000+01:00,3,anyVehicle,0.0,carOrLightVehicle,0.0,5213.0,LZA-Detektor,Milbertshofener-/ SchleiÃÅ¸heimer Str.,48.184605,11.566794
+10531001,4838,2023-12-05T18:00:00.000+01:00,30,anyVehicle,0.0,carOrLightVehicle,5.0,5288.0,LZA-Detektor,Regerstr./ Weilerschule,48.123035,11.586976
+10531002,4839,2023-12-05T18:00:00.000+01:00,48,anyVehicle,0.0,carOrLightVehicle,4.0,5289.0,LZA-Detektor,Regerstr./ Weilerschule,48.123573,11.587321
+10534001,4864,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,5314.0,LZA-Detektor,Aidenbach-/ Lochhamer Str.,48.09,11.5209465
+10534002,4865,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,5315.0,LZA-Detektor,Aidenbach-/ Lochhamer Str.,48.09001,11.520903
+10534003,4866,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,5316.0,LZA-Detektor,Aidenbach-/ Lochhamer Str.,48.0905,11.520575
+10534004,4867,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,5317.0,LZA-Detektor,Aidenbach-/ Lochhamer Str.,48.090527,11.520602
+10534005,4868,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,5318.0,LZA-Detektor,Aidenbach-/ Lochhamer Str.,48.090965,11.52124
+10534006,4869,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,5319.0,LZA-Detektor,Aidenbach-/ Lochhamer Str.,48.090958,11.52128
+10534007,4870,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,5320.0,LZA-Detektor,Aidenbach-/ Lochhamer Str.,48.09065,11.521141
+10534008,4871,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,5321.0,LZA-Detektor,Aidenbach-/ Lochhamer Str.,48.090504,11.5216875
+10534009,4872,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,5322.0,LZA-Detektor,Aidenbach-/ Lochhamer Str.,48.09048,11.521742
+10560001,4995,2023-12-05T18:00:00.000+01:00,18,anyVehicle,0.0,carOrLightVehicle,11.0,5452.0,LZA-Detektor,Cosima-/ Englschalkinger Str.,48.153416,11.62863
+10560002,4996,2023-12-05T18:00:00.000+01:00,54,anyVehicle,0.0,carOrLightVehicle,24.0,5453.0,LZA-Detektor,Cosima-/ Englschalkinger Str.,48.153446,11.628566
+10560003,4997,2023-12-05T18:00:00.000+01:00,40,anyVehicle,0.0,carOrLightVehicle,84.0,5454.0,LZA-Detektor,Cosima-/ Englschalkinger Str.,48.153446,11.629085
+10560004,4998,2023-12-05T18:00:00.000+01:00,40,anyVehicle,0.0,carOrLightVehicle,28.0,5455.0,LZA-Detektor,Cosima-/ Englschalkinger Str.,48.15346,11.62877
+10560005,4999,2023-12-05T18:00:00.000+01:00,27,anyVehicle,0.0,carOrLightVehicle,17.0,5456.0,LZA-Detektor,Cosima-/ Englschalkinger Str.,48.153996,11.62941
+10560006,5000,2023-12-05T18:00:00.000+01:00,68,anyVehicle,0.0,carOrLightVehicle,11.0,5457.0,LZA-Detektor,Cosima-/ Englschalkinger Str.,48.15408,11.629467
+10560007,5001,2023-12-05T18:00:00.000+01:00,29,anyVehicle,0.0,carOrLightVehicle,4.0,5458.0,LZA-Detektor,Cosima-/ Englschalkinger Str.,48.153988,11.62949
+10560008,5002,2023-12-05T18:00:00.000+01:00,40,anyVehicle,0.0,carOrLightVehicle,3.0,5459.0,LZA-Detektor,Cosima-/ Englschalkinger Str.,48.153515,11.6303625
+10560009,5003,2023-12-05T18:00:00.000+01:00,47,anyVehicle,0.0,carOrLightVehicle,3.0,5460.0,LZA-Detektor,Cosima-/ Englschalkinger Str.,48.15349,11.63036
+10560010,5004,2023-12-05T18:00:00.000+01:00,23,anyVehicle,0.0,carOrLightVehicle,26.0,5461.0,LZA-Detektor,Cosima-/ Englschalkinger Str.,48.153484,11.629839
+10560011,5005,2023-12-05T18:00:00.000+01:00,22,anyVehicle,0.0,carOrLightVehicle,4.0,5462.0,LZA-Detektor,Cosima-/ Englschalkinger Str.,48.15347,11.630154
+10560012,5006,2023-12-05T18:00:00.000+01:00,8,anyVehicle,0.0,carOrLightVehicle,40.0,5463.0,LZA-Detektor,Cosima-/ Englschalkinger Str.,48.153027,11.629406
+10560013,5007,2023-12-05T18:00:00.000+01:00,69,anyVehicle,0.0,carOrLightVehicle,10.0,5464.0,LZA-Detektor,Cosima-/ Englschalkinger Str.,48.152943,11.629326
+10560014,5008,2023-12-05T18:00:00.000+01:00,11,anyVehicle,0.0,carOrLightVehicle,19.0,5465.0,LZA-Detektor,Cosima-/ Englschalkinger Str.,48.15322,11.629404
+10560018,5012,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,5469.0,LZA-Detektor,Cosima-/ Englschalkinger Str.,48.153942,11.629553
+10582001,5177,2023-12-05T18:00:00.000+01:00,77,anyVehicle,0.0,carOrLightVehicle,4.0,5635.0,LZA-Detektor,SchleiÃÅ¸heimer-/ Rathenaustr.,48.20112,11.564362
+10582002,5178,2023-12-05T18:00:00.000+01:00,117,anyVehicle,0.0,carOrLightVehicle,6.0,5636.0,LZA-Detektor,SchleiÃÅ¸heimer-/ Rathenaustr.,48.201115,11.5643215
+10582003,5179,2023-12-05T18:00:00.000+01:00,32,anyVehicle,0.0,carOrLightVehicle,2.0,5637.0,LZA-Detektor,SchleiÃÅ¸heimer-/ Rathenaustr.,48.201763,11.564073
+10582004,5180,2023-12-05T18:00:00.000+01:00,54,anyVehicle,0.0,carOrLightVehicle,3.0,5638.0,LZA-Detektor,SchleiÃÅ¸heimer-/ Rathenaustr.,48.201767,11.5641165
+10597001,5312,2023-12-05T18:00:00.000+01:00,10,anyVehicle,0.0,carOrLightVehicle,9.0,5770.0,LZA-Detektor,Liebig-/ Triftstr.,48.14116,11.588556
+10597002,5313,2023-12-05T18:00:00.000+01:00,19,anyVehicle,0.0,carOrLightVehicle,37.0,5771.0,LZA-Detektor,Liebig-/ Triftstr.,48.141117,11.589073
+10597003,5314,2023-12-05T18:00:00.000+01:00,5,anyVehicle,0.0,carOrLightVehicle,0.0,5772.0,LZA-Detektor,Liebig-/ Triftstr.,48.14104,11.588775
+10597004,5315,2023-12-05T18:00:00.000+01:00,1,anyVehicle,0.0,carOrLightVehicle,0.0,5773.0,LZA-Detektor,Liebig-/ Triftstr.,48.14126,11.588913
+10604001,5376,2023-12-05T18:00:00.000+01:00,22,anyVehicle,0.0,carOrLightVehicle,42.0,5840.0,LZA-Detektor,Lazarett-/ Nymphenburger Str.,48.15041,11.544701
+10632001,5515,2023-12-05T18:00:00.000+01:00,7,anyVehicle,0.0,carOrLightVehicle,9.0,5993.0,LZA-Detektor,Maria-Eich-/ Paosostr.,48.144104,11.452552
+10632002,5516,2023-12-05T18:00:00.000+01:00,1,anyVehicle,0.0,carOrLightVehicle,0.0,5994.0,LZA-Detektor,Maria-Eich-/ Paosostr.,48.144238,11.452744
+10632003,5517,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,5995.0,LZA-Detektor,Maria-Eich-/ Paosostr.,48.144012,11.45265
+10642002,5553,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,6034.0,LZA-Detektor,Baumkirchner-/ Josephsburgstr.,48.127117,11.629499
+10674001,5790,2023-12-05T18:00:00.000+01:00,8,anyVehicle,0.0,carOrLightVehicle,1.0,6275.0,LZA-Detektor,SchÃÂ¤ftlarnstr./ GroÃÅ¸markthalle,48.116405,11.556801
+10674002,5791,2023-12-05T18:00:00.000+01:00,56,anyVehicle,0.0,carOrLightVehicle,8.0,6276.0,LZA-Detektor,SchÃÂ¤ftlarnstr./ GroÃÅ¸markthalle,48.116543,11.556955
+10674003,5792,2023-12-05T18:00:00.000+01:00,63,anyVehicle,0.0,carOrLightVehicle,15.0,6277.0,LZA-Detektor,SchÃÂ¤ftlarnstr./ GroÃÅ¸markthalle,48.116528,11.556993
+10674004,5793,2023-12-05T18:00:00.000+01:00,11,anyVehicle,0.0,carOrLightVehicle,14.0,6278.0,LZA-Detektor,SchÃÂ¤ftlarnstr./ GroÃÅ¸markthalle,48.117012,11.5568285
+10674005,5794,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,6279.0,LZA-Detektor,SchÃÂ¤ftlarnstr./ GroÃÅ¸markthalle,48.116962,11.556802
+10674006,5795,2023-12-05T18:00:00.000+01:00,88,anyVehicle,0.0,carOrLightVehicle,15.0,6280.0,LZA-Detektor,SchÃÂ¤ftlarnstr./ GroÃÅ¸markthalle,48.117302,11.557376
+10674007,5796,2023-12-05T18:00:00.000+01:00,98,anyVehicle,0.0,carOrLightVehicle,25.0,6281.0,LZA-Detektor,SchÃÂ¤ftlarnstr./ GroÃÅ¸markthalle,48.11729,11.557416
+10674008,5797,2023-12-05T18:00:00.000+01:00,4,anyVehicle,0.0,carOrLightVehicle,10.0,6282.0,LZA-Detektor,SchÃÂ¤ftlarnstr./ GroÃÅ¸markthalle,48.11681,11.557415
+10723001,6141,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,6642.0,LZA-Detektor,Breisacher-/ WÃÂ¶rthstr.,48.129387,11.601954
+10723002,6142,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,6643.0,LZA-Detektor,Breisacher-/ WÃÂ¶rthstr.,48.129356,11.601952
+10723003,6143,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,6644.0,LZA-Detektor,Breisacher-/ WÃÂ¶rthstr.,48.12928,11.602101
+10723004,6144,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,6645.0,LZA-Detektor,Breisacher-/ WÃÂ¶rthstr.,48.129253,11.602096
+10723005,6145,2023-12-05T18:00:00.000+01:00,12,anyVehicle,0.0,carOrLightVehicle,2.0,6646.0,LZA-Detektor,Breisacher-/ WÃÂ¶rthstr.,48.129284,11.601511
+10723006,6146,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,100.0,6647.0,LZA-Detektor,Breisacher-/ WÃÂ¶rthstr.,48.12919,11.601362
+10723007,6147,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,6648.0,LZA-Detektor,Breisacher-/ WÃÂ¶rthstr.,48.129448,11.601371
+10723008,6148,2023-12-05T18:00:00.000+01:00,21,anyVehicle,0.0,carOrLightVehicle,18.0,6649.0,LZA-Detektor,Breisacher-/ WÃÂ¶rthstr.,48.129482,11.601369
+10723009,6149,2023-12-05T18:00:00.000+01:00,29,anyVehicle,0.0,carOrLightVehicle,3.0,6650.0,LZA-Detektor,Breisacher-/ WÃÂ¶rthstr.,48.129612,11.601172
+10723010,6150,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,6651.0,LZA-Detektor,Breisacher-/ WÃÂ¶rthstr.,48.12967,11.602034
+10723011,6151,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,6652.0,LZA-Detektor,Breisacher-/ WÃÂ¶rthstr.,48.129757,11.602167
+10723012,6152,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,6653.0,LZA-Detektor,Breisacher-/ WÃÂ¶rthstr.,48.129528,11.601404
+10723013,6153,2023-12-05T18:00:00.000+01:00,4,anyVehicle,0.0,carOrLightVehicle,0.0,6654.0,LZA-Detektor,Breisacher-/ WÃÂ¶rthstr.,48.129406,11.601837
+10723014,6154,2023-12-05T18:00:00.000+01:00,9,anyVehicle,0.0,carOrLightVehicle,0.0,6655.0,LZA-Detektor,Breisacher-/ WÃÂ¶rthstr.,48.12935,11.601452
+10723015,6155,2023-12-05T18:00:00.000+01:00,6,anyVehicle,0.0,carOrLightVehicle,0.0,6656.0,LZA-Detektor,Breisacher-/ WÃÂ¶rthstr.,48.12972,11.601866
+10723016,6156,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,6657.0,LZA-Detektor,Breisacher-/ WÃÂ¶rthstr.,48.129543,11.6019535
+10743001,6281,2023-12-05T18:00:00.000+01:00,155,anyVehicle,0.0,carOrLightVehicle,31.0,6786.0,LZA-Detektor,Carl-Wery-/ Putzbrunner Str.,48.096653,11.645661
+10743002,6282,2023-12-05T18:00:00.000+01:00,40,anyVehicle,0.0,carOrLightVehicle,13.0,6787.0,LZA-Detektor,Carl-Wery-/ Putzbrunner Str.,48.096916,11.646568
+10743003,6283,2023-12-05T18:00:00.000+01:00,47,anyVehicle,0.0,carOrLightVehicle,17.0,6788.0,LZA-Detektor,Carl-Wery-/ Putzbrunner Str.,48.0969,11.646614
+10743004,6284,2023-12-05T18:00:00.000+01:00,87,anyVehicle,0.0,carOrLightVehicle,15.0,6789.0,LZA-Detektor,Carl-Wery-/ Putzbrunner Str.,48.096268,11.647204
+10743005,6285,2023-12-05T18:00:00.000+01:00,34,anyVehicle,0.0,carOrLightVehicle,20.0,6790.0,LZA-Detektor,Carl-Wery-/ Putzbrunner Str.,48.095993,11.64635
+10743006,6286,2023-12-05T18:00:00.000+01:00,78,anyVehicle,0.0,carOrLightVehicle,32.0,6791.0,LZA-Detektor,Carl-Wery-/ Putzbrunner Str.,48.096004,11.646311
+10743007,6287,2023-12-05T18:00:00.000+01:00,38,anyVehicle,0.0,carOrLightVehicle,62.0,6792.0,LZA-Detektor,Carl-Wery-/ Putzbrunner Str.,48.0961,11.646322
+10769002,6451,2023-12-05T18:00:00.000+01:00,52,anyVehicle,0.0,carOrLightVehicle,66.0,6957.0,LZA-Detektor,Blumenauer-/ Weinbergerstr.,48.14004,11.456816
+10836001,6760,2023-12-05T18:00:00.000+01:00,36,anyVehicle,0.0,carOrLightVehicle,28.0,7276.0,LZA-Detektor,BÃÂ¤cker-/ Josef-Retzer-Str.,48.14409,11.460843
+10836002,6761,2023-12-05T18:00:00.000+01:00,21,anyVehicle,0.0,carOrLightVehicle,16.0,7277.0,LZA-Detektor,BÃÂ¤cker-/ Josef-Retzer-Str.,48.14401,11.461279
+10838002,6778,2023-12-05T18:00:00.000+01:00,45,anyVehicle,0.0,carOrLightVehicle,26.0,7294.0,LZA-Detektor,Allacher-/ Netzerstr.,48.171078,11.50826
+10866003,6899,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,99.0,7415.0,LZA-Detektor,Auerfeld-/ Schornstr.,48.124226,11.58962
+10866004,6900,2023-12-05T18:00:00.000+01:00,55,anyVehicle,0.0,carOrLightVehicle,10.0,7416.0,LZA-Detektor,Auerfeld-/ Schornstr.,48.12377,11.590489
+10866005,6901,2023-12-05T18:00:00.000+01:00,16,anyVehicle,0.0,carOrLightVehicle,4.0,7417.0,LZA-Detektor,Auerfeld-/ Schornstr.,48.12405,11.589977
+10866006,6902,2023-12-05T18:00:00.000+01:00,2,anyVehicle,0.0,carOrLightVehicle,1.0,7418.0,LZA-Detektor,Auerfeld-/ Schornstr.,48.123806,11.589933
+10885001,7014,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,100.0,7531.0,LZA-Detektor,Landsberger-/ Barthstr. (FgÃÅ),48.140343,11.530706
+10885002,7015,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,100.0,7532.0,LZA-Detektor,Landsberger-/ Barthstr. (FgÃÅ),48.140316,11.530703
+10885003,7016,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,7533.0,LZA-Detektor,Landsberger-/ Barthstr. (FgÃÅ),48.14023,11.529742
+10885004,7017,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,7534.0,LZA-Detektor,Landsberger-/ Barthstr. (FgÃÅ),48.140255,11.529745
+10885005,7018,2023-12-05T18:00:00.000+01:00,26,anyVehicle,0.0,carOrLightVehicle,0.0,7535.0,LZA-Detektor,Landsberger-/ Barthstr. (FgÃÅ),48.140415,11.53024
+10885006,7019,2023-12-05T18:00:00.000+01:00,17,anyVehicle,0.0,carOrLightVehicle,0.0,7536.0,LZA-Detektor,Landsberger-/ Barthstr. (FgÃÅ),48.14016,11.530132
+10915001,7201,2023-12-05T18:00:00.000+01:00,86,anyVehicle,0.0,carOrLightVehicle,8.0,7718.0,LZA-Detektor,Putzbrunner Str./ Europaschule,48.09789,11.640986
+10915002,7202,2023-12-05T18:00:00.000+01:00,114,anyVehicle,0.0,carOrLightVehicle,15.0,7719.0,LZA-Detektor,Putzbrunner Str./ Europaschule,48.098118,11.639938
+10933001,7305,2023-12-05T18:00:00.000+01:00,96,anyVehicle,0.0,carOrLightVehicle,10.0,7822.0,LZA-Detektor,Allacher-/ Von-Kahr-Str.,48.179234,11.486897
+10933002,7306,2023-12-05T18:00:00.000+01:00,15,anyVehicle,0.0,carOrLightVehicle,1.0,7823.0,LZA-Detektor,Allacher-/ Von-Kahr-Str.,48.17926,11.486883
+10933003,7307,2023-12-05T18:00:00.000+01:00,30,anyVehicle,0.0,carOrLightVehicle,3.0,7824.0,LZA-Detektor,Allacher-/ Von-Kahr-Str.,48.179623,11.486891
+10933004,7308,2023-12-05T18:00:00.000+01:00,45,anyVehicle,0.0,carOrLightVehicle,4.0,7825.0,LZA-Detektor,Allacher-/ Von-Kahr-Str.,48.179646,11.486897
+10933005,7309,2023-12-05T18:00:00.000+01:00,60,anyVehicle,0.0,carOrLightVehicle,10.0,7826.0,LZA-Detektor,Allacher-/ Von-Kahr-Str.,48.179573,11.488041
+10933006,7310,2023-12-05T18:00:00.000+01:00,91,anyVehicle,0.0,carOrLightVehicle,8.0,7827.0,LZA-Detektor,Allacher-/ Von-Kahr-Str.,48.17954,11.487962
+10933007,7311,2023-12-05T18:00:00.000+01:00,98,anyVehicle,0.0,carOrLightVehicle,8.0,7828.0,LZA-Detektor,Allacher-/ Von-Kahr-Str.,48.179504,11.4879675
+10939004,7358,2023-12-05T18:00:00.000+01:00,163,anyVehicle,0.0,carOrLightVehicle,40.0,7879.0,LZA-Detektor,Nymphenburger-/ Alfonsstr.,48.15081,11.54186
+10939005,7359,2023-12-05T18:00:00.000+01:00,145,anyVehicle,0.0,carOrLightVehicle,29.0,7880.0,LZA-Detektor,Nymphenburger-/ Alfonsstr.,48.150974,11.540803
+10976001,7601,2023-12-05T18:00:00.000+01:00,163,anyVehicle,0.0,carOrLightVehicle,18.0,8129.0,LZA-Detektor,Dachauer-/ Max-Born-Str.,48.192963,11.502917
+10976002,7602,2023-12-05T18:00:00.000+01:00,158,anyVehicle,0.0,carOrLightVehicle,14.0,8130.0,LZA-Detektor,Dachauer-/ Max-Born-Str.,48.192932,11.502914
+10976003,7603,2023-12-05T18:00:00.000+01:00,35,anyVehicle,0.0,carOrLightVehicle,3.0,8131.0,LZA-Detektor,Dachauer-/ Max-Born-Str.,48.192448,11.502107
+10976004,7604,2023-12-05T18:00:00.000+01:00,68,anyVehicle,0.0,carOrLightVehicle,31.0,8132.0,LZA-Detektor,Dachauer-/ Max-Born-Str.,48.192448,11.502066
+10976005,7605,2023-12-05T18:00:00.000+01:00,39,anyVehicle,0.0,carOrLightVehicle,14.0,8133.0,LZA-Detektor,Dachauer-/ Max-Born-Str.,48.19245,11.502017
+10976006,7606,2023-12-05T18:00:00.000+01:00,95,anyVehicle,0.0,carOrLightVehicle,17.0,8134.0,LZA-Detektor,Dachauer-/ Max-Born-Str.,48.19291,11.501508
+10976007,7607,2023-12-05T18:00:00.000+01:00,98,anyVehicle,0.0,carOrLightVehicle,15.0,8135.0,LZA-Detektor,Dachauer-/ Max-Born-Str.,48.192963,11.501317
+10976008,7608,2023-12-05T18:00:00.000+01:00,106,anyVehicle,0.0,carOrLightVehicle,12.0,8136.0,LZA-Detektor,Dachauer-/ Max-Born-Str.,48.192993,11.501324
+10976009,7609,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,8137.0,LZA-Detektor,Dachauer-/ Max-Born-Str.,48.19284,11.501868
+10976010,7610,2023-12-05T18:00:00.000+01:00,35,anyVehicle,0.0,carOrLightVehicle,69.0,8138.0,LZA-Detektor,Dachauer-/ Max-Born-Str.,48.192932,11.502427
+10997001,7718,2023-12-05T18:00:00.000+01:00,123,anyVehicle,0.0,carOrLightVehicle,14.0,8247.0,LZA-Detektor,Eversbusch-/ Otto-Warburg-Str.,48.206528,11.458162
+10997002,7719,2023-12-05T18:00:00.000+01:00,78,anyVehicle,0.0,carOrLightVehicle,8.0,8248.0,LZA-Detektor,Eversbusch-/ Otto-Warburg-Str.,48.205692,11.457657
+10997003,7720,2023-12-05T18:00:00.000+01:00,91,anyVehicle,0.0,carOrLightVehicle,15.0,8249.0,LZA-Detektor,Eversbusch-/ Otto-Warburg-Str.,48.20587,11.457687
+10997004,7721,2023-12-05T18:00:00.000+01:00,80,anyVehicle,0.0,carOrLightVehicle,21.0,8250.0,LZA-Detektor,Eversbusch-/ Otto-Warburg-Str.,48.206028,11.45778
+10997005,7722,2023-12-05T18:00:00.000+01:00,19,anyVehicle,0.0,carOrLightVehicle,47.0,8251.0,LZA-Detektor,Eversbusch-/ Otto-Warburg-Str.,48.206215,11.457634
+10997006,7723,2023-12-05T18:00:00.000+01:00,30,anyVehicle,0.0,carOrLightVehicle,38.0,8252.0,LZA-Detektor,Eversbusch-/ Otto-Warburg-Str.,48.206238,11.457662
+10997007,7724,2023-12-05T18:00:00.000+01:00,34,anyVehicle,0.0,carOrLightVehicle,9.0,8253.0,LZA-Detektor,Eversbusch-/ Otto-Warburg-Str.,48.20634,11.457554
+10997008,7725,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,8254.0,LZA-Detektor,Eversbusch-/ Otto-Warburg-Str.,48.206287,11.457861
+10997009,7726,2023-12-05T18:00:00.000+01:00,68,anyVehicle,0.0,carOrLightVehicle,7.0,8255.0,LZA-Detektor,Eversbusch-/ Otto-Warburg-Str.,48.206497,11.458213
+11017003,7832,2023-12-05T18:00:00.000+01:00,89,anyVehicle,0.0,carOrLightVehicle,10.0,8361.0,LZA-Detektor,Gleim-/ Weltenburger Str.,48.14141,11.627037
+11017004,7833,2023-12-05T18:00:00.000+01:00,72,anyVehicle,0.0,carOrLightVehicle,12.0,8362.0,LZA-Detektor,Gleim-/ Weltenburger Str.,48.1419,11.627265
+11028001,7881,2023-12-05T18:00:00.000+01:00,20,anyVehicle,0.0,carOrLightVehicle,13.0,8412.0,LZA-Detektor,Rhein-/ Mainzer Str.,48.167046,11.581254
+11028002,7882,2023-12-05T18:00:00.000+01:00,19,anyVehicle,0.0,carOrLightVehicle,18.0,8413.0,LZA-Detektor,Rhein-/ Mainzer Str.,48.167137,11.581182
+11032004,7902,2023-12-05T18:00:00.000+01:00,62,anyVehicle,0.0,carOrLightVehicle,6.0,8433.0,LZA-Detektor,Grosjean-/ OberfÃÂ¶hringer Str.,48.15549,11.61343
+11032005,7903,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,8434.0,LZA-Detektor,Grosjean-/ OberfÃÂ¶hringer Str.,48.155144,11.613352
+11032006,7904,2023-12-05T18:00:00.000+01:00,60,anyVehicle,0.0,carOrLightVehicle,11.0,8435.0,LZA-Detektor,Grosjean-/ OberfÃÂ¶hringer Str.,48.154892,11.612794
+11033001,7905,2023-12-05T18:00:00.000+01:00,15,anyVehicle,0.0,carOrLightVehicle,25.0,8436.0,LZA-Detektor,Baldur-/ Nederlinger Str.,48.16758,11.516594
+11039002,7929,2023-12-05T18:00:00.000+01:00,103,anyVehicle,0.0,carOrLightVehicle,11.0,8460.0,LZA-Detektor,Eversbuschstr./ Hohenadelweg,48.203712,11.4570265
+11039003,7930,2023-12-05T18:00:00.000+01:00,138,anyVehicle,0.0,carOrLightVehicle,15.0,8461.0,LZA-Detektor,Eversbuschstr./ Hohenadelweg,48.204258,11.457294
+11056002,8077,2023-12-05T18:00:00.000+01:00,124,anyVehicle,0.0,carOrLightVehicle,13.0,8613.0,LZA-Detektor,Clemens-/ SchleiÃÅ¸heimer Str.,48.164097,11.56446
+11056003,8078,2023-12-05T18:00:00.000+01:00,24,anyVehicle,0.0,carOrLightVehicle,8.0,8614.0,LZA-Detektor,Clemens-/ SchleiÃÅ¸heimer Str.,48.164562,11.564449
+11056004,8079,2023-12-05T18:00:00.000+01:00,13,anyVehicle,0.0,carOrLightVehicle,3.0,8615.0,LZA-Detektor,Clemens-/ SchleiÃÅ¸heimer Str.,48.164593,11.564048
+11056005,8080,2023-12-05T18:00:00.000+01:00,25,anyVehicle,0.0,carOrLightVehicle,5.0,8616.0,LZA-Detektor,Clemens-/ SchleiÃÅ¸heimer Str.,48.16496,11.564461
+11056006,8081,2023-12-05T18:00:00.000+01:00,170,anyVehicle,0.0,carOrLightVehicle,31.0,8617.0,LZA-Detektor,Clemens-/ SchleiÃÅ¸heimer Str.,48.164955,11.564502
+11056007,8082,2023-12-05T18:00:00.000+01:00,20,anyVehicle,0.0,carOrLightVehicle,10.0,8618.0,LZA-Detektor,Clemens-/ SchleiÃÅ¸heimer Str.,48.16449,11.56452
+11056008,8083,2023-12-05T18:00:00.000+01:00,18,anyVehicle,0.0,carOrLightVehicle,8.0,8619.0,LZA-Detektor,Clemens-/ SchleiÃÅ¸heimer Str.,48.164463,11.564936
+11113001,8493,2023-12-05T18:00:00.000+01:00,7,anyVehicle,0.0,carOrLightVehicle,1.0,9035.0,LZA-Detektor,Gollierstr./ TheresienhÃÂ¶he,48.13514,11.547464
+11113002,8494,2023-12-05T18:00:00.000+01:00,71,anyVehicle,0.0,carOrLightVehicle,6.0,9036.0,LZA-Detektor,Gollierstr./ TheresienhÃÂ¶he,48.135197,11.547457
+11113003,8495,2023-12-05T18:00:00.000+01:00,58,anyVehicle,0.0,carOrLightVehicle,12.0,9037.0,LZA-Detektor,Gollierstr./ TheresienhÃÂ¶he,48.13541,11.547634
+11113006,8496,2023-12-05T18:00:00.000+01:00,23,anyVehicle,0.0,carOrLightVehicle,31.0,9040.0,LZA-Detektor,Gollierstr./ TheresienhÃÂ¶he,48.1356,11.54746
+11113007,8497,2023-12-05T18:00:00.000+01:00,55,anyVehicle,0.0,carOrLightVehicle,10.0,9041.0,LZA-Detektor,Gollierstr./ TheresienhÃÂ¶he,48.135895,11.548187
+11113008,8498,2023-12-05T18:00:00.000+01:00,75,anyVehicle,0.0,carOrLightVehicle,12.0,9042.0,LZA-Detektor,Gollierstr./ TheresienhÃÂ¶he,48.13585,11.54817
+11113009,8499,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,9043.0,LZA-Detektor,Gollierstr./ TheresienhÃÂ¶he,48.135315,11.547457
+11113010,8500,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,9044.0,LZA-Detektor,Gollierstr./ TheresienhÃÂ¶he,48.135303,11.547491
+11113016,8506,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,9050.0,LZA-Detektor,Gollierstr./ TheresienhÃÂ¶he,48.135628,11.547468
+11122001,8543,2023-12-05T18:00:00.000+01:00,81,anyVehicle,0.0,carOrLightVehicle,15.0,9089.0,LZA-Detektor,Eversbuschstr./ Paul-Ehrlich-Weg,48.19482,11.458378
+11122002,8544,2023-12-05T18:00:00.000+01:00,137,anyVehicle,0.0,carOrLightVehicle,41.0,9090.0,LZA-Detektor,Eversbuschstr./ Paul-Ehrlich-Weg,48.194954,11.458189
+11122003,8545,2023-12-05T18:00:00.000+01:00,39,anyVehicle,0.0,carOrLightVehicle,64.0,9091.0,LZA-Detektor,Eversbuschstr./ Paul-Ehrlich-Weg,48.1951,11.45785
+11122004,8546,2023-12-05T18:00:00.000+01:00,37,anyVehicle,0.0,carOrLightVehicle,41.0,9092.0,LZA-Detektor,Eversbuschstr./ Paul-Ehrlich-Weg,48.195065,11.457605
+11122005,8547,2023-12-05T18:00:00.000+01:00,108,anyVehicle,0.0,carOrLightVehicle,39.0,9093.0,LZA-Detektor,Eversbuschstr./ Paul-Ehrlich-Weg,48.195568,11.458011
+11140001,8683,2023-12-05T18:00:00.000+01:00,11,anyVehicle,0.0,carOrLightVehicle,39.0,9244.0,LZA-Detektor,HeÃÅ¸-/ SchleiÃÅ¸heimer Str.,48.153423,11.560663
+11140002,8684,2023-12-05T18:00:00.000+01:00,7,anyVehicle,0.0,carOrLightVehicle,7.0,9245.0,LZA-Detektor,HeÃÅ¸-/ SchleiÃÅ¸heimer Str.,48.153343,11.561003
+11152001,8727,2023-12-05T18:00:00.000+01:00,53,anyVehicle,0.0,carOrLightVehicle,5.0,9296.0,LZA-Detektor,Weinberger-/ Benedikterstr.,48.14032,11.467553
+11152002,8728,2023-12-05T18:00:00.000+01:00,47,anyVehicle,0.0,carOrLightVehicle,3.0,9297.0,LZA-Detektor,Weinberger-/ Benedikterstr.,48.14042,11.468582
+11152003,8729,2023-12-05T18:00:00.000+01:00,41,anyVehicle,0.0,carOrLightVehicle,6.0,9298.0,LZA-Detektor,Weinberger-/ Benedikterstr.,48.140366,11.467859
+11178001,8813,2023-12-05T18:00:00.000+01:00,46,anyVehicle,0.0,carOrLightVehicle,7.0,9390.0,LZA-Detektor,Max-Weber-Platz HauptgerÃÂ¤t,48.134277,11.597241
+11178002,8814,2023-12-05T18:00:00.000+01:00,65,anyVehicle,0.0,carOrLightVehicle,18.0,9391.0,LZA-Detektor,Max-Weber-Platz HauptgerÃÂ¤t,48.13431,11.597199
+11178004,8816,2023-12-05T18:00:00.000+01:00,57,anyVehicle,0.0,carOrLightVehicle,26.0,9393.0,LZA-Detektor,Max-Weber-Platz HauptgerÃÂ¤t,48.13458,11.597882
+11178005,8817,2023-12-05T18:00:00.000+01:00,77,anyVehicle,0.0,carOrLightVehicle,60.0,9394.0,LZA-Detektor,Max-Weber-Platz HauptgerÃÂ¤t,48.13459,11.597923
+11178006,8818,2023-12-05T18:00:00.000+01:00,129,anyVehicle,0.0,carOrLightVehicle,16.0,9395.0,LZA-Detektor,Max-Weber-Platz HauptgerÃÂ¤t,48.134254,11.59788
+11178007,8819,2023-12-05T18:00:00.000+01:00,23,anyVehicle,0.0,carOrLightVehicle,2.0,9396.0,LZA-Detektor,Max-Weber-Platz HauptgerÃÂ¤t,48.134285,11.598469
+11178008,8820,2023-12-05T18:00:00.000+01:00,68,anyVehicle,0.0,carOrLightVehicle,10.0,9397.0,LZA-Detektor,Max-Weber-Platz HauptgerÃÂ¤t,48.134262,11.598601
+11178009,8821,2023-12-05T18:00:00.000+01:00,53,anyVehicle,0.0,carOrLightVehicle,43.0,9398.0,LZA-Detektor,Max-Weber-Platz HauptgerÃÂ¤t,48.134243,11.598267
+11178010,8822,2023-12-05T18:00:00.000+01:00,22,anyVehicle,0.0,carOrLightVehicle,9.0,9399.0,LZA-Detektor,Max-Weber-Platz HauptgerÃÂ¤t,48.133755,11.597882
+11178011,8823,2023-12-05T18:00:00.000+01:00,57,anyVehicle,0.0,carOrLightVehicle,7.0,9400.0,LZA-Detektor,Max-Weber-Platz HauptgerÃÂ¤t,48.133766,11.597854
+11178012,8824,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,17.0,9401.0,LZA-Detektor,Max-Weber-Platz HauptgerÃÂ¤t,48.13396,11.597807
+11178048,8834,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,9411.0,LZA-Detektor,Max-Weber-Platz HauptgerÃÂ¤t,48.13415,11.597696
+11178049,8835,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,9412.0,LZA-Detektor,Max-Weber-Platz HauptgerÃÂ¤t,48.134224,11.598234
+11178050,8836,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,9413.0,LZA-Detektor,Max-Weber-Platz HauptgerÃÂ¤t,48.134224,11.598237
+11178051,8837,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,9414.0,LZA-Detektor,Max-Weber-Platz HauptgerÃÂ¤t,48.13383,11.597718
+11178052,8838,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,9415.0,LZA-Detektor,Max-Weber-Platz HauptgerÃÂ¤t,48.13343,11.597699
+11178053,8839,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,9416.0,LZA-Detektor,Max-Weber-Platz HauptgerÃÂ¤t,48.134167,11.597804
+11178054,8840,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,9417.0,LZA-Detektor,Max-Weber-Platz HauptgerÃÂ¤t,48.13452,11.597909
+11178055,8841,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,9418.0,LZA-Detektor,Max-Weber-Platz HauptgerÃÂ¤t,48.134163,11.597993
+11178056,8842,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,9419.0,LZA-Detektor,Max-Weber-Platz HauptgerÃÂ¤t,48.13403,11.597911
+11178057,8843,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,9420.0,LZA-Detektor,Max-Weber-Platz HauptgerÃÂ¤t,48.13358,11.597827
+11178058,8844,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,9421.0,LZA-Detektor,Max-Weber-Platz HauptgerÃÂ¤t,48.1335,11.597757
+11186001,8918,2023-12-05T18:00:00.000+01:00,17,anyVehicle,0.0,carOrLightVehicle,8.0,9514.0,LZA-Detektor,Domagk-/ Walter-Gropius-Str.,48.182117,11.598874
+11186002,8919,2023-12-05T18:00:00.000+01:00,53,anyVehicle,0.0,carOrLightVehicle,67.0,9515.0,LZA-Detektor,Domagk-/ Walter-Gropius-Str.,48.182014,11.5985365
+11217001,9073,2023-12-05T18:00:00.000+01:00,103,anyVehicle,0.0,carOrLightVehicle,19.0,9673.0,LZA-Detektor,Frankfurter Ring / Joseph-Dollinger-Bogen,48.18648,11.606674
+11217002,9074,2023-12-05T18:00:00.000+01:00,85,anyVehicle,0.0,carOrLightVehicle,16.0,9674.0,LZA-Detektor,Frankfurter Ring / Joseph-Dollinger-Bogen,48.18646,11.6066675
+11217005,9077,2023-12-05T18:00:00.000+01:00,105,anyVehicle,0.0,carOrLightVehicle,15.0,9677.0,LZA-Detektor,Frankfurter Ring / Joseph-Dollinger-Bogen,48.18653,11.605123
+11217006,9078,2023-12-05T18:00:00.000+01:00,116,anyVehicle,0.0,carOrLightVehicle,27.0,9678.0,LZA-Detektor,Frankfurter Ring / Joseph-Dollinger-Bogen,48.18656,11.60513
+11217009,9081,2023-12-05T18:00:00.000+01:00,16,anyVehicle,0.0,carOrLightVehicle,0.0,9681.0,LZA-Detektor,Frankfurter Ring / Joseph-Dollinger-Bogen,48.186615,11.605737
+11248001,9253,2023-12-05T18:00:00.000+01:00,130,anyVehicle,0.0,carOrLightVehicle,19.0,9865.0,LZA-Detektor,Allacher-/ Ambossstr.,48.176487,11.498131
+11248002,9254,2023-12-05T18:00:00.000+01:00,91,anyVehicle,0.0,carOrLightVehicle,11.0,9866.0,LZA-Detektor,Allacher-/ Ambossstr.,48.176464,11.498103
+11248003,9255,2023-12-05T18:00:00.000+01:00,82,anyVehicle,0.0,carOrLightVehicle,13.0,9867.0,LZA-Detektor,Allacher-/ Ambossstr.,48.17722,11.496301
+11248004,9256,2023-12-05T18:00:00.000+01:00,60,anyVehicle,0.0,carOrLightVehicle,9.0,9868.0,LZA-Detektor,Allacher-/ Ambossstr.,48.177246,11.49633
+11248005,9257,2023-12-05T18:00:00.000+01:00,1,anyVehicle,0.0,carOrLightVehicle,3.0,9869.0,LZA-Detektor,Allacher-/ Ambossstr.,48.176743,11.497453
+11248006,9258,2023-12-05T18:00:00.000+01:00,9,anyVehicle,0.0,carOrLightVehicle,20.0,9870.0,LZA-Detektor,Allacher-/ Ambossstr.,48.176903,11.497637
+11248007,9259,2023-12-05T18:00:00.000+01:00,8,anyVehicle,0.0,carOrLightVehicle,11.0,9871.0,LZA-Detektor,Allacher-/ Ambossstr.,48.17689,11.497672
+11250001,9267,2023-12-05T18:00:00.000+01:00,6,anyVehicle,0.0,carOrLightVehicle,18.0,9879.0,LZA-Detektor,Freisinger Landstr./ Josef-Wirth-Weg,48.199245,11.626349
+11250002,9268,2023-12-05T18:00:00.000+01:00,3,anyVehicle,0.0,carOrLightVehicle,0.0,9880.0,LZA-Detektor,Freisinger Landstr./ Josef-Wirth-Weg,48.19927,11.626704
+11250003,9269,2023-12-05T18:00:00.000+01:00,3,anyVehicle,0.0,carOrLightVehicle,7.0,9881.0,LZA-Detektor,Freisinger Landstr./ Josef-Wirth-Weg,48.199184,11.6268015
+11273001,9411,2023-12-05T18:00:00.000+01:00,48,anyVehicle,0.0,carOrLightVehicle,23.0,10036.0,LZA-Detektor,Barbara-/ Schwere-Reiter-Str.,48.161324,11.556303
+11273002,9412,2023-12-05T18:00:00.000+01:00,74,anyVehicle,0.0,carOrLightVehicle,15.0,10037.0,LZA-Detektor,Barbara-/ Schwere-Reiter-Str.,48.16135,11.556303
+11273003,9413,2023-12-05T18:00:00.000+01:00,14,anyVehicle,0.0,carOrLightVehicle,29.0,10038.0,LZA-Detektor,Barbara-/ Schwere-Reiter-Str.,48.161373,11.5566635
+11273004,9414,2023-12-05T18:00:00.000+01:00,19,anyVehicle,0.0,carOrLightVehicle,39.0,10039.0,LZA-Detektor,Barbara-/ Schwere-Reiter-Str.,48.16168,11.556907
+11273005,9415,2023-12-05T18:00:00.000+01:00,44,anyVehicle,0.0,carOrLightVehicle,19.0,10040.0,LZA-Detektor,Barbara-/ Schwere-Reiter-Str.,48.16154,11.557541
+11273006,9416,2023-12-05T18:00:00.000+01:00,75,anyVehicle,0.0,carOrLightVehicle,13.0,10041.0,LZA-Detektor,Barbara-/ Schwere-Reiter-Str.,48.161514,11.55754
+11273007,9417,2023-12-05T18:00:00.000+01:00,8,anyVehicle,0.0,carOrLightVehicle,29.0,10042.0,LZA-Detektor,Barbara-/ Schwere-Reiter-Str.,48.1615,11.55718
+11273008,9418,2023-12-05T18:00:00.000+01:00,8,anyVehicle,0.0,carOrLightVehicle,3.0,10043.0,LZA-Detektor,Barbara-/ Schwere-Reiter-Str.,48.161198,11.556938
+11273009,9419,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,10044.0,LZA-Detektor,Barbara-/ Schwere-Reiter-Str.,48.161488,11.556786
+11273010,9420,2023-12-05T18:00:00.000+01:00,6,anyVehicle,0.0,carOrLightVehicle,0.0,10045.0,LZA-Detektor,Barbara-/ Schwere-Reiter-Str.,48.161293,11.557056
+11306007,9577,2023-12-05T18:00:00.000+01:00,9,anyVehicle,0.0,carOrLightVehicle,3.0,10208.0,LZA-Detektor,Alto-/ Fabrikstr.,48.1566,11.416162
+11306009,9579,2023-12-05T18:00:00.000+01:00,168,anyVehicle,0.0,carOrLightVehicle,36.0,10210.0,LZA-Detektor,Alto-/ Fabrikstr.,48.15629,11.416415
+11306010,9580,2023-12-05T18:00:00.000+01:00,97,anyVehicle,0.0,carOrLightVehicle,28.0,10211.0,LZA-Detektor,Alto-/ Fabrikstr.,48.156937,11.415911
+11319001,9640,2023-12-05T18:00:00.000+01:00,67,anyVehicle,0.0,carOrLightVehicle,11.0,10271.0,LZA-Detektor,Edmund-Rumpler-Str./ Lilienthalallee,48.19452,11.608638
+11319002,9641,2023-12-05T18:00:00.000+01:00,21,anyVehicle,0.0,carOrLightVehicle,10.0,10272.0,LZA-Detektor,Edmund-Rumpler-Str./ Lilienthalallee,48.194767,11.608717
+11319003,9642,2023-12-05T18:00:00.000+01:00,11,anyVehicle,0.0,carOrLightVehicle,3.0,10273.0,LZA-Detektor,Edmund-Rumpler-Str./ Lilienthalallee,48.19499,11.608617
+11319004,9643,2023-12-05T18:00:00.000+01:00,2,anyVehicle,0.0,carOrLightVehicle,0.0,10274.0,LZA-Detektor,Edmund-Rumpler-Str./ Lilienthalallee,48.195034,11.6085615
+11319006,9645,2023-12-05T18:00:00.000+01:00,15,anyVehicle,0.0,carOrLightVehicle,7.0,10276.0,LZA-Detektor,Edmund-Rumpler-Str./ Lilienthalallee,48.19519,11.608935
+11319007,9646,2023-12-05T18:00:00.000+01:00,6,anyVehicle,0.0,carOrLightVehicle,2.0,10277.0,LZA-Detektor,Edmund-Rumpler-Str./ Lilienthalallee,48.19493,11.609094
+11320001,9653,2023-12-05T18:00:00.000+01:00,11,anyVehicle,0.0,carOrLightVehicle,4.0,10284.0,LZA-Detektor,Oertelplatz,48.190205,11.467132
+11330001,9705,2023-12-05T18:00:00.000+01:00,97,anyVehicle,0.0,carOrLightVehicle,24.0,10339.0,LZA-Detektor,Schwanthaler-/ St.-Paul-Str.,48.13752,11.554009
+11330002,9706,2023-12-05T18:00:00.000+01:00,188,anyVehicle,0.0,carOrLightVehicle,38.0,10340.0,LZA-Detektor,Schwanthaler-/ St.-Paul-Str.,48.137505,11.553073
+11337001,9738,2023-12-05T18:00:00.000+01:00,19,anyVehicle,0.0,carOrLightVehicle,42.0,10374.0,LZA-Detektor,Landaubogen / Siegenburger Str.,48.12903,11.530061
+11337002,9739,2023-12-05T18:00:00.000+01:00,9,anyVehicle,0.0,carOrLightVehicle,7.0,10375.0,LZA-Detektor,Landaubogen / Siegenburger Str.,48.12928,11.530254
+11338008,9743,2023-12-05T18:00:00.000+01:00,51,anyVehicle,0.0,carOrLightVehicle,7.0,10379.0,LZA-Detektor,Georg-Zech-Allee / Lerchenauer Str.,48.20801,11.5331955
+11338009,9744,2023-12-05T18:00:00.000+01:00,22,anyVehicle,0.0,carOrLightVehicle,30.0,10380.0,LZA-Detektor,Georg-Zech-Allee / Lerchenauer Str.,48.208385,11.532771
+11338010,9745,2023-12-05T18:00:00.000+01:00,43,anyVehicle,0.0,carOrLightVehicle,12.0,10381.0,LZA-Detektor,Georg-Zech-Allee / Lerchenauer Str.,48.208805,11.53277
+11338011,9746,2023-12-05T18:00:00.000+01:00,44,anyVehicle,0.0,carOrLightVehicle,6.0,10382.0,LZA-Detektor,Georg-Zech-Allee / Lerchenauer Str.,48.20835,11.533072
+11338012,9747,2023-12-05T18:00:00.000+01:00,3,anyVehicle,0.0,carOrLightVehicle,1.0,10383.0,LZA-Detektor,Georg-Zech-Allee / Lerchenauer Str.,48.20833,11.533132
+14043001,9861,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,10494.0,Doppelschleife,"Maria GÃÂ¶ppert-Mayer-Str. (W), 30m vor Werner-Heisenberg-Alle",48.207565,11.618226
+14043003,9862,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,10496.0,Doppelschleife,"Maria-GÃÂ¶ppert-Mayer-Str. (O), 50m hinter  Werner-Heisenberg-Allee",48.207764,11.619653
+14043004,9863,2023-12-05T18:00:00.000+01:00,1,anyVehicle,0.0,carOrLightVehicle,0.0,10497.0,Doppelschleife,"Maria-GÃÂ¶ppert-Mayer-Str. (O), 50m hinter Werner-Heisenberg-Allee",48.20781,11.619681
+14043005,9864,2023-12-05T18:00:00.000+01:00,27,anyVehicle,46.8,carOrLightVehicle,1.0,10498.0,Doppelschleife,"Werner-Heisenberg-Allee (W) sÃÂ¼dlich P&R, 90m sÃÂ¼dlich Maria-GÃÂ¶ppert-Mayer-Str.",48.20941,11.619898
+14043006,9865,2023-12-05T18:00:00.000+01:00,17,anyVehicle,46.08,carOrLightVehicle,1.0,10499.0,Doppelschleife,"Werner-Heisenberg-Allee (W) sÃÂ¼dlich P&R, 90m sÃÂ¼dlich Maria-GÃÂ¶ppert-Mayer-Str.",48.209396,11.619938
+14043007,9866,2023-12-05T18:00:00.000+01:00,8,anyVehicle,19.44,carOrLightVehicle,0.0,10500.0,Doppelschleife,"Maria-GÃÂ¶ppert-Mayer-Str. (P&R), 15m vor Werner-Heisenberg-Allee",48.210182,11.620275
+14043008,9867,2023-12-05T18:00:00.000+01:00,13,anyVehicle,24.48,carOrLightVehicle,1.0,10501.0,Doppelschleife,"Maria-GÃÂ¶ppert-Mayer-Str. (P&R), 15m hinter Werner-Heisenberg-Allee",48.210197,11.620292
+14043009,9868,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,10502.0,Doppelschleife,"Werner-Heisenberg-Allee (O) SB 2  bei Abfahrt P&R, hinter Abzweigung Busparkplatz SÃÂ¼d",48.21035,11.621344
+14043010,9869,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,10503.0,Doppelschleife,"Werner-Heisenberg-Allee (O) SB 2  bei Abfahrt P&R, hinter Abzweigung Busparkplatz SÃÂ¼d",48.21038,11.621346
+14043011,9870,2023-12-05T18:00:00.000+01:00,1,anyVehicle,25.2,carOrLightVehicle,0.0,10504.0,Doppelschleife,"Werner-Heisenberg-Allee (O) FR Arena, 60m hinter Abzweigung zum Busparkplatz SÃÂ¼d",48.210323,11.621931
+14043012,9871,2023-12-05T18:00:00.000+01:00,9,anyVehicle,43.56,carOrLightVehicle,0.0,10505.0,Doppelschleife,"Werner-Heisenberg-Allee (O) FR Arena, 60m hinter Abzweigung zum Busparkplatz SÃÂ¼d",48.210354,11.621947
+14043013,9872,2023-12-05T18:00:00.000+01:00,2,anyVehicle,45.0,carOrLightVehicle,0.0,10506.0,Doppelschleife,"Werner-Heisenberg-Allee (O) FR Arena, 60m hinter Abzweigung zum Busparkplatz SÃÂ¼d",48.21038,11.621961
+14043014,9873,2023-12-05T18:00:00.000+01:00,37,anyVehicle,36.36,carOrLightVehicle,2.0,10507.0,Doppelschleife,"Werner-Heisenberg-Allee (W) FR AS FrÃÂ¶ttmaning SÃÂ¼d, 75m vor Einfahrt P&R",48.210487,11.621907
+14043015,9874,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,10508.0,Doppelschleife,"Werner-Heisenberg-Allee (W) FR AS FrÃÂ¶ttmaning SÃÂ¼d, 75m vor Einfahrt P&R",48.210457,11.621897
+14043016,9875,2023-12-05T18:00:00.000+01:00,3,anyVehicle,54.0,carOrLightVehicle,0.0,10509.0,Doppelschleife,"Werner-Heisenberg-Allee (O) FR Nord Zufahrt P3, 65m vor SB B1",48.21337,11.624351
+14043017,9876,2023-12-05T18:00:00.000+01:00,7,anyVehicle,47.16,carOrLightVehicle,0.0,10510.0,Doppelschleife,"Werner-Heisenberg-Allee (O) FR Nord Zufahrt P3, 65m vor SB B1",48.213413,11.624287
+14043018,9877,2023-12-05T18:00:00.000+01:00,1,anyVehicle,72.0,carOrLightVehicle,0.0,10511.0,Doppelschleife,"Werner-Heisenberg-Allee (O) FR Nord Zufahrt P3, 65m vor SB B1",48.213406,11.624211
+14043020,9878,2023-12-05T18:00:00.000+01:00,2,anyVehicle,45.0,carOrLightVehicle,0.0,10512.0,Doppelschleife,"Werner-Heisenberg-Allee (W) FR SÃÂ¼d Zufahrt Busparken SÃÂ¼d, 65m hinter Einfahrt P3",48.21351,11.623836
+14043021,9879,2023-12-05T18:00:00.000+01:00,33,anyVehicle,40.68,carOrLightVehicle,1.0,10513.0,Doppelschleife,"Werner-Heisenberg-Allee (W) FR SÃÂ¼d Zufahrt Busparken SÃÂ¼d, 65m hinter Einfahrt P3",48.21351,11.623932
+14043022,9880,2023-12-05T18:00:00.000+01:00,2,anyVehicle,63.0,carOrLightVehicle,0.0,10514.0,Doppelschleife,"Werner-Heisenberg-Allee (W) FR SÃÂ¼d Zufahrt Busparken SÃÂ¼d, 65m hinter Einfahrt P3",48.213493,11.624007
+14043023,9881,2023-12-05T18:00:00.000+01:00,3,anyVehicle,57.6,carOrLightVehicle,0.0,10515.0,Doppelschleife,"Werner-Heisenberg-Allee (O) FR Nord Zufahrt P2, 65m vor SB B2",48.2147,11.62507
+14043024,9882,2023-12-05T18:00:00.000+01:00,7,anyVehicle,45.72,carOrLightVehicle,0.0,10516.0,Doppelschleife,"Werner-Heisenberg-Allee (O) FR Nord Zufahrt P2, 65m vor SB B2",48.21473,11.624984
+14043025,9883,2023-12-05T18:00:00.000+01:00,1,anyVehicle,68.4,carOrLightVehicle,0.0,10517.0,Doppelschleife,"Werner-Heisenberg-Allee (O) FR Nord Zufahrt P2, 65m vor SB B2",48.214752,11.624919
+14043027,9884,2023-12-05T18:00:00.000+01:00,2,anyVehicle,52.2,carOrLightVehicle,0.0,10518.0,Doppelschleife,"Werner-Heisenberg-Allee (W) FR SÃÂ¼d Zufahrt P3, 65m vor Einfahrt P3",48.2148,11.624544
+14043028,9885,2023-12-05T18:00:00.000+01:00,32,anyVehicle,52.56,carOrLightVehicle,1.0,10519.0,Doppelschleife,"Werner-Heisenberg-Allee (W) FR SÃÂ¼d Zufahrt P3, 65m vor Einfahrt P3",48.214794,11.62463
+14043029,9886,2023-12-05T18:00:00.000+01:00,1,anyVehicle,72.0,carOrLightVehicle,0.0,10520.0,Doppelschleife,"Werner-Heisenberg-Allee (W) FR SÃÂ¼d Zufahrt P3, 65m vor Einfahrt P3",48.21478,11.624716
+14043030,9887,2023-12-05T18:00:00.000+01:00,3,anyVehicle,54.0,carOrLightVehicle,0.0,10521.0,Doppelschleife,"Werner-Heisenberg-Allee (O) FR Nord Zufahrt P1, 65m vor SB 3",48.21576,11.62567
+14043031,9888,2023-12-05T18:00:00.000+01:00,6,anyVehicle,49.32,carOrLightVehicle,0.0,10522.0,Doppelschleife,"Werner-Heisenberg-Allee (O) FR Nord Zufahrt P1, 65m vor SB 3",48.215786,11.625585
+14043032,9889,2023-12-05T18:00:00.000+01:00,1,anyVehicle,68.4,carOrLightVehicle,0.0,10523.0,Doppelschleife,"Werner-Heisenberg-Allee (O) FR Nord Zufahrt P1, 65m vor SB 3",48.21581,11.625509
+14043034,9890,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,10524.0,Doppelschleife,"Werner-Heisenberg-Allee (W) FR SÃÂ¼d Zufahrt P2, 65m vor Einfahrt P2",48.215893,11.625155
+14043035,9891,2023-12-05T18:00:00.000+01:00,31,anyVehicle,52.92,carOrLightVehicle,1.0,10525.0,Doppelschleife,"Werner-Heisenberg-Allee (W) FR SÃÂ¼d Zufahrt P2, 65m vor Einfahrt P2",48.21588,11.625231
+14043036,9892,2023-12-05T18:00:00.000+01:00,3,anyVehicle,50.4,carOrLightVehicle,0.0,10526.0,Doppelschleife,"Werner-Heisenberg-Allee (W) FR SÃÂ¼d Zufahrt P2, 65m vor Einfahrt P2",48.21586,11.625327
+14043037,9893,2023-12-05T18:00:00.000+01:00,3,anyVehicle,39.6,carOrLightVehicle,0.0,10527.0,Doppelschleife,"Werner-Heisenberg-Allee (O) FR Nord Zufahrt Sonderparken, 110m hinter SB 3",48.217087,11.626271
+14043038,9894,2023-12-05T18:00:00.000+01:00,6,anyVehicle,45.72,carOrLightVehicle,0.0,10528.0,Doppelschleife,"Werner-Heisenberg-Allee (O) FR Nord Zufahrt Sonderparken, 110m hinter SB 3",48.21706,11.626357
+14043039,9895,2023-12-05T18:00:00.000+01:00,3,anyVehicle,47.88,carOrLightVehicle,0.0,10529.0,Doppelschleife,"Werner-Heisenberg-Allee (W) FR SÃÂ¼d Zufahrt P1, 65m vor Einfahrt P1",48.21719,11.6258955
+14043040,9896,2023-12-05T18:00:00.000+01:00,27,anyVehicle,52.56,carOrLightVehicle,1.0,10530.0,Doppelschleife,"Werner-Heisenberg-Allee (W) FR SÃÂ¼d Zufahrt P1, 65m vor Einfahrt P1",48.217167,11.625959
+14043041,9897,2023-12-05T18:00:00.000+01:00,5,anyVehicle,57.6,carOrLightVehicle,0.0,10531.0,Doppelschleife,"Werner-Heisenberg-Allee (W) FR SÃÂ¼d Zufahrt P1, 65m vor Einfahrt P1",48.217144,11.625994
+14043042,9898,2023-12-05T18:00:00.000+01:00,5,anyVehicle,0.0,carOrLightVehicle,0.0,10532.0,Doppelschleife,Ausfahrt Parken Sonderausweis,48.21774,11.626216
+14043044,9899,2023-12-05T18:00:00.000+01:00,2,anyVehicle,14.4,carOrLightVehicle,0.0,10533.0,Doppelschleife,"Werner-Heisenberg-Allee (W) Einfahrt Sonderparken, 30m hinter Abzweigung",48.21851,11.626637
+14043045,9900,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,10534.0,Doppelschleife,"Werner-Heisenberg-Allee (W) Einfahrt Sonderparken, 30m hinter Abzweigung",48.218494,11.626688
+14043046,9901,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,10535.0,Doppelschleife,"Werner-Heisenberg-Allee (W) Einfahrt Sonderparken, 30m hinter Abzweigung",48.218483,11.62673
+14043047,9902,2023-12-05T18:00:00.000+01:00,3,anyVehicle,57.6,carOrLightVehicle,0.0,10536.0,Doppelschleife,"Werner-Heisenberg-Allee (O) FR Nord, 210m hinter Ausfahrt Sonderparken",48.22042,11.627279
+14043048,9903,2023-12-05T18:00:00.000+01:00,3,anyVehicle,54.0,carOrLightVehicle,0.0,10537.0,Doppelschleife,"Werner-Heisenberg-Allee (O) FR Nord, 210m hinter Ausfahrt Sonderparken",48.220394,11.62722
+14043049,9904,2023-12-05T18:00:00.000+01:00,4,anyVehicle,53.28,carOrLightVehicle,0.0,10538.0,Doppelschleife,"Werner-Heisenberg-Allee (W) Abfahrt Arena, 110m nach Ausfahrt Busparken Mitte",48.2212,11.626045
+14043050,9905,2023-12-05T18:00:00.000+01:00,23,anyVehicle,50.76,carOrLightVehicle,1.0,10539.0,Doppelschleife,"Werner-Heisenberg-Allee (W) FR ParkhÃÂ¤user, 110m nach Ausfahrt Busparken Mitte",48.221252,11.626116
+14043051,9906,2023-12-05T18:00:00.000+01:00,3,anyVehicle,56.52,carOrLightVehicle,0.0,10540.0,Doppelschleife,"Werner-Heisenberg-Allee (W) FR ParkhÃÂ¤user, 110m nach Ausfahrt Busparken Mitte",48.221222,11.626075
+14043052,9907,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,10541.0,Doppelschleife,"Werner-Heisenberg-Allee (W) Abfahrt Busparken Nord, 110m nach Ausfahrt Busparken Mitte",48.221336,11.626159
+14043053,9908,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,10542.0,Doppelschleife,Werner-Heisenberg-Allee (W)  Einfahrt Busparken Mitte,48.2218,11.624606
+14043054,9909,2023-12-05T18:00:00.000+01:00,1,anyVehicle,7.2,carOrLightVehicle,0.0,10543.0,Doppelschleife,Werner-Heisenberg-Allee (W)  Ausfahrt Busparken Mitte,48.221775,11.624642
+14043055,9910,2023-12-05T18:00:00.000+01:00,1,anyVehicle,43.2,carOrLightVehicle,0.0,10544.0,Doppelschleife,"Werner-Heisenberg-Allee (O) Abfahrt Busparken Nord, 10m nach Abzweigung",48.22296,11.623278
+14043056,9911,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,10545.0,Doppelschleife,"Werner-Heisenberg-Allee (O) Abfahrt BAB FR SÃÂ¼d, 10m nach Abzweigung",48.22293,11.623261
+14043057,9912,2023-12-05T18:00:00.000+01:00,4,anyVehicle,54.0,carOrLightVehicle,0.0,10546.0,Doppelschleife,"Werner-Heisenberg-Allee (O) Zufahrt  A99 FR M-Neuherberg, 10m nach Abzweigung",48.22287,11.62324
+14043058,9913,2023-12-05T18:00:00.000+01:00,3,anyVehicle,47.88,carOrLightVehicle,0.0,10547.0,Doppelschleife,"Werner-Heisenberg-Allee (O) Zufahrt  A99 FR M-Neuherberg, 10m nach Abzweigung",48.222836,11.623219
+14043059,9914,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,10548.0,Doppelschleife,"Werner-Heisenberg-Allee (W) HÃÂ¶he Fa. GSB, 20m nach Hans-Jensen-Weg",48.222633,11.623004
+14043060,9915,2023-12-05T18:00:00.000+01:00,1,anyVehicle,39.6,carOrLightVehicle,0.0,10549.0,Doppelschleife,"Werner-Heisenberg-Allee (W) HÃÂ¶he Fa. GSB, 20m nach Hans-Jensen-Weg",48.22266,11.62301
+14043061,9916,2023-12-05T18:00:00.000+01:00,0,anyVehicle,84.96,carOrLightVehicle,0.0,10550.0,Doppelschleife,"Werner-Heisenberg-Allee (W) HÃÂ¶he Fa. GSB (BAB), 20m nach Hans-Jensen-Weg",48.22269,11.623041
+14043062,9917,2023-12-05T18:00:00.000+01:00,0,anyVehicle,84.96,carOrLightVehicle,0.0,10551.0,Doppelschleife,"Werner-Heisenberg-Allee (W) HÃÂ¶he Fa. GSB (BAB), 20m nach Hans-Jensen-Weg",48.222717,11.623063
+14043063,9918,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,10552.0,Doppelschleife,15 m vor Werner-Heisenberg-Allee (W) Ausfahrt Busparken Nord,48.22261,11.622654
+14043064,9919,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,10553.0,Doppelschleife,"Werner-Heisenberg-Allee (W) Einfahrt Busparken Nord, 10m vor Einfahrt",48.223118,11.621236
+14043065,9920,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,10554.0,Doppelschleife,"Ausfahrt Busparken SÃÂ¼d, 10m vor Hans Jensen Weg",48.211372,11.618617
+14043066,9921,2023-12-05T18:00:00.000+01:00,0,anyVehicle,0.0,carOrLightVehicle,0.0,10555.0,Doppelschleife,"Ausfahrt Busparken SÃÂ¼d, 10m vor Hans Jensen Weg",48.211468,11.618653

@@ -12,6 +12,8 @@ from qgis.PyQt import QtGui
 from shapely import GeometryType
 from config import ROOT_DIR
 
+
+edgesData= ROOT_DIR + "/data/network/edges.shp"
 mergedDataRoot = ROOT_DIR + "/data/merged_data/"
 projectDataRoot = ROOT_DIR + "/data/project_data/"
 trafficRanges = [[(0.0, 100.0), 'Very Low Traffic', QtGui.QColor('#008000')],
@@ -27,7 +29,7 @@ project = QgsProject.instance()
 qgs.initQgis()
 
 # Adding Map
-tms = '	crs=EPSG:3857&format&type=xyz&url=https://tile.openstreetmap.org/%7Bz%7D/%7Bx%7D/%7By%7D.png&zmax=19&zmin=0'
+tms = '    crs=EPSG:3857&format&type=xyz&url=https://tile.openstreetmap.org/%7Bz%7D/%7Bx%7D/%7By%7D.png&zmax=19&zmin=0'
 rlayer = QgsRasterLayer(tms, 'OSM', 'wms')
 print(rlayer.crs())
 if rlayer.isValid():
@@ -87,6 +89,17 @@ def mapAndPoint():
         project.addMapLayer(csvlayer)
     else:
         print("CSV Layer failed to load!")
+
+    layer = QgsVectorLayer(edgesData, "testlayer_shp", "ogr")
+
+    if layer.isValid():
+        print("Detector Layer loaded!")
+        print(iface)
+        project.addMapLayer(layer)
+    else:
+        print("CSV Layer failed to load!")
+
+
 
     # color detector locations according to traffic
     target_field = 'flow'
@@ -154,3 +167,4 @@ def main():
 if __name__ == '__main__':
     main()
     print("End of Program")
+
