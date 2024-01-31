@@ -13,7 +13,9 @@ from shapely import GeometryType
 from config import ROOT_DIR
 
 
-edgesData= ROOT_DIR + "/data/network/edges.shp"
+edgesData = ROOT_DIR + "/data/network/edges.shp"
+# gpkgData = ROOT_DIR + "/data/network/map_and_points.gpkg"
+nodesData = ROOT_DIR + "/data/network/detector_nodes.gpkg"
 mergedDataRoot = ROOT_DIR + "/data/merged_data/"
 projectDataRoot = ROOT_DIR + "/data/project_data/"
 trafficRanges = [[(0.0, 100.0), 'Very Low Traffic', QtGui.QColor('#008000')],
@@ -64,6 +66,20 @@ def add_color(traffic_range: (float, float),
     return QgsRendererRange(lower, upper, symbol, label)
 
 
+def add_vector_layer(layer: QgsVectorLayer):
+    """
+    Adds the given QgsVectorLayer to the current QGIS project if the layer is valid. Otherwise, print the error summary
+
+    :param layer: A QgsVectorLayer object
+    """
+    if layer.isValid():
+        print(layer.name() + " loaded successfully!")
+        project.addMapLayer(layer)
+    else:
+        print(layer.name() + " failed to load")
+        print(layer.error().summary())
+
+
 def mapAndPoint():
     """
     Define a base map using OSM and load previously pulled detector location data. Color the detector points
@@ -73,35 +89,31 @@ def mapAndPoint():
 
     # Adding Points
     # TODO: ':=' available for python >= 3.8 -> compatibility issues?
-    if not (latest_merged_data_csv := max(glob.glob(mergedDataRoot + "*.csv"), key=os.path.getctime)):
+    if not (merged_points_data_csv := max(glob.glob(mergedDataRoot + "*.csv"), key=os.path.getctime)):
         print("No files found in {}".format(mergedDataRoot))
     # TODO: include line below to use map matched detector locations
-    latest_merged_data_csv = ROOT_DIR + "/data/network/matched.csv"
+    merged_points_data_csv = ROOT_DIR + "/data/network/coords_matched.csv"
     # matched.csv uses ';' as delimiter -> check if we use the matched detector locations as the csvlayer
-    delim = ';' if "matched.csv" in latest_merged_data_csv[-11:] else ','
+    delim = ';' if "matched.csv" in merged_points_data_csv[-11:] else ','
     options = '?delimiter={}&xField=lon&yField=lat&crs=epsg:4326'.format(delim)
-    uri = "file:///{}{}".format(latest_merged_data_csv, options)
+    uri = "file:///{}{}".format(merged_points_data_csv, options)
 
-    csvlayer = QgsVectorLayer(uri, "Points", "delimitedtext")
-    if csvlayer.isValid():
-        print("Detector Layer loaded!")
-        print(iface)
-        project.addMapLayer(csvlayer)
-    else:
-        print("CSV Layer failed to load!")
+    add_vector_layer(layer          := QgsVectorLayer(edgesData, "testlayer_shp", "ogr"))
+    add_vector_layer(gpkg_edgelayer := QgsVectorLayer(nodesData + "|layername=edges", "OSMnx edges", "ogr"))
+    add_vector_layer(gpkg_nodelayer := QgsVectorLayer(nodesData + "|layername=nodes", "OSMnx nodes", "ogr"))
+    add_vector_layer(csvlayer       := QgsVectorLayer(uri, "Points", "delimitedtext"))
 
-    layer = QgsVectorLayer(edgesData, "testlayer_shp", "ogr")
+    # set the size of the points from gpkg_nodelayer to be data driven using the "size" attribute
+    # create a new symbol for rendering the points of the node layer
+    size_symbol = QgsSymbol.defaultSymbol(gpkg_nodelayer.geometryType())
+    # set a data-defined override for the size, based on the 'size' attribute
+    size_symbol.setDataDefinedSize(QgsProperty.fromField("size"))
+    # set the renderer to the layer
+    gpkg_nodelayer.setRenderer(QgsSingleSymbolRenderer(size_symbol))
+    # refresh the layer to apply changes -> not necessary I think since we dont have a QGIS instance running
+    # gpkg_nodelayer.triggerRepaint()
 
-    if layer.isValid():
-        print("Detector Layer loaded!")
-        print(iface)
-        project.addMapLayer(layer)
-    else:
-        print("CSV Layer failed to load!")
-
-
-
-    # color detector locations according to traffic
+    # color detector locations stored in csvlayer according to traffic flow
     target_field = 'flow'
     range_list = []
     geom_type = csvlayer.geometryType()
@@ -117,7 +129,7 @@ def mapAndPoint():
     renderer.setClassAttribute(target_field)
     csvlayer.setRenderer(renderer)
     print("Classification of detectors done.", csvlayer)
-    QgsProject.instance().setCrs(QgsCoordinateReferenceSystem('EPSG:3857'), True)
+    project.setCrs(QgsCoordinateReferenceSystem('EPSG:3857'), True)
 
     # Center QGIS on the rlayer
     canvas = QgsMapCanvas()
