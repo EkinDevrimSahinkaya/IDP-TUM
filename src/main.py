@@ -6,6 +6,10 @@ from pull_static_mobilithek import static_data
 from compare import output_data, compare_csv_files
 from clear_flow import clear_flow
 from visualise_network import plot
+import cProfile
+from config import ROOT_DIR
+
+PROFILE = False  # set to True to include profiling
 
 
 def run(condition: bool):
@@ -34,12 +38,30 @@ def run(condition: bool):
         task()
 
 
-if __name__ == '__main__':
-    #run(True)
+def profile():
+    # TODO: figure out how to profile the code, maybe we can fix the slow parts
+    pr = cProfile.Profile()
+    pr.enable()
+
+    main()
+
+    pr.disable()
+    pr.print_stats(sort="time")
+    pr.dump_stats(ROOT_DIR + "/profiling/profile.prof")
+
+
+def main():
     xml_to_csv()
     static_data()
     output_data()
     compare_csv_files()
     clear_flow()
-    layer()
     plot()
+    layer()
+
+
+if __name__ == '__main__':
+    if PROFILE:
+        profile()
+    else:
+        main()
