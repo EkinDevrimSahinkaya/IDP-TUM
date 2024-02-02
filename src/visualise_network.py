@@ -199,7 +199,8 @@ def plot():
         lats, lons = zip(*nodes_list)
         df_matched.insert(len(df_matched.columns), "lon", list(lons))
         df_matched.insert(len(df_matched.columns), "lat", list(lats))
-    df_matched.insert(len(df_matched.columns), "flow", flow_list)
+    if 'flow' not in df_matched:
+        df_matched.insert(len(df_matched.columns), "flow", flow_list)
     # write updated dataframe to matched.csv
     df_matched.to_csv(networkDataRoot + "coords_matched.csv", sep=";", index=True)
 
