@@ -12,12 +12,14 @@ import geopandas as gpd
 
 from networkx import MultiDiGraph
 from geopandas import GeoDataFrame
-from shapely.geometry import Point
+from shapely.geometry import Point, LineString
 from osmnx import settings, utils_graph, io
 from shutil import copy
 # from subprocess import Popen, PIPE
 from config import ROOT_DIR
 from copy import deepcopy
+from heapq import nsmallest
+from osmnx.distance import nearest_edges, nearest_nodes
 
 # Use this citation when referencing OSMnx in work
 # Boeing, G. 2017. OSMnx: New Methods for Acquiring, Constructing, Analyzing, and Visualizing Complex Street Networks.
@@ -131,6 +133,83 @@ def to_shp(map: MultiDiGraph, nodes: [(str, str)]):
     # Write the GeoDataFrame to a shapefile
     gdf_nodes.to_file(output_shapefile)
 
+def find_clostest_nodes(G: MultiDiGraph, node, nodes, n: int):
+    """
+
+    :param G: A MultiDiGraph containing a OSMnx street network
+    :param node:
+    :param nodes: Detector nodes in G
+    :param n: Number of closest nodes to be found in relation to node
+    :return:
+    """
+    detector_paths = {}
+    distances = {}
+
+    for i, node_start in enumerate(nodes):
+        for node_end in nodes[i+1:]:
+            try:
+                shortest_path = nx.shortest_path(G, node_start, node_end, weight='length')
+                distances[node_end] = shortest_path
+            except nx.NetworkXNoPath:
+                pass
+        smallest = nsmallest(n, distances, key=distances.get)
+        detector_paths[node_start] = smallest
+
+    result = detector_paths
+
+
+    # distances = {}
+    # for target in nodes:
+    #     if node != target:
+    #         try:
+    #             distance = nx.shortest_path_length(G, node, target, weight='length')
+    #             distances[target] = distance
+    #         except nx.NetworkXNoPath:   # TODO: probably not necessary since we don't have unconnected nodes
+    #             pass  # ignore non-existent paths
+    # result = nsmallest(n, distances, key=distances.get)
+
+    return result
+
+
+def connect_detector_nodes(G: MultiDiGraph, detector_nodes: [(any, any)]):
+    """
+
+    :param G:
+    :param detector_nodes:
+    """
+    # TODO: (un)install scikit-learn
+    ox.project_graph(G)
+    edges = []
+
+    # nodes is a list of coordinates (lat, lon)? of every detector node
+    for coord in detector_nodes:
+        # convert coord into a Point
+        point = Point(coord[1], coord[0])
+        # get nearest edge to current node and split into u, v, key info
+        u, v, key = nearest_edges(G, X=point.x, Y=point.y)  # TODO: update to newest version
+        # get start and end node of the edge
+        start_node = G.nodes[u]
+        end_node = G.nodes[v]
+
+        # calculate geometry of new edges
+        start_point = Point(start_node['x'], start_node['y'])
+        end_point = Point(end_node['x'], end_node['y'])
+        new_edge_geom_1 = LineString([start_point, point])
+        new_edge_geom_2 = LineString([point, end_point])
+
+        # get detector node from graph
+        detector_node = nearest_nodes(G, X=point.x, Y=point.y, return_dist=False)
+
+        # add new edges to graph
+        # TODO: maybe add flow information here?
+
+        G.add_edge(u, detector_node, key=key, geom=new_edge_geom_1)
+        G.add_edge(detector_node, v, key=key, geom=new_edge_geom_2)
+        # G.add_edges_from()
+
+        # remove original edge because is now split into 2 edges
+        G.remove_edge(u, v, key)
+
 
 def plot():
     """
@@ -206,12 +285,30 @@ def plot():
 
     # add matched detector locations to base map and graph the result
     # ox.io.save_graph_shapefile(map, networkDataRoot+"map_and_points")
-    ox.io.save_graph_geopackage(map, networkDataRoot+"map_and_points.gpkg")
+    # ox.io.save_graph_geopackage(map, networkDataRoot+"map_and_points.gpkg")
     ox.io.save_graph_geopackage(nodes_map, networkDataRoot+"detector_nodes.gpkg")
 
     # TODO: color edges between detector nodes
-    for u, v, k in map.edges(keys=True):
-        pass
+    num_clostest_nodes = 4
+    connect_detector_nodes(nodes_map, nodes_list)
+    nodes = [node for node, data in nodes_map.nodes(data=True) if 'flow' in data and data['flow'] != "NULL"]
+    paths = find_clostest_nodes(nodes_map, None, nodes, num_clostest_nodes)
+
+    # for node in nodes:
+    #     closest_nodes = find_clostest_nodes(nodes_map, node, nodes, num_clostest_nodes)
+    #     paths[node] = [nx.shortest_path(nodes_map, node, target, weight='length') for target in closest_nodes]
+
+    for start_node, paths_list in paths.items():
+        for path in paths_list:
+            # TODO: CHECK WHAT IS IN PATHS_LIST
+            nodes_map.add_edge()
+            _, _ = ox.plot_graph_route(nodes_map, path, route_color='yellow', route_linewidth=2, show=False, close=False)
+
+    ox.plot_graph(map, bgcolor="white",
+                  node_size=3, node_color="red",
+                  edge_linewidth=0.3, edge_color="black")
+    # for u, v, k in map.edges(keys=True):
+    #     pass
 
     # map.add_nodes_from(nodes)
     # _ = ox.plot_graph(map, bgcolor="white",
