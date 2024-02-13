@@ -1,6 +1,7 @@
 import os
 import glob
 import subprocess
+import time
 
 import fiona  # this import needs to happen before osmnx
 import networkx as nx
@@ -31,6 +32,7 @@ xmlDataRoot = ROOT_DIR + "/data/xml_data/"
 networkDataRoot = ROOT_DIR + "/data/network/"
 
 node_size = 3  # used to define the size of map matched detector nodes; 2 is default size
+ox.config(use_cache=True)
 
 
 def find_cygwin() -> str:
@@ -133,6 +135,7 @@ def to_shp(map: MultiDiGraph, nodes: [(str, str)]):
     # Write the GeoDataFrame to a shapefile
     gdf_nodes.to_file(output_shapefile)
 
+
 def find_clostest_nodes(G: MultiDiGraph, node, nodes, n: int):
     """
 
@@ -171,44 +174,98 @@ def find_clostest_nodes(G: MultiDiGraph, node, nodes, n: int):
     return result
 
 
-def connect_detector_nodes(G: MultiDiGraph, detector_nodes: [(any, any)]):
+def connect_detector_nodes(G: MultiDiGraph, detector_nodes: [(float, float)], detector_ids: [int]):
     """
 
-    :param G:
-    :param detector_nodes:
+    :param G: A MultiDiGraph containing nodes and edges for a road network
+    :param detector_nodes: a list of (lat, lon) = (y, x) values of detector nodes
+    :param detector_ids: a list containing the  osmid of the detector node corresponding to the entry in detector_nodes
     """
     # TODO: (un)install scikit-learn
-    ox.project_graph(G)
-    edges = []
+    ox.project_graph(G, G.graph['crs'])
+    y, x = zip(*detector_nodes)
+    x = np.array(x, dtype=float) #list(y_x[1])
+    y = np.array(y, dtype=float) #list(y_x[0])
+    start = time.time_ns()
+    edges = nearest_edges(G, list(x), list(y), return_dist=False)
+    end = time.time_ns()
+    print("{}s to execute nearest_edges()".format((end - start) / 1e9))
+    len_edges = len(edges)
+    skip = False
+    count = 0
 
-    # nodes is a list of coordinates (lat, lon)? of every detector node
-    for coord in detector_nodes:
-        # convert coord into a Point
-        point = Point(coord[1], coord[0])
-        # get nearest edge to current node and split into u, v, key info
-        u, v, key = nearest_edges(G, X=point.x, Y=point.y)  # TODO: update to newest version
-        # get start and end node of the edge
+    # now we have a list of edges sorted by the order of detector_nodes and detector_ids
+    start = time.time_ns()
+
+    for idx, e in enumerate(edges):
+        if count > 1:
+            # skip this edge because it has been processed
+            count -= 1
+            continue
+        # save info about current edge, necessary for end of loop
+        cur_edge = e
+
+        # count now has the contains the number of det nodes that are on top of cur_edge = (u, v, key)
+        # now we want to following line of edges: u-d1-d2-v to replace u-v
+        # idea: create list of tuples containing the corresponding det_nodes and their osmids
+        # sort the list, add chain of edges, remove edge u-v, skip for loop until e != cur_edge
+        sorted_dets = []
+        if idx < len_edges:
+            count = 1
+            # check if the next detector nodes are on top of cur_edge
+            while idx + count < len_edges and cur_edge == edges[idx+count]:
+                # count number of edges that are the same == number of detector on the same edge
+                count += 1
+            # sort detector nodes according to their lon, lat values in ascending order
+            sorted_dets = sorted([(lon, lat, osmid)
+                                  for osmid, (lat, lon)
+                                  in zip(detector_ids[idx:idx+count], detector_nodes[idx:idx+count])]) #,
+                                 # key=lambda t: t[1:])  # this should sort (osmid, lon, lat) only using lon lat
+
+        # sorted_dets now has from [d1, d2, d3] -> create edges u-d1-d2-v
+        # get i-th detector coordinate in (lat, lon) form and convert to (lon, lat)
+        lon_lat = detector_nodes[idx][::-1]
+        det_point = Point(lon_lat)
+        u, v, key = e
+
+        print("Before adding edges: edge between {} and {} exists: {}".format(u, v, e in G.edges))
+
         start_node = G.nodes[u]
         end_node = G.nodes[v]
 
         # calculate geometry of new edges
         start_point = Point(start_node['x'], start_node['y'])
         end_point = Point(end_node['x'], end_node['y'])
-        new_edge_geom_1 = LineString([start_point, point])
-        new_edge_geom_2 = LineString([point, end_point])
 
-        # get detector node from graph
-        detector_node = nearest_nodes(G, X=point.x, Y=point.y, return_dist=False)
+        # create train of edges
+        # sorted_dets[i] = (lon, lat, osmid)
+        # TODO: we can add flow information here, for starters add flow of start node if it is a detector node
+        # connect detectors to
+        for i in range(count):
+            if i == 0:
+                G.add_edge(u, sorted_dets[i][0])
+            elif i == count - 1:
+                G.add_edge(sorted_dets[i - 1][0], sorted_dets[i][0])
+                G.add_edge(sorted_dets[i][0], v)
+            else:
+                G.add_edge(sorted_dets[i-1][0], sorted_dets[i][0])
 
-        # add new edges to graph
-        # TODO: maybe add flow information here?
 
-        G.add_edge(u, detector_node, key=key, geom=new_edge_geom_1)
-        G.add_edge(detector_node, v, key=key, geom=new_edge_geom_2)
-        # G.add_edges_from()
+        # get osmid of the i-th detector node
+        # detector_node = detector_ids[idx]
+
+        # add new edges with detector_node as start and end point
+        # G.add_edge(u, detector_node, key=key, geom=new_edge_geom_1)
+        # G.add_edge(detector_node, v, key=key, geom=new_edge_geom_2)
+        # print("After adding edges: edge between {} and {} exists: {}".format(u, v, e in G.edges))
 
         # remove original edge because is now split into 2 edges
-        G.remove_edge(u, v, key)
+        if e in G.edges:
+            G.remove_edge(u, v, key)
+
+    end = time.time_ns()
+    print("{}s to execute loop".format((end-start) / 1e9))
+
 
 
 def plot():
@@ -258,11 +315,13 @@ def plot():
     flows = df_xml[["detid", "flow"]].set_index('detid')
 
     # reformat detector locations from [LINESTRING(lon lat,lon lat)] to [(lat, lon)]
+    detector_ids = []  # useful to map detector nodes to existing edges
     for id, node in matched_detector_locations.values:
         lon_lat = node.split(',')[0][11:].split(' ')
         flow = flows.loc[id, 'flow']
-        nodes_list.append((lon_lat[1], lon_lat[0]))
         flow_list.append(flow)
+        nodes_list.append((lon_lat[1], lon_lat[0]))
+        detector_ids.append(id)
         # add x, y, flow information to new detector nodes in an osmnx network
         nodes_map.add_node(id, x=lon_lat[0], y=lon_lat[1], flow=flow)
 
@@ -290,7 +349,11 @@ def plot():
 
     # TODO: color edges between detector nodes
     num_clostest_nodes = 4
-    connect_detector_nodes(nodes_map, nodes_list)
+    print("start timer")
+    start = time.time_ns()
+    connect_detector_nodes(nodes_map, nodes_list, detector_ids)  #TODO: FIRST RUN TOOK 974 SECONDS FOR 704 NODES
+    end = time.time_ns()
+    print("{}s to execute connect_detector_nodes with ~700 nodes".format((end-start)/1e9))
     nodes = [node for node, data in nodes_map.nodes(data=True) if 'flow' in data and data['flow'] != "NULL"]
     paths = find_clostest_nodes(nodes_map, None, nodes, num_clostest_nodes)
 
