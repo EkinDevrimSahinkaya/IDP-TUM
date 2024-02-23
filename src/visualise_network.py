@@ -3,15 +3,21 @@ import glob
 import subprocess
 
 import fiona  # this import needs to happen before osmnx
+import networkx as nx
+import networkx.classes.filters
 import osmnx as ox
 import pandas as pd
 import numpy as np
+import geopandas as gpd
 
-from networkx import MultiDiGraph, Graph
+from networkx import MultiDiGraph
 from geopandas import GeoDataFrame
 from shapely.geometry import Point
 from osmnx import settings, utils_graph, io
+from shutil import copy
+# from subprocess import Popen, PIPE
 from config import ROOT_DIR
+from copy import deepcopy
 
 # Use this citation when referencing OSMnx in work
 # Boeing, G. 2017. OSMnx: New Methods for Acquiring, Constructing, Analyzing, and Visualizing Complex Street Networks.
@@ -19,7 +25,10 @@ from config import ROOT_DIR
 
 path_map_munich = ROOT_DIR + "/data/network/map_munich.graphml"
 mergedDataRoot = ROOT_DIR + "/data/merged_data/"
+xmlDataRoot = ROOT_DIR + "/data/xml_data/"
 networkDataRoot = ROOT_DIR + "/data/network/"
+
+node_size = 3  # used to define the size of map matched detector nodes; 2 is default size
 
 
 def find_cygwin() -> str:
@@ -43,7 +52,7 @@ def find_cygwin() -> str:
                     return cygname
 
 
-def save_graph_shapefile_directional(graph, filepath=None, encoding="utf-8"):
+def save_graph_shapefile_directional(graph: MultiDiGraph, filepath=None, encoding="utf-8"):
     # default filepath if none was provided
     if filepath is None:
         filepath = os.path.join(ox.settings.data_folder, "shapefile")
@@ -78,12 +87,7 @@ def get_base_graphml() -> MultiDiGraph:
     else:
         graph = ox.load_graphml(path_map_munich)
 
-    save_graph_shapefile_directional(graph, filepath=networkDataRoot)
-
-    # #graph base map
-    # _ = ox.plot_graph(graph,
-    #                   node_size=0, node_color="black",
-    #                   edge_linewidth=0.3, edge_color="white")
+    # save_graph_shapefile_directional(graph, filepath=networkDataRoot)
 
     return graph
 
@@ -92,9 +96,9 @@ def get_detectors() -> (GeoDataFrame, [Point]):
     """
     Get the latest merged detector locations and add a geometry column containing
     Points with lon, lat values
-
     :return: The resulting GeoDataFrame and a list of the created Points
     """
+    
     # load detector static_data
     latest_merged_data_csv = max(glob.glob(mergedDataRoot + "*.csv"), key=os.path.getctime)
     detector_df = pd.read_csv(latest_merged_data_csv)
@@ -106,11 +110,26 @@ def get_detectors() -> (GeoDataFrame, [Point]):
 
     # Add the point geometry as column to points.csv for fmm in cygwin
     #detector_df.insert(11, "geom", geometry, True)
-    # TODO: replace path to local cygwin64 installation or comment it out -> example result of fmm
-    # in data/network/matched.csv
+    # TODO: replace path to local cygwin64 installation or comment it out -> contains example result of fmm
+    #  in data/network/matched.csv
     detector_gdf.to_csv("D:\\cygwin64\\home\\User\\fmm\\matching\\network\\points.csv", sep=";")
 
     return detector_gdf, geometry
+
+
+def to_shp(map: MultiDiGraph, nodes: [(str, str)]):
+    # TODO: delete, probably useless
+    # Convert nodes to a GeoDataFrame
+    node_attributes = {node: map.nodes[node] for node in map.nodes()}
+    node_coords = {node: data.get("pos", None) for node, data in map.nodes(data=True)}
+    node_geometries = [Point(coords) for coords in node_coords.values()]
+    gdf_nodes = gpd.GeoDataFrame(node_attributes.values(), geometry=node_geometries)
+
+    # Specify the output shapefile path
+    output_shapefile = networkDataRoot+"map_nodes.shp"
+
+    # Write the GeoDataFrame to a shapefile
+    gdf_nodes.to_file(output_shapefile)
 
 
 def plot():
@@ -118,9 +137,12 @@ def plot():
     Get a base map of Munich using osmnx, match the merged detector locations using a map matching algorithm
     (here: fmm), add the matched location to the base map and plot the result
     """
+    nodes_list = []
+    flow_list = []
 
     # get a base map and the merged detector locations
     map = get_base_graphml()
+    nodes_map = deepcopy(map)
     df_detectors, coords = get_detectors()
 
     # https://stackoverflow.com/questions/64104884/osmnx-project-point-to-street-segments
@@ -128,19 +150,73 @@ def plot():
     print("The resulting file is data/network/matched.csv")
 
     # get mapped points
+    # TODO: for the server, we can just move matched.csv to the correct location instead of reading and writing the file
+    copy("D:\\cygwin64\\home\\User\\fmm\\matching\\network\\matched.csv",
+         networkDataRoot+"matched.csv")
     df_matched = pd.read_csv(networkDataRoot + "matched.csv", sep=";")
-    matched_locs = df_matched["mgeom"]
-    nodes = []
+
+    # fmm seems to sometimes write out wrong information:
+    # LINESTRING(lon lat) instead of LINESTRING(lon lat,lon lat) -> fix those entries:
+    def _fix_linestring(ls: str):
+        ls_split = ls.split(',')
+        # if ls contains a valid linestring, return ls
+        if len(ls_split) == 2:
+            return ls
+        # else ls is of form LINESTRING(lon lat)
+        else:
+            lon, lat = ls[11:-1].split(' ')
+            return ls[:-1] + ",{} {})".format(lon, lat)
+
+    # some matched detector locations are broken -> fix them and add them back to the 'mgeom' column
+    df_matched["mgeom"] = pd.Series([_fix_linestring(ls) for ls in df_matched['mgeom']], name='mgeom')
+
+    # get id and mgeom columns from matched detector locations
+    matched_detector_locations = df_matched[["id", "mgeom"]]
+
+    # get detector flows
+    latest_xml_data_csv = max(glob.glob(xmlDataRoot + "*.csv"), key=os.path.getctime)
+    df_xml = pd.read_csv(latest_xml_data_csv)
+    flows = df_xml[["detid", "flow"]].set_index('detid')
+
     # reformat detector locations from [LINESTRING(lon lat,lon lat)] to [(lat, lon)]
-    for node in matched_locs:
+    for id, node in matched_detector_locations.values:
         lon_lat = node.split(',')[0][11:].split(' ')
-        nodes.append((lon_lat[1], lon_lat[0]))
+        flow = flows.loc[id, 'flow']
+        nodes_list.append((lon_lat[1], lon_lat[0]))
+        flow_list.append(flow)
+        # add x, y, flow information to new detector nodes in an osmnx network
+        nodes_map.add_node(id, x=lon_lat[0], y=lon_lat[1], flow=flow)
+
+    # create a node dict that sets the size of a node depending on its flow value -> effectively hide non-detector nodes
+    nodes_sizes_dict = {n[0]: 0 if n[1] == "NULL" else node_size for n in nodes_map.nodes(data='flow', default="NULL")}
+    nx.set_node_attributes(nodes_map, nodes_sizes_dict, "size")
+
+    # ox.graph_to_gdfs(nodes_map, nodes=False).explore()
+
+    # add lon, lat columns to matched.csv so we can add it to add_layer.py
+    if 'lon' not in df_matched:
+        # https://stackoverflow.com/questions/5917522/unzipping-and-the-operator#:~:text=25-,zip
+        lats, lons = zip(*nodes_list)
+        df_matched.insert(len(df_matched.columns), "lon", list(lons))
+        df_matched.insert(len(df_matched.columns), "lat", list(lats))
+    if 'flow' not in df_matched:
+        df_matched.insert(len(df_matched.columns), "flow", flow_list)
+    # write updated dataframe to matched.csv
+    df_matched.to_csv(networkDataRoot + "coords_matched.csv", sep=";", index=True)
 
     # add matched detector locations to base map and graph the result
-    map.add_nodes_from(nodes)
-    _ = ox.plot_graph(map, bgcolor="white",
-                      node_size=3, node_color="red",
-                      edge_linewidth=0.3, edge_color="black")
+    # ox.io.save_graph_shapefile(map, networkDataRoot+"map_and_points")
+    ox.io.save_graph_geopackage(map, networkDataRoot+"map_and_points.gpkg")
+    ox.io.save_graph_geopackage(nodes_map, networkDataRoot+"detector_nodes.gpkg")
+
+    # TODO: color edges between detector nodes
+    for u, v, k in map.edges(keys=True):
+        pass
+
+    # map.add_nodes_from(nodes)
+    # _ = ox.plot_graph(map, bgcolor="white",
+    #                   node_size=3, node_color="red",
+    #                   edge_linewidth=0.3, edge_color="black")
 
 
 def main():
@@ -149,4 +225,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
