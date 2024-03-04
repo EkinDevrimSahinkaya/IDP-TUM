@@ -109,20 +109,15 @@ def connect_detector_nodes(G: MultiDiGraph, detector_nodes: [(float, float)], de
     :param detector_nodes: a list of (lat, lon) = (y, x) values of detector nodes
     :param detector_ids: a list containing the  osmid of the detector node corresponding to the entry in detector_nodes
     """
-    # TODO: (un)install scikit-learn
     y, x = zip(*detector_nodes)
     x = np.array(x, dtype=float)
     y = np.array(y, dtype=float)
-    start = time.time_ns()
     edges = nearest_edges(G, list(x), list(y), return_dist=False)
-    end = time.time_ns()
-    print("{}s to execute nearest_edges()".format((end - start) / 1e9))
 
     len_edges = len(edges)
     count = 0
     delete = []
 
-    start = time.time_ns()
     for idx, e in enumerate(edges):
         if count > 1:
             # skip this edge because it has been processed
@@ -189,29 +184,21 @@ def connect_detector_nodes(G: MultiDiGraph, detector_nodes: [(float, float)], de
         # split2 now contains geometry for last detector node connected to end of the original edge
         new_geoms.append(line)  # new_geoms[i] now contains an edge with detector i and i+1 as start and end point
 
-        # create train of edges
-        # TODO: sometimes edge_attrs looks like {0: ..., 1: ..., 2: ...} -> what does this mean? do we just need the first one?
+        # create train of edges by calculating the length of the new split up part
         for i in range(count):
             # https://stackoverflow.com/questions/72523683/#:~:text=Then%20you%20could%20e.g.%20define%20the%20new%20edge%20like%20this
             if i == 0:
                 dist = shortest_path(G, (start_node['y'], start_node['x']), (float(sorted_dets[i][1]), float(sorted_dets[i][0])), e, e)[0]
-                G.add_edge(u_for_edge=u, v_for_edge=sorted_dets[i][2], **{**edge_attrs[0], 'geometry': new_geoms[i], 'length': round(dist, 3)})
+                G.add_edge(u, sorted_dets[i][2], **{**edge_attrs[0], 'geometry': new_geoms[i], 'length': round(dist, 3), 'flow': sorted_dets[i][3]})
             else:
                 dist = shortest_path(G, (float(sorted_dets[i-1][1]), float(sorted_dets[i-1][0])), (float(sorted_dets[i][1]), float(sorted_dets[i][0])), e, e)[0]
-                G.add_edge(u_for_edge=sorted_dets[i-1][2], v_for_edge=sorted_dets[i][2], **{**edge_attrs[0], 'geometry': new_geoms[i], 'length': round(dist, 3), 'flow': sorted_dets[i-1][3]})
+                G.add_edge(sorted_dets[i-1][2], sorted_dets[i][2], **{**edge_attrs[0], 'geometry': new_geoms[i], 'length': round(dist, 3), 'flow': sorted_dets[i][3]})
             if i == count - 1:
                 dist = shortest_path(G, (float(sorted_dets[i][1]), float(sorted_dets[i][0])), (end_node['y'], end_node['x']), e, e)[0]
-                G.add_edge(u_for_edge=sorted_dets[i][2], v_for_edge=v, **{**edge_attrs[0], 'geometry': new_geoms[i+1], 'length': round(dist, 3), 'flow': sorted_dets[i][3]})  # TODO: love the IDIOT SANDWICH <3
+                G.add_edge(sorted_dets[i][2], v, **{**edge_attrs[0], 'geometry': new_geoms[i+1], 'length': round(dist, 3), 'flow': sorted_dets[i][3]})
 
+    # remove the original edges that we split up
     G.remove_edges_from(delete)
-    count = 0
-    for u, v, key in delete:
-        if G.has_edge(u, v, key):
-            count += 1
-    print("THERE ARE STILL {} ORIGINAL EDGES LEFT ".format(count))
-
-    end = time.time_ns()
-    print("{}s to execute loop".format((end-start) / 1e9))
 
 
 def plot():
