@@ -55,7 +55,7 @@ def main():
     static_data()
     output_data()
     compare_csv_files()
-    # clear_flow()
+    clear_flow()
     plot()
     layer()
 
