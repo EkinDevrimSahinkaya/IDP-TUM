@@ -18,11 +18,12 @@ edgesData = ROOT_DIR + "/data/network/edges.shp"
 nodesData = ROOT_DIR + "/data/network/detector_nodes.gpkg"
 mergedDataRoot = ROOT_DIR + "/data/merged_data/"
 projectDataRoot = ROOT_DIR + "/data/project_data/"
-trafficRanges = [[(0.0, 100.0), 'Very Low Traffic', QtGui.QColor('#008000')],
-                 [(100.1, 200.0), 'Low Traffic', QtGui.QColor('#00a500')],
-                 [(200.1, 300.0), 'Normal Traffic', QtGui.QColor('#f5ff09')],
-                 [(300.1, 400.0), 'Busy Traffic', QtGui.QColor('#ffa634')],
-                 [(400.1, 1000.0), 'Very Busy Traffic', QtGui.QColor('#ff2712')]]
+trafficRanges = [[(0.0, 1.0), 'No Data', QtGui.QColor('#afafaf'), 0.26],
+                 [(1.1, 100.0), 'Very Low Traffic', QtGui.QColor('#008000'), 0.66],
+                 [(100.1, 200.0), 'Low Traffic', QtGui.QColor('#00a500'), 0.66],
+                 [(200.1, 300.0), 'Normal Traffic', QtGui.QColor('#f5ff09'), 0.66],
+                 [(300.1, 400.0), 'Busy Traffic', QtGui.QColor('#ffa634'), 0.66],
+                 [(400.1, 1000.0), 'Very Busy Traffic', QtGui.QColor('#ff2712'), 0.66]]
 
 prefixPath = r'C:\Program Files\QGIS 3.34.0\bin'  # TODO: change prefix path to your QGIS root directory
 QgsApplication.setPrefixPath(prefixPath, True)
@@ -45,8 +46,10 @@ else:
 def add_color(traffic_range: (float, float),
               label: str,
               color: QColor,
+              line_width: float,
               geom_type: GeometryType,
-              opacity: float = 1.0) -> QgsRendererRange:
+              opacity: float = 1.0,
+               ) -> QgsRendererRange:
     """
     Colorize the detector data according to the measured traffic flow
 
@@ -55,11 +58,14 @@ def add_color(traffic_range: (float, float),
     :param color: Color corresponding to the measured traffic
     :param geom_type: GeometryType of the loaded detector data
     :param opacity: Opacity of the corresponding points
+    :param line_width: thickness of line
     :return: QgsRendererRange instance
     """
-
     (lower, upper) = traffic_range
     symbol = QgsSymbol.defaultSymbol(geom_type)
+    line_layer = QgsSimpleLineSymbolLayer()
+    line_layer.setWidth(line_width)
+    symbol.changeSymbolLayer(0, line_layer)
     symbol.setColor(color)
     symbol.setOpacity(opacity)
 
@@ -129,7 +135,6 @@ def mapAndPoint():
     range_listforSHP = []
     geom_type = csvlayer.geometryType()
     geom_typeforSHP = gpkg_edgelayer.geometryType()
-    print("qdqwdasldaskldals", geom_type)
 
     for traffic_range in trafficRanges:
         color_range = add_color(*traffic_range, geom_type)
@@ -150,7 +155,10 @@ def mapAndPoint():
     renderer = QgsGraduatedSymbolRenderer('', range_listforSHP)
     classification_method = QgsApplication.classificationMethodRegistry().method("EqualInterval")
     renderer.setClassificationMethod(classification_method)
-    renderer.setClassAttribute("OSMnx nodes_flow")
+    # renderer.setClassAttribute("OSMnx nodes_flow")
+    expression = 'case when "OSMnx nodes_flow" IS NULL then 0 else "OSMnx nodes_flow" end'
+    field = expression
+    renderer.setClassAttribute(field)
     gpkg_edgelayer.setRenderer(renderer)
     print("Classification of detectors done.", gpkg_edgelayer)
     project.setCrs(QgsCoordinateReferenceSystem('EPSG:3857'), True)
