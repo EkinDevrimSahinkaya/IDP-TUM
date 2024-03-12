@@ -26,11 +26,12 @@ var lyr_OSMnxedges_1 = new ol.layer.Vector({
                 popuplayertitle: "OSMnx edges",
                 interactive: true,
     title: 'OSMnx edges<br />\
-    <img src="styles/legend/OSMnxedges_1_0.png" /> Very Low Traffic<br />\
-    <img src="styles/legend/OSMnxedges_1_1.png" /> Low Traffic<br />\
-    <img src="styles/legend/OSMnxedges_1_2.png" /> Normal Traffic<br />\
-    <img src="styles/legend/OSMnxedges_1_3.png" /> Busy Traffic<br />\
-    <img src="styles/legend/OSMnxedges_1_4.png" /> Very Busy Traffic<br />'
+    <img src="styles/legend/OSMnxedges_1_0.png" /> No Data<br />\
+    <img src="styles/legend/OSMnxedges_1_1.png" /> Very Low Traffic<br />\
+    <img src="styles/legend/OSMnxedges_1_2.png" /> Low Traffic<br />\
+    <img src="styles/legend/OSMnxedges_1_3.png" /> Normal Traffic<br />\
+    <img src="styles/legend/OSMnxedges_1_4.png" /> Busy Traffic<br />\
+    <img src="styles/legend/OSMnxedges_1_5.png" /> Very Busy Traffic<br />'
         });
 
 lyr_OSM_0.setVisible(true);lyr_OSMnxedges_1.setVisible(true);

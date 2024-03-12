@@ -62,42 +62,56 @@ def pull_and_save_data(working_directory=os.getcwd()):
             all_entries = []
 
             for idx, row in mdm.iterrows():
+
+
+
                 temp_index = int(row.measurementSiteReference['@id'])
                 temp_time = row.measurementTimeDefault
 
-                if len(row.measuredValue) == 3:
+                if(str(row.measuredValue) != "nan"):
+                    if len(row.measuredValue) == 3:
 
-                    # checkStr purpose is if a row really contain var we are looking for
-                    checkStr = str(row.measuredValue[0])
-                    if("vehicleFlowRate" in checkStr):
-                        temp_Flow = row.measuredValue[0]['measuredValue']['basicData']['vehicleFlow']['vehicleFlowRate']
-                    if("vehicleType" in checkStr):
-                        temp_veh_type_flow = row.measuredValue[0]['measuredValue']['basicData']['forVehiclesWithCharacteristicsOf']['vehicleType']
-                    checkStr = row.measuredValue[1]
-                    if ("vehicleFlowRate" in checkStr):
-                        temp_speed = float(row.measuredValue[1]['measuredValue']['basicData']['averageVehicleSpeed']['speed'])
-                    if ("vehicleType" in checkStr):
-                        temp_veh_type_speed = row.measuredValue[1]['measuredValue']['basicData']['forVehiclesWithCharacteristicsOf']['vehicleType']
-                    checkStr = row.measuredValue[2]
-                    if ("percentage" in checkStr):
-                        temp_occ = float(row.measuredValue[2]['measuredValue']['basicData']['occupancy']['percentage'])
 
-                else:
-                    checkLength = str(row.measuredValue)
-                    # checkLength purpose is if a row really smaller than 1 because there are some cases even size is 1 len funvtion gives 2
-                    if len(row.measuredValue) <2 or checkLength[0] == '{' :
-                        temp_Flow = row.measuredValue['measuredValue']['basicData']['vehicleFlow']['vehicleFlowRate']
-                        temp_veh_type_flow =row.measuredValue['measuredValue']['basicData']['forVehiclesWithCharacteristicsOf'][
-                                'vehicleType']
+                        # checkStr purpose is if a row really contain var we are looking for
+                        checkStr = str(row.measuredValue[0])
+                        if("vehicleFlowRate" in checkStr):
+                            temp_Flow = row.measuredValue[0]['measuredValue']['basicData']['vehicleFlow']['vehicleFlowRate']
+                        if("vehicleType" in checkStr):
+                            temp_veh_type_flow = row.measuredValue[0]['measuredValue']['basicData']['forVehiclesWithCharacteristicsOf']['vehicleType']
+                        checkStr = row.measuredValue[1]
+                        if ("vehicleFlowRate" in checkStr):
+                            print("breakPoint1")
+                            print(row.measuredValue[1]['measuredValue']['basicData']['averageVehicleSpeed']['speed'])
+                            temp_speed = float(row.measuredValue[1]['measuredValue']['basicData']['averageVehicleSpeed']['speed'])
+                        if ("vehicleType" in checkStr):
+                            temp_veh_type_speed = row.measuredValue[1]['measuredValue']['basicData']['forVehiclesWithCharacteristicsOf']['vehicleType']
+                        checkStr = row.measuredValue[2]
+                        if ("percentage" in checkStr):
+                            print("breakPoint2")
+                            print(row.measuredValue[2]['measuredValue']['basicData']['occupancy']['percentage'])
+                            temp_occ = float(row.measuredValue[2]['measuredValue']['basicData']['occupancy']['percentage'])
+
                     else:
-                        temp_Flow = row.measuredValue[0]['measuredValue']['basicData']['vehicleFlow']['vehicleFlowRate']
-                        temp_veh_type_flow = \
-                        row.measuredValue[0]['measuredValue']['basicData']['forVehiclesWithCharacteristicsOf'][
-                            'vehicleType']
-                    temp_speed = 0
-                    temp_veh_type_speed = None
-                    temp_occ = 0
-                all_entries.append([temp_index,temp_time,temp_Flow,temp_veh_type_flow,temp_speed,temp_veh_type_speed,temp_occ])
+
+
+                        checkLength = str(row.measuredValue)
+                        # checkLength purpose is if a row really smaller than 1 because there are some cases even size is 1 len funvtion gives 2
+                        if len(row.measuredValue) <2 or checkLength[0] == '{' :
+                            temp_Flow = row.measuredValue['measuredValue']['basicData']['vehicleFlow']['vehicleFlowRate']
+                            temp_veh_type_flow =row.measuredValue['measuredValue']['basicData']['forVehiclesWithCharacteristicsOf'][
+                                    'vehicleType']
+                        else:
+                            temp_Flow = row.measuredValue[0]['measuredValue']['basicData']['vehicleFlow']['vehicleFlowRate']
+                            temp_veh_type_flow = \
+                            row.measuredValue[0]['measuredValue']['basicData']['forVehiclesWithCharacteristicsOf'][
+                                'vehicleType']
+
+                        temp_speed = 0
+                        temp_veh_type_speed = None
+                        temp_occ = 0
+
+
+                    all_entries.append([temp_index,temp_time,temp_Flow,temp_veh_type_flow,temp_speed,temp_veh_type_speed,temp_occ])
             temp_df = pd.DataFrame(all_entries, columns = ["detid","timestamp","flow","vehicleTypeFlow","speed","vehicleTypeSpeed","occupancy_percentage"])
 
             # temp_df.to_pickle(os.path.join(sd, filename))
@@ -116,7 +130,3 @@ def xml_to_csv():
 
 if __name__ == '__main__':
     pull_and_save_data(Root)
-
-
-
-
