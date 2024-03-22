@@ -57,67 +57,53 @@ def pull_and_save_data(working_directory=os.getcwd()):
             mdm = pdx.read_xml(response.text,
                                ['soapenv:Envelope', 'soapenv:Body', 'd2LogicalModel', 'payloadPublication',
                                 'siteMeasurements'], root_is_rows=False)
-            # print(mdm)
 
-            all_entries = []
-
+            all_data = []
             for idx, row in mdm.iterrows():
-
-
-
-                temp_index = int(row.measurementSiteReference['@id'])
-                temp_time = row.measurementTimeDefault
-
-                if(str(row.measuredValue) != "nan"):
-                    if len(row.measuredValue) == 3:
-
-
-                        # checkStr purpose is if a row really contain var we are looking for
-                        checkStr = str(row.measuredValue[0])
-                        if("vehicleFlowRate" in checkStr):
-                            temp_Flow = row.measuredValue[0]['measuredValue']['basicData']['vehicleFlow']['vehicleFlowRate']
-                        if("vehicleType" in checkStr):
-                            temp_veh_type_flow = row.measuredValue[0]['measuredValue']['basicData']['forVehiclesWithCharacteristicsOf']['vehicleType']
-                        checkStr = row.measuredValue[1]
-                        if ("vehicleFlowRate" in checkStr):
-                            print("breakPoint1")
-                            print(row.measuredValue[1]['measuredValue']['basicData']['averageVehicleSpeed']['speed'])
-                            temp_speed = float(row.measuredValue[1]['measuredValue']['basicData']['averageVehicleSpeed']['speed'])
-                        if ("vehicleType" in checkStr):
-                            temp_veh_type_speed = row.measuredValue[1]['measuredValue']['basicData']['forVehiclesWithCharacteristicsOf']['vehicleType']
-                        checkStr = row.measuredValue[2]
-                        if ("percentage" in checkStr):
-                            print("breakPoint2")
-                            print(row.measuredValue[2]['measuredValue']['basicData']['occupancy']['percentage'])
-                            temp_occ = float(row.measuredValue[2]['measuredValue']['basicData']['occupancy']['percentage'])
-
+                det_id = int(row.measurementSiteReference['@id'])
+                date_time = row.measurementTimeDefault
+                anyVehicle, car, lorry, lorryAndVehicleWithTrailer, articulatedVehicle, anyVehicle_unknown, carWithTrailer, van, bus, motorcycle = -1, -1, -1, -1, -1, -1, -1, -1, -1, -1
+                speed_carOrLightVehicle, speed_lorry = -1, -1
+                if type(row.measuredValue) == dict:
+                    anyVehicle = row.measuredValue['measuredValue']['basicData']['vehicleFlow']['vehicleFlowRate']
+                else:
+                    if not type(row.measuredValue) == list:
+                        anyVehicle = math.nan
                     else:
-
-
-                        checkLength = str(row.measuredValue)
-                        # checkLength purpose is if a row really smaller than 1 because there are some cases even size is 1 len funvtion gives 2
-                        if len(row.measuredValue) <2 or checkLength[0] == '{' :
-                            temp_Flow = row.measuredValue['measuredValue']['basicData']['vehicleFlow']['vehicleFlowRate']
-                            temp_veh_type_flow =row.measuredValue['measuredValue']['basicData']['forVehiclesWithCharacteristicsOf'][
-                                    'vehicleType']
-                        else:
-                            temp_Flow = row.measuredValue[0]['measuredValue']['basicData']['vehicleFlow']['vehicleFlowRate']
-                            temp_veh_type_flow = \
-                            row.measuredValue[0]['measuredValue']['basicData']['forVehiclesWithCharacteristicsOf'][
-                                'vehicleType']
-
-                        temp_speed = 0
-                        temp_veh_type_speed = None
-                        temp_occ = 0
-
-
-                    all_entries.append([temp_index,temp_time,temp_Flow,temp_veh_type_flow,temp_speed,temp_veh_type_speed,temp_occ])
-            temp_df = pd.DataFrame(all_entries, columns = ["detid","timestamp","flow","vehicleTypeFlow","speed","vehicleTypeSpeed","occupancy_percentage"])
-
-            # temp_df.to_pickle(os.path.join(sd, filename))
-
-            temp_df.to_csv(os.path.join(working_directory, filename))
+                        for measurement in row.measuredValue:
+                            if 'vehicleFlow' in measurement['measuredValue']['basicData'].keys():
+                                cur_val = measurement['measuredValue']['basicData']['vehicleFlow']['vehicleFlowRate']
+                                if int(measurement['@index']) == 10:
+                                    anyVehicle = cur_val
+                                elif int(measurement['@index']) == 11:
+                                    car = cur_val
+                                elif int(measurement['@index']) == 12:
+                                    lorry = cur_val
+                                elif int(measurement['@index']) == 13:
+                                    lorryAndVehicleWithTrailer = cur_val
+                                elif int(measurement['@index']) == 14:
+                                    articulatedVehicle = cur_val
+                                elif int(measurement['@index']) == 15:
+                                    anyVehicle_unknown = cur_val
+                                elif int(measurement['@index']) == 16:
+                                    carWithTrailer = cur_val
+                                elif int(measurement['@index']) == 17:
+                                    van = cur_val
+                                elif int(measurement['@index']) == 18:
+                                    bus = cur_val
+                                elif int(measurement['@index']) == 19:
+                                    motorcycle = cur_val
+                            else:
+                                cur_val = measurement['measuredValue']['basicData']['averageVehicleSpeed']['speed']
+                                if int(measurement['@index']) == 21:
+                                    speed_carOrLightVehicle = cur_val
+                                elif int(measurement['@index']) == 22:
+                                    speed_lorry = cur_val
+                all_data.append([det_id, date_time, anyVehicle, car, lorry, lorryAndVehicleWithTrailer, articulatedVehicle, anyVehicle_unknown, carWithTrailer, van, bus, motorcycle, speed_carOrLightVehicle, speed_lorry])
+            all_data_df = pd.DataFrame(all_data, columns = ['detid','date_time', 'flow', 'car', 'lorry', 'lorryAndVehicleWithTrailer', 'articulatedVehicle', 'anyVehicle_unknown', 'carWithTrailer', 'van', 'bus', 'motorcycle', 'speed_carOrLightVehicle', 'speed_lorry'])
+            all_data_df.to_csv(os.path.join(working_directory, filename))
             session.close()
+
         else:
             print(f"Request failed with status code: {response.status_code}")
 
