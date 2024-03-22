@@ -11,7 +11,8 @@ from qgis.utils import iface
 from qgis.PyQt import QtGui
 from shapely import GeometryType
 from config import ROOT_DIR
-
+from qgis.core import QgsVectorLayer, QgsProject, QgsApplication, QgsVectorFileWriter
+import json, tempfile, os
 
 edgesData = ROOT_DIR + "/data/network/edges.shp"
 # gpkgData = ROOT_DIR + "/data/network/map_and_points.gpkg"
@@ -171,7 +172,31 @@ def mapAndPoint():
 
     # save the created QGIS project
     project.write(filename=os.path.join(projectDataRoot, "mapAndPoint.qgs"))
+    updateDataforWebsite(gpkg_edgelayer)
 
+
+def updateDataforWebsite(gpkg_edgelayer):
+    #update folder path to "/layers/" change github website
+    websiteFolder = ROOT_DIR + "/layers/"
+
+    (temp_fd, temp_path) = tempfile.mkstemp(suffix=".geojson")
+    os.close(temp_fd)
+    _writer = QgsVectorFileWriter.writeAsVectorFormat(gpkg_edgelayer, temp_path, "utf-8", driverName="GeoJSON")
+
+    # read GeoJSON file and save content in a Javascript variable
+    with open(temp_path, 'r') as geojson_file:
+        geojson_content = geojson_file.read()
+        js_content = f"var json_OSMnxedges_1 = {geojson_content};"
+
+    # Write to gpkg data to JavaScript file
+    js_path = websiteFolder + "OSMnxedges_1.js"
+    with open(js_path, "w") as js_file:
+        js_file.write(js_content)
+
+    # Delete temporary folder
+    os.remove(temp_path)
+
+    print("Convert process done, file saved.")
 
 def layer():
     """
